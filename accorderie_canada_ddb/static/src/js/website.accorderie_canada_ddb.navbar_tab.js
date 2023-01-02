@@ -32,6 +32,7 @@ odoo.define("website.accorderie_canada_ddb.navbar_tabs", function (require) {
                     .click(function (ev) {
                         self.on_click(ev);
                         self.showTab("tabOffres");
+                        self.setActive('#BtnTabOffres');
                     });
             });
             this._super.apply(this.arguments).then(function () {
@@ -40,6 +41,7 @@ odoo.define("website.accorderie_canada_ddb.navbar_tabs", function (require) {
                     .click(function (ev) {
                         self.on_click(ev);
                         self.showTab("tabDemandes");
+                        self.setActive('#BtnTabDemandes');
                     });
             });
             this._super.apply(this.arguments).then(function () {
@@ -48,6 +50,7 @@ odoo.define("website.accorderie_canada_ddb.navbar_tabs", function (require) {
                     .click(function (ev) {
                         self.on_click(ev);
                         self.showTab("tabMembres");
+                        self.setActive('#BtnTabMembres');
                     });
             });
             this._super.apply(this.arguments).then(function () {
@@ -56,6 +59,7 @@ odoo.define("website.accorderie_canada_ddb.navbar_tabs", function (require) {
                     .click(function (ev) {
                         self.on_click(ev);
                         self.showTab("tabMessages");
+                        self.setActive('#BtnTabMessages');
                     });
             });
             this._super.apply(this.arguments).then(function () {
@@ -64,6 +68,7 @@ odoo.define("website.accorderie_canada_ddb.navbar_tabs", function (require) {
                     .click(function (ev) {
                         self.on_click(ev);
                         self.showTab("tabNotifications");
+                        self.setActive('#BtnTabNotifications');
                     });
             });
         },
@@ -80,6 +85,16 @@ odoo.define("website.accorderie_canada_ddb.navbar_tabs", function (require) {
             }
             document.getElementById(tab).style.display = "block";
         },
+
+        setActive: function (id) {
+            let siblings = $(id).siblings();
+            $(id).addClass("active");
+
+            for(let i = 0; i < siblings.length; i++) {
+                console.log(siblings[i]);
+                $(siblings[i]).removeClass("active");
+            }
+        }
     });
 
     return PublierForm;

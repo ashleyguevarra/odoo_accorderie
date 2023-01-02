@@ -863,7 +863,7 @@ actualité
   width: 50%;
   height: 100%;
   margin: 0 !important;
-  overflow: hidden;
+  //overflow: hidden;
 
   .list_title {
     padding-bottom: 3rem;
@@ -872,7 +872,7 @@ actualité
 
 .activite.btn {
   max-width: 100%;
-  max-height: 160px;
+  //max-height: 160px;
   padding: 1.5rem 0;
   overflow: hidden;
   text-align: left;
@@ -966,6 +966,7 @@ actualité
 
     .activite {
       padding: 2% 0 2%;
+      height: unset !important;
 
       .activite_img {
         height: 8vh;
@@ -974,8 +975,9 @@ actualité
 
       .activite_title {
         font-size: 1.8vh;
-        max-height: 3rem;
+        max-height: unset;
         overflow: hidden;
+        //line-height: 1rem;
       }
 
       .activite_auteur,
@@ -1208,10 +1210,11 @@ actualité
     .nav-link {
       padding: 1rem 0;
     }
-    .nav-link.active {
-      box-shadow: inset 0 -2px $primary-color;
-    }
   }
+}
+
+.active {
+  box-shadow: inset 0 -2px $primary-color;
 }
 
 .actualite_search {
@@ -1271,8 +1274,7 @@ actualité
 @media only screen and (max-width: 500px) {
   .sub-navbar .nav {
     flex-direction: row;
-    background-color: $bg-alpha;
-    border-bottom: 1px solid grey;
+    /*
     padding: 0;
 
     .nav-item {
@@ -1280,7 +1282,7 @@ actualité
       padding: 0;
       font-size: 3.5vw;
       margin: auto;
-    }
+    }*/
   }
 }
 
@@ -2468,6 +2470,10 @@ actualité
           text-align: center;
         }
       }
+      .information-4 {
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -2891,13 +2897,15 @@ actualité
     background-color: $delta;
     border-radius: 7px;
     height: auto;
+    padding: 2rem;
 
     img {
       height: 300px;
       border-radius: 7px 7px 0 0;
     }
     div {
-      padding: 2rem;
+      width: 100%;
+      padding-bottom: .5rem;
       font-size: 1rem;
     }
   }
@@ -3172,6 +3180,10 @@ actualité
   //}
   .chat_container {
     max-height: calc(94vh - 154px);
+
+    .right_cards_container {
+      display: none;
+    }
   }
   .chat_box {
     width: 100%;
@@ -3197,10 +3209,13 @@ actualité
       left: 1rem;
       right: 1rem;
     }
+    .chat_body {
+      margin-bottom: 139px;
+    }
 
     .chat_footer {
       position: fixed;
-      bottom: 10vh;
+      bottom: 65px;
       width: 100%;
       background-color: $bg-alpha;
       padding: 1rem;
@@ -3438,6 +3453,23 @@ actualité
       flex-direction: column;
       text-align: left;
       gap: 0.5rem;
+    }
+  }
+}
+
+/*
+ section guide
+*/
+
+
+@media only screen and (max-width: 990px) {
+  .guide_buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .btn {
+      margin: 0 !important;
     }
   }
 }

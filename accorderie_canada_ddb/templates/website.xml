@@ -1319,7 +1319,7 @@
                                             </div>
                                             <div class="form_box" ng-if="form_is_frais_trajet_prix(state)">
                                                 <input
-                                                    class="form-control"
+                                                    class="form-control border-0"
                                                     name="date"
                                                     type="text"
                                                     ng-model="form.frais_trajet"
@@ -1331,7 +1331,7 @@
                                             </div>
                                             <div class="form_box" ng-if="form_is_frais_trajet_prix(state)">
                                                 <input
-                                                    class="form-control"
+                                                    class="form-control border-0"
                                                     name="date"
                                                     type="text"
                                                     ng-model="form.frais_materiel"
