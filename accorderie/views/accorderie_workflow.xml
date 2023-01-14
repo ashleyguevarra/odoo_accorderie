@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="accorderie_workflow_view_diagram" model="ir.ui.view">
+        <field name="name">accorderie_workflow_diagram</field>
+        <field name="model">accorderie.workflow</field>
+        <field name="arch" type="xml">
+            <diagram>
+                <node
+                    form_view_ref="accorderie.accorderie_workflow_state_view_form"
+                    shape="rectangle:is_rectangle==True"
+                    object="accorderie.workflow.state"
+                >
+                    <field name="name" />
+                    <field name="key" />
+                    <field name="data" />
+                    <field name="is_rectangle" invisible="1" />
+                </node>
+                <arrow
+                    destination="state_dst"
+                    form_view_ref="accorderie.accorderie_workflow_relation_view_form"
+                    label="['name']"
+                    object="accorderie.workflow.relation"
+                    source="state_src"
+                >
+                    <field name="name" />
+                    <field name="state_src" />
+                    <field name="state_dst" />
+                </arrow>
+                <label
+                    for=""
+                    string="Diagramme de navigation pour le processus de participation d'un membre sur le mécanisme d'échange de temps.
+                    Toutes modifications sont réels sans retour en arrière.
+                    L'état rectangle pour des choix de navigation et l'état cercle pour la saisie de données (formulaire)."
+                />
+            </diagram>
+        </field>
+    </record>
+
+    <record id="accorderie_workflow_view_form" model="ir.ui.view">
+        <field name="name">accorderie_workflow_form</field>
+        <field name="model">accorderie.workflow</field>
+        <field name="arch" type="xml">
+            <form string="Titre">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                    </group>
+                    <group>
+                        <field name="diagram_state_ids" />
+                    </group>
+                    <group>
+                        <field name="diagram_relation_ids" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="accorderie_workflow_view_kanban" model="ir.ui.view">
+        <field name="name">accorderie_workflow_kanban</field>
+        <field name="model">accorderie.workflow</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile">
+                <field name="name" />
+                <field name="diagram_relation_ids" />
+                <field name="diagram_state_ids" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="name" />
+                                        </strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="accorderie_workflow_view_search" model="ir.ui.view">
+        <field name="name">accorderie_workflow_search</field>
+        <field name="model">accorderie.workflow</field>
+        <field name="arch" type="xml">
+            <search string="Accorderie workflow">
+                <filter domain="[('name','!=',False)]" name="name" string="Nom" />
+                <filter domain="[('diagram_relation_ids','!=',False)]" name="diagram_relation_ids" string="Relation" />
+                <filter domain="[('diagram_state_ids','!=',False)]" name="diagram_state_ids" string="State" />
+            </search>
+        </field>
+    </record>
+
+    <record id="accorderie_workflow_view_tree" model="ir.ui.view">
+        <field name="name">accorderie_workflow_tree</field>
+        <field name="model">accorderie.workflow</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="diagram_relation_ids" />
+                <field name="diagram_state_ids" />
+            </tree>
+        </field>
+    </record>
+
+    <act_window
+        id="accorderie_workflow_action_window"
+        name="Diagramme de navigation"
+        res_model="accorderie.workflow"
+        view_mode="kanban,tree,form,diagram"
+    />
+</odoo>

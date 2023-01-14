@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="accorderie_workflow_state_init" model="accorderie.workflow.state">
+            <field name="name">Initiale</field>
+            <field name="key">init</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86371515</field>
+            <field name="message">Que souhaitez-vous faire?</field>
+            <field name="type">selection_static</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_null_collective" model="accorderie.workflow.state">
+            <field name="name">Null</field>
+            <field name="key">null</field>
+            <field name="message">L'offre de service collective n'est pas encore supporté.</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_pos" model="accorderie.workflow.state">
+            <field name="name">Offre de service</field>
+            <field name="key">init.pos</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86371582</field>
+            <field name="message">Est-ce pour une offre de service :</field>
+            <field name="type">selection_static</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Publier.Une offre de service</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_pos_individuelle" model="accorderie.workflow.state">
+            <field name="name">Choisir une catégorie de service</field>
+            <field name="key">init.pos.single</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86371553</field>
+            <field name="message">Dans quelle catégorie s'inscrit votre offre de service?</field>
+            <field name="type">choix_categorie_de_service</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Individuelle</field>
+            <field name="data">type_service_categorie</field>
+            <field name="model_field_name_alias">categorie</field>
+            <field name="model_field_name">type_service_id</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_pos_individuelle_form" model="accorderie.workflow.state">
+            <field name="name">Formulaire Créer une offre de service publique individuelle</field>
+            <field name="key">init.pos.single.form</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86371567</field>
+            <field name="type">form</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_show_only_last_item">True</field>
+            <field name="disable_question">True</field>
+            <field name="submit_button_text">Valider mon offre de service</field>
+            <field name="submit_response_title">Félicitation votre offre de service a été publié!</field>
+            <field name="model_field_depend">type_service_id</field>
+            <field name="help_section">Échange de service</field>
+            <field name="help_sub_section">Créer une offre de service</field>
+            <field name="help_title">Créer une offre de service publique individuelle</field>
+            <field name="help_description">Permettre de rendre accessible une offre de service à la communauté, entre deux personnes.</field>
+            <field name="help_caract_lst">Nouvelle offre;Offre publique</field>
+            <field name="caract_offre_demande_nouveau_existante">Nouvelle offre</field>
+            <field name="help_fast_btn_title">Créer une offre</field>
+            <field name="help_fast_btn_url">participer#!?state=init.pos.single</field>
+            <field name="help_fast_btn_guide_url">participer#!?animation=Créer une offre de service publique individuelle</field>
+            <field name="help_date_last_update" eval="(DateTime.today() - timedelta(minutes=5)).strftime('%Y-%m-%d %H:%M')" />
+            <field name="help_video_url">//player.vimeo.com/video/753487834?autoplay=0</field>
+            <field name="help_validate_bug">&lt;i class="fa fa-check" style="color:#00FF00"/&gt;</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_pos_groupe_form" model="accorderie.workflow.state">
+            <field name="name">Formulaire Créer une offre de service de groupe</field>
+            <field name="key">init.pos.groupe.form</field>
+            <field name="type">form</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_show_only_last_item">True</field>
+            <field name="disable_question">True</field>
+            <field name="submit_button_text">Valider mon offre de service</field>
+            <field name="submit_response_title">Félicitation votre offre de service a été publié!</field>
+            <field name="model_field_depend">type_service_id</field>
+            <field name="help_section">Échange de service</field>
+            <field name="help_sub_section">Créer une offre de service</field>
+            <field name="help_title">Créer une offre de service de groupe</field>
+            <field name="help_description">Permettre de rendre accessible une offre de service à la communauté entre une personne et un groupe de personnes.</field>
+            <field name="help_caract_lst">Nouvelle offre;Offre publique;Offre de groupe</field>
+            <field name="caract_offre_demande_nouveau_existante">Nouvelle offre</field>
+<!--            <field name="help_fast_btn_title">Créer une offre</field>-->
+<!--            <field name="help_fast_btn_url">participer#!?state=init.pos.single</field>-->
+<!--            <field name="help_fast_btn_guide_url">participer#!?animation=Créer une offre de service publique individuelle</field>-->
+<!--            <field name="help_video_url">//player.vimeo.com/video/753487834?autoplay=0</field>-->
+            <field name="not_implemented">true</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_pos_special_form" model="accorderie.workflow.state">
+            <field name="name">Formulaire Créer une offre de service spéciale</field>
+            <field name="key">init.pos.special.form</field>
+            <field name="type">form</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_show_only_last_item">True</field>
+            <field name="disable_question">True</field>
+            <field name="submit_button_text">Valider mon offre de service</field>
+            <field name="submit_response_title">Félicitation votre offre de service a été publié!</field>
+            <field name="model_field_depend">type_service_id</field>
+            <field name="help_section">Échange de service</field>
+            <field name="help_sub_section">Créer une offre de service</field>
+            <field name="help_title">Créer une offre de service spéciale</field>
+            <field name="help_description">Permettre de rendre accessible une offre de service à la communauté, entre deux personnes de manière ponctuel.</field>
+            <field name="help_caract_lst">Nouvelle offre;Offre publique;Offre ponctuelle</field>
+            <field name="caract_offre_demande_nouveau_existante">Nouvelle offre</field>
+<!--            <field name="help_fast_btn_title">Créer une offre</field>-->
+<!--            <field name="help_fast_btn_url">participer#!?state=init.pos.single</field>-->
+<!--            <field name="help_fast_btn_guide_url">participer#!?animation=Créer une offre de service publique individuelle</field>-->
+<!--            <field name="help_video_url">//player.vimeo.com/video/753487834?autoplay=0</field>-->
+            <field name="not_implemented">true</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_pds" model="accorderie.workflow.state">
+            <field name="name">Demande de service</field>
+            <field name="key">init.pds</field>
+            <field name="message">Est-ce pour une demande de service :</field>
+            <field name="type">selection_static</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Publier.Une demande de service</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_pds_individuelle" model="accorderie.workflow.state">
+            <field name="name">Choisir une catégorie de service</field>
+            <field name="key">init.pds.single</field>
+            <field name="message">Dans quelle catégorie s'inscrit votre demande de service?</field>
+            <field name="type">choix_categorie_de_service</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Individuelle</field>
+            <field name="data">type_service_categorie</field>
+            <field name="model_field_name_alias">categorie</field>
+            <field name="model_field_name">type_service_id</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_pds_individuelle_form" model="accorderie.workflow.state">
+            <field name="name">Formulaire demande de service individuelle</field>
+            <field name="key">init.pds.single.form</field>
+            <field name="type">form</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_show_only_last_item">True</field>
+            <field name="disable_question">True</field>
+            <field name="submit_button_text">Valider ma demande de service</field>
+            <field name="submit_response_title">Félicitation votre demande de service a été publié!</field>
+            <field name="model_field_depend">type_service_id</field>
+            <field name="help_section">Échange de service</field>
+            <field name="help_sub_section">Créer une demande de service</field>
+            <field name="help_title">Créer une demande de service publique individuelle</field>
+            <field name="help_description">Permettre de rendre accessible une demande de service à la communauté, entre deux personnes.</field>
+            <field name="help_caract_lst">Nouvelle demande;Demande publique</field>
+            <field name="caract_offre_demande_nouveau_existante">Nouvelle demande</field>
+            <field name="help_fast_btn_title">Créer une demande</field>
+            <field name="help_fast_btn_url">participer#!?state=init.pds.single</field>
+            <field name="help_fast_btn_guide_url">participer#!?animation=Créer une demande de service publique individuelle</field>
+            <field name="help_date_last_update" eval="(DateTime.today() - timedelta(minutes=5)).strftime('%Y-%m-%d %H:%M')" />
+            <field name="help_video_url">//player.vimeo.com/video/753488142?autoplay=0</field>
+            <field name="help_validate_bug">&lt;i class="fa fa-check" style="color:#00FF00"/&gt;</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_saa" model="accorderie.workflow.state">
+            <field name="name">Échange d'un service</field>
+            <field name="key">init.saa</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86537288</field>
+            <field name="message">Que voulez-vous?</field>
+            <field name="type">selection_static</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Créer un échange</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_saa_offrir" model="accorderie.workflow.state">
+            <field name="name">Choisir une de mes offres</field>
+            <field name="key">init.saa.offrir</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86537290</field>
+            <field name="message">Choisir une de mes offres</field>
+            <field name="type">selection_dynamique</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Offrir un service</field>
+            <field name="model_field_name_alias">offre_service</field>
+            <field name="model_field_name">offre_service_id</field>
+            <field name="data">mes_offres_de_service</field>
+            <field name="list_is_first_position">True</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_saa_offrir_nouveau" model="accorderie.workflow.state">
+            <field name="name">Choisir un membre</field>
+            <field name="key">init.saa.offrir.nouveau</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86537465</field>
+            <field name="message">À qui souhaitez-vous offrir le service?</field>
+            <field name="type">choix_membre</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Privé</field>
+            <field name="model_field_name_alias">membre</field>
+            <field name="model_field_name">membre_id</field>
+            <field name="data">membre</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_saa_offrir_existant" model="accorderie.workflow.state">
+            <field name="name">Choisir un membre</field>
+            <field name="key">init.saa.offrir.existant</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86537292</field>
+            <field name="message">À qui souhaitez-vous offrir le service?</field>
+            <field name="type">choix_membre</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Que j'ai publié</field>
+            <field name="model_field_name_alias">membre</field>
+            <field name="model_field_name">membre_id</field>
+            <field name="data">membre</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_saa_offrir_existant_form" model="accorderie.workflow.state">
+            <field name="name">Formulaire service privé existant échange</field>
+            <field name="key">init.saa.offrir.existant.form</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86537295</field>
+            <field name="message">Offrir un service privé</field>
+            <field name="type">form</field>
+            <field name="show_breadcrumb">False</field>
+            <field name="submit_button_text">Valider mon offre</field>
+            <field name="submit_response_title">Votre offre de service a bien été envoyée.</field>
+            <field name="submit_response_description">L'Accordeur devrait vous contacter sous peu pour valider, modifier ou refuser votre proposition.</field>
+            <field name="model_field_depend">offre_service_id;membre_id</field>
+            <field name="help_section">Échange de service</field>
+            <field name="help_sub_section">Créer un échange avec un autre membre</field>
+            <field name="help_title">Créer un échange en tant que personne offrant le service avec une offre existante</field>
+            <field name="help_description">Permettre de mettre en accord à l’avance sur les modalités exactes du service à donner ou à recevoir, entre deux personnes, en étant la personne qui offre un service. L’offre de service doit déjà avoir été publiée.</field>
+            <field name="help_caract_lst">Nouvel échange;Offre existante;Service à offrir</field>
+            <field name="caract_echange_nouvel_existant">Nouvel échange</field>
+            <field name="caract_offre_demande_nouveau_existante">Offre existante</field>
+            <field name="caract_service_offrir_recevoir">Service à offrir</field>
+            <field name="help_fast_btn_title">Créer un échange</field>
+            <field name="help_fast_btn_url">participer#!?state=init.saa.offrir</field>
+            <field name="help_fast_btn_guide_url">participer#!?animation=Créer un échange en tant que personne offrant le service avec une offre existante</field>
+            <field name="help_video_url">//player.vimeo.com/video/753489576?autoplay=0</field>
+            <field name="help_date_last_update" eval="(DateTime.today() - timedelta(minutes=5)).strftime('%Y-%m-%d %H:%M')" />
+            <field name="help_validate_bug">&lt;div style="text-align:left"&gt;
+	&lt;span style="color:#0000FF"&gt;Déf&lt;/span&gt; membre A et membre B&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Act&lt;/span&gt; &lt;span style="color:#00FF00"&gt;A crée une offre&lt;/span&gt;&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Int&lt;/span&gt; &lt;span style="color:#00FF00"&gt;A sait que B veut recevoir le service de l'offre par A&lt;/span&gt;&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Act&lt;/span&gt; &lt;span style="color:#00FF00"&gt;A propose un échange avec une date et heure&lt;/span&gt; &lt;span style="color:#FF0000"&gt;selon disponibilité de B&lt;/span&gt; + &lt;span style="color:#00FF00"&gt;durée désirée&lt;/span&gt; + &lt;span style="color:#FF0000"&gt;suggestion lieu de rencontre&lt;/span&gt;&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Choix&lt;/span&gt; &lt;span style="color:#FF0000"&gt;&lt;ul&gt;
+	&lt;li&gt;B accepte&lt;/li&gt;
+	&lt;li&gt;B propose une modification&lt;/li&gt;
+	&lt;li&gt;B demande une modification par A&lt;/li&gt;
+	&lt;li&gt;B refuse&lt;/li&gt;
+	&lt;/ul&gt;&lt;/span&gt;
+	&lt;span style="color:#0000FF"&gt;Note&lt;/span&gt; A et B peuvent clavarder en lien avec cet échange&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Act&lt;/span&gt; &lt;span style="color:#00FF00"&gt;A et B déclarent échange réussi&lt;/span&gt;&lt;br /&gt;
+&lt;/div&gt;</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_saa_offrir_demande" model="accorderie.workflow.state">
+            <field name="name">Choisir un membre</field>
+            <field name="key">init.saa.offrir.demande</field>
+            <field name="message">Qui souhaite recevoir le service?</field>
+            <field name="type">choix_membre</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Privé</field>
+            <field name="model_field_name_alias">membre</field>
+            <field name="model_field_name">membre_id</field>
+            <field name="data">membre</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_saa_offrir_demande_existante" model="accorderie.workflow.state">
+            <field name="name">Choisir une de ses demandes</field>
+            <field name="key">init.saa.offrir.demande.existante</field>
+            <field name="message">Choisir une de ses demandes</field>
+            <field name="type">selection_dynamique</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">À %s</field>
+            <field name="breadcrumb_field_value">membre_id</field>
+            <field name="model_field_name_alias">demande_service</field>
+            <field name="model_field_name">demande_service_id</field>
+            <field name="data">ses_demandes_de_service</field>
+            <field name="model_field_depend">membre_id</field>
+            <field name="data_url_field">membre_id</field>
+            <field name="data_update_url">/accorderie/get_info/demande_service/%s</field>
+            <field name="force_update_data">True</field>
+            <field name="list_is_first_position">True</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_saa_offrir_demande_existante_date" model="accorderie.workflow.state">
+            <field name="name">Choisir date</field>
+            <field name="key">init.saa.offrir.demande.existante.date</field>
+            <field name="message">Choisir une des dates</field>
+            <field name="type">calendrier</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Pour une demande publiée</field>
+            <field name="data">ses_temps_disponibles</field>
+            <field name="model_field_name_alias">date</field>
+            <field name="model_field_name">date_service</field>
+            <field name="model_field_depend">membre_id</field>
+            <field name="data_url_field">membre_id</field>
+            <field name="data_update_url">/accorderie/get_info/recevoir_service/%s</field>
+            <field name="force_update_data">True</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_saa_offrir_demande_existante_date_temps_duree" model="accorderie.workflow.state">
+            <field name="name">Choisir temps et durée</field>
+            <field name="key">init.saa.offrir.demande.existante.date.time</field>
+            <field name="message">Horaires - Date demandée à offrir le service</field>
+            <field name="type">temps_duree</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Le %s</field>
+            <field name="breadcrumb_field_value">date_service</field>
+            <field name="model_field_name_alias">time</field>
+            <field name="model_field_name">time_service</field>
+            <field name="model_field_depend">membre_id;date_service</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_saa_offrir_demande_existante_date_temps_duree_form" model="accorderie.workflow.state">
+            <field name="name">Formulaire service demande existante échange</field>
+            <field name="key">init.saa.offrir.demande.existante.date.time.form</field>
+            <field name="message">Offrir un service à une demande existante</field>
+            <field name="type">form</field>
+            <field name="show_breadcrumb">False</field>
+            <field name="submit_button_text">Valider mon offre</field>
+            <field name="submit_response_title">Votre offre de service a bien été envoyée.</field>
+            <field name="submit_response_description">L'Accordeur devrait vous contacter sous peu pour valider, modifier ou refuser votre proposition.</field>
+            <field name="model_field_depend">demande_service_id;membre_id;date_service;time_service</field>
+            <field name="help_section">Échange de service</field>
+            <field name="help_sub_section">Créer un échange avec un autre membre</field>
+            <field name="help_title">Créer un échange en tant que personne offrant le service avec une demande existante</field>
+            <field name="help_description">Permettre de mettre en accord à l’avance sur les modalités exactes du service à donner ou à recevoir, entre deux personnes, en étant la personne qui offre un service sur une demande existante. La demande de service doit déjà avoir été publiée.</field>
+            <field name="help_caract_lst">Nouvel échange;Demande existante;Service à offrir</field>
+            <field name="caract_echange_nouvel_existant">Nouvel échange</field>
+            <field name="caract_offre_demande_nouveau_existante">Demande existante</field>
+            <field name="caract_service_offrir_recevoir">Service à offrir</field>
+            <field name="help_fast_btn_title">Créer un échange</field>
+            <field name="help_fast_btn_url">participer#!?state=init.saa.offrir</field>
+<!--            <field name="help_fast_btn_guide_url">participer#!?animation=Créer un échange en tant que personne offrant le service avec une demande existante</field>-->
+            <field name="help_date_last_update" eval="(DateTime.today() - timedelta(minutes=5)).strftime('%Y-%m-%d %H:%M')" />
+            <field name="help_validate_bug">&lt;i class="fa fa-bug" style="color:#FF0000"/&gt; Not finish&lt;br /&gt;
+&lt;div style="text-align:left"&gt;
+	&lt;span style="color:#0000FF"&gt;Déf&lt;/span&gt; membre A et membre B&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Act&lt;/span&gt; &lt;span style="color:#00FF00"&gt;A crée une offre&lt;/span&gt;&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Int&lt;/span&gt; &lt;span style="color:#00FF00"&gt;A a trouvé une demande de service pour B sans avoir d'offre de service&lt;/span&gt;&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Act&lt;/span&gt; &lt;span style="color:#00FF00"&gt;A propose un échange avec une date et heure&lt;/span&gt; &lt;span style="color:#FF0000"&gt;selon disponibilité de B&lt;/span&gt; + &lt;span style="color:#FF0000"&gt;durée désirée&lt;/span&gt; + &lt;span style="color:#FF0000"&gt;suggestion lieu de rencontre&lt;/span&gt;&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Choix&lt;/span&gt; &lt;span style="color:#FF0000"&gt;&lt;ul&gt;
+	&lt;li&gt;B accepte&lt;/li&gt;
+	&lt;li&gt;B propose une modification&lt;/li&gt;
+	&lt;li&gt;B demande une modification par A&lt;/li&gt;
+	&lt;li&gt;B refuse&lt;/li&gt;
+	&lt;/ul&gt;&lt;/span&gt;
+	&lt;span style="color:#0000FF"&gt;Note&lt;/span&gt; A et B peuvent clavarder en lien avec cet échange&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Act&lt;/span&gt; &lt;span style="color:#00FF00"&gt;A et B déclarent échange réussi&lt;/span&gt;&lt;br /&gt;
+&lt;/div&gt;</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_saa_offrir_nouveau_categorie_service" model="accorderie.workflow.state">
+            <field name="name">Choisir une catégorie de service</field>
+            <field name="key">init.saa.offrir.nouveau.cat</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86537468</field>
+            <field name="message">Dans quelle catégorie s'inscrit votre offre de service privée?</field>
+            <field name="type">choix_categorie_de_service</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Pour %s</field>
+            <field name="breadcrumb_field_value">membre_id</field>
+            <field name="data">type_service_categorie</field>
+            <field name="model_field_name_alias">categorie</field>
+            <field name="model_field_name">type_service_id</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_saa_recevoir_choix_existant_temps_duree_form" model="accorderie.workflow.state">
+            <field name="name">Formulaire service existant reçu échange</field>
+            <field name="key">init.saa.recevoir.choix.existant.time.form</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86588770</field>
+            <field name="message">Résumé de ma demande</field>
+            <field name="type">form</field>
+            <field name="show_breadcrumb">False</field>
+            <field name="submit_button_text">Envoyer ma demande</field>
+            <field name="submit_response_title">La demande a bien été envoyée!</field>
+            <field name="submit_response_description">Que souhaitez-vous faire maintenant?</field>
+            <field name="model_field_depend">membre_id;offre_service_id;date_service;time_service</field>
+            <field name="help_section">Échange de service</field>
+            <field name="help_sub_section">Créer un échange avec un autre membre</field>
+            <field name="help_title">Créer un échange en tant que personne recevant le service d’une offre existante</field>
+            <field name="help_description">Permettre de mettre en accord à l’avance sur les modalités exactes du service à donner ou à recevoir, entre deux personnes, en étant la personne qui reçoit un service. L’offre de service a déjà été créée.</field>
+            <field name="help_caract_lst">Nouvel échange;Offre existante;Service à recevoir</field>
+            <field name="caract_echange_nouvel_existant">Nouvel échange</field>
+            <field name="caract_offre_demande_nouveau_existante">Offre existante</field>
+            <field name="caract_service_offrir_recevoir">Service à recevoir</field>
+            <field name="help_fast_btn_title">Créer un échange</field>
+            <field name="help_fast_btn_url">participer#!?state=init.saa.recevoir</field>
+            <field name="help_fast_btn_guide_url">participer#!?animation=Créer un échange en tant que personne recevant le service d’une offre existante</field>
+            <field name="help_date_last_update" eval="(DateTime.today() - timedelta(minutes=5)).strftime('%Y-%m-%d %H:%M')" />
+            <field name="help_validate_bug">&lt;div style="text-align:left"&gt;
+	&lt;span style="color:#0000FF"&gt;Déf&lt;/span&gt; membre A et membre B&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Act&lt;/span&gt; &lt;span style="color:#00FF00"&gt;A crée une offre&lt;/span&gt;&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Int&lt;/span&gt; &lt;span style="color:#00FF00"&gt;B veut recevoir un service de l'offre par A&lt;/span&gt;&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Act&lt;/span&gt; &lt;span style="color:#00FF00"&gt;B propose un échange avec une date et heure&lt;/span&gt; &lt;span style="color:#FF0000"&gt;selon disponibilité de A&lt;/span&gt; + &lt;span style="color:#FF0000"&gt;durée désirée&lt;/span&gt; + &lt;span style="color:#FF0000"&gt;suggestion lieu de rencontre&lt;/span&gt;&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Choix&lt;/span&gt; &lt;span style="color:#FF0000"&gt;&lt;ul&gt;
+	&lt;li&gt;A accepte&lt;/li&gt;
+	&lt;li&gt;A propose une modification&lt;/li&gt;
+	&lt;li&gt;A demande une modification par B&lt;/li&gt;
+	&lt;li&gt;A refuse&lt;/li&gt;
+	&lt;/ul&gt;&lt;/span&gt;
+	&lt;span style="color:#0000FF"&gt;Note&lt;/span&gt; A et B peuvent clavarder en lien avec cet échange&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Act&lt;/span&gt; &lt;span style="color:#00FF00"&gt;A et B déclarent échange réussi&lt;/span&gt;&lt;br /&gt;
+&lt;/div&gt;</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_saa_offrir_nouveau_categorie_service_form" model="accorderie.workflow.state">
+            <field name="name">Formulaire nouveau service privé échange</field>
+            <field name="key">init.saa.offrir.nouveau.cat.form</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86537471</field>
+            <field name="message">Offrir un service privé</field>
+            <field name="type">form</field>
+            <field name="show_breadcrumb">False</field>
+            <field name="submit_button_text">Valider mon offre</field>
+            <field name="submit_response_title">Votre offre de service privée a bien été envoyée.</field>
+            <field name="submit_response_description">L'Accordeur devrait vous contacter sous peu pour valider, modifier ou refuser votre proposition.</field>
+            <field name="model_field_depend">membre_id;type_service_id</field>
+            <field name="help_section">Échange de service</field>
+            <field name="help_sub_section">Créer un échange avec un autre membre</field>
+            <field name="help_title">Créer un échange en tant que personne offrant le service avec une offre qui doit être créée</field>
+            <field name="help_description">Permettre de mettre en accord à l’avance sur les modalités exactes du service à donner ou à recevoir, entre deux personnes, en étant la personne qui offre un service. L’offre de service n’a pas été créée et le sera lors de cette action. Cette offre sera privée.</field>
+            <field name="help_caract_lst">Nouvel échange;Nouvelle offre;Offre ponctuelle;Offre privée;Service à offrir</field>
+            <field name="caract_echange_nouvel_existant">Nouvel échange</field>
+            <field name="caract_offre_demande_nouveau_existante">Nouvelle offre</field>
+            <field name="caract_service_offrir_recevoir">Service à offrir</field>
+            <field name="help_fast_btn_title">Créer un échange</field>
+            <field name="help_fast_btn_url">participer#!?state=init.saa.offrir.nouveau</field>
+            <field name="help_fast_btn_guide_url">participer#!?animation=Créer un échange en tant que personne offrant le service avec une offre qui doit être créée</field>
+            <field name="help_date_last_update" eval="(DateTime.today() - timedelta(minutes=5)).strftime('%Y-%m-%d %H:%M')" />
+            <field name="help_validate_bug">&lt;div style="text-align:left"&gt;
+	&lt;span style="color:#0000FF"&gt;Déf&lt;/span&gt; membre A et membre B&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Int&lt;/span&gt; &lt;span style="color:#00FF00"&gt;A sait que B veut recevoir le service&lt;/span&gt;&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Act&lt;/span&gt; &lt;span style="color:#00FF00"&gt;En créant une offre privée, A propose un échange avec une date et heure&lt;/span&gt; &lt;span style="color:#FF0000"&gt;selon disponibilité de B&lt;/span&gt; + &lt;span style="color:#00FF00"&gt;durée désirée&lt;/span&gt; + &lt;span style="color:#FF0000"&gt;suggestion lieu de rencontre&lt;/span&gt;&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Choix&lt;/span&gt; &lt;span style="color:#FF0000"&gt;&lt;ul&gt;
+	&lt;li&gt;B accepte&lt;/li&gt;
+	&lt;li&gt;B propose une modification&lt;/li&gt;
+	&lt;li&gt;B demande une modification par A&lt;/li&gt;
+	&lt;li&gt;B refuse&lt;/li&gt;
+	&lt;/ul&gt;&lt;/span&gt;
+	&lt;span style="color:#0000FF"&gt;Note&lt;/span&gt; A et B peuvent clavarder en lien avec cet échange&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Act&lt;/span&gt; &lt;span style="color:#00FF00"&gt;A et B déclarent échange réussi&lt;/span&gt;&lt;br /&gt;
+&lt;/div&gt;</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+
+        <record id="accorderie_workflow_state_saa_recevoir" model="accorderie.workflow.state">
+            <field name="name">Choisir un membre</field>
+            <field name="key">init.saa.recevoir</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86588759</field>
+            <field name="message">De qui souhaitez-vous recevoir le service?</field>
+            <field name="type">choix_membre</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Recevoir un service</field>
+            <field name="model_field_name_alias">membre</field>
+            <field name="model_field_name">membre_id</field>
+            <field name="data">membre</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_saa_recevoir_choix" model="accorderie.workflow.state">
+            <field name="name">Choisir une de ses offres ou faire une demande de service</field>
+            <field name="key">init.saa.recevoir.choix</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86588762</field>
+            <field name="message">Choisir une de ses offres ou faire une demande de service</field>
+            <field name="type">selection_dynamique</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">De %s</field>
+            <field name="breadcrumb_field_value">membre_id</field>
+            <field name="model_field_name_alias">offre_service</field>
+            <field name="model_field_name">offre_service_id</field>
+            <field name="data">ses_offres_de_service</field>
+            <field name="model_field_depend">membre_id</field>
+            <field name="data_url_field">membre_id</field>
+            <field name="data_update_url">/accorderie/get_info/offre_service/%s</field>
+            <field name="force_update_data">True</field>
+            <field name="list_is_first_position">True</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_saa_recevoir_choix_nouveau" model="accorderie.workflow.state">
+            <field name="name">Choisir une catégorie de service</field>
+            <field name="key">init.saa.recevoir.choix.nouveau</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86698635</field>
+            <field name="message">Dans quelle catégorie s'inscrit la demande de service privé reçue?</field>
+            <field name="type">choix_categorie_de_service</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Offre privée</field>
+            <field name="data">type_service_categorie</field>
+            <field name="model_field_name_alias">categorie</field>
+            <field name="model_field_name">type_service_id</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_saa_recevoir_choix_nouveau_form" model="accorderie.workflow.state">
+            <field name="name">Formulaire nouveau service reçu échange</field>
+            <field name="key">init.saa.recevoir.choix.nouveau.form</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86697719</field>
+            <field name="message">Description de ma demande</field>
+            <field name="type">form</field>
+            <field name="show_breadcrumb">False</field>
+            <field name="submit_button_text">Envoyer ma demande</field>
+            <field name="submit_response_title">La demande a bien été envoyée!</field>
+            <field name="submit_response_description">Que souhaitez-vous faire maintenant?</field>
+            <field name="model_field_depend">membre_id;type_service_id</field>
+            <field name="help_section">Échange de service</field>
+            <field name="help_sub_section">Créer un échange avec un autre membre</field>
+            <field name="help_title">Créer un échange en tant que personne recevant le service d’une demande qui doit être créée</field>
+            <field name="help_description">Permettre de mettre en accord à l’avance sur les modalités exactes du service à donner ou à recevoir, entre deux personnes, en étant la personne qui reçoit un service. La demande de service n’a pas été créée et le sera lors de cette action. Cette demande sera privée.</field>
+            <field name="help_caract_lst">Nouvel échange;Nouvelle demande;Demande privée;Demande ponctuelle;Service à recevoir</field>
+            <field name="caract_echange_nouvel_existant">Nouvel échange</field>
+            <field name="caract_offre_demande_nouveau_existante">Nouvelle demande</field>
+            <field name="caract_service_offrir_recevoir">Service à recevoir</field>
+            <field name="help_fast_btn_title">Créer un échange</field>
+            <field name="help_fast_btn_url">participer#!?state=init.saa.recevoir</field>
+            <field name="help_fast_btn_guide_url">participer#!?animation=Créer un échange en tant que personne recevant le service d’une demande qui doit être créée</field>
+            <field name="help_date_last_update" eval="(DateTime.today() - timedelta(minutes=5)).strftime('%Y-%m-%d %H:%M')" />
+            <field name="help_validate_bug">&lt;div style="text-align:left"&gt;
+	&lt;span style="color:#0000FF"&gt;Déf&lt;/span&gt; membre A et membre B&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Int&lt;/span&gt; &lt;span style="color:#00FF00"&gt;B sait que A peut lui offrir un service&lt;/span&gt;&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Act&lt;/span&gt; &lt;span style="color:#00FF00"&gt;En créant une demande privée, B propose un échange avec une date et heure&lt;/span&gt; &lt;span style="color:#FF0000"&gt;selon disponibilité de A&lt;/span&gt; + &lt;span style="color:#00FF00"&gt;durée désirée&lt;/span&gt; + &lt;span style="color:#FF0000"&gt;suggestion lieu de rencontre&lt;/span&gt;&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Choix&lt;/span&gt; &lt;span style="color:#FF0000"&gt;&lt;ul&gt;
+	&lt;li&gt;A accepte&lt;/li&gt;
+	&lt;li&gt;A propose une modification&lt;/li&gt;
+	&lt;li&gt;A demande une modification par B&lt;/li&gt;
+	&lt;li&gt;A refuse&lt;/li&gt;
+	&lt;/ul&gt;&lt;/span&gt;
+	&lt;span style="color:#0000FF"&gt;Note&lt;/span&gt; A et B peuvent clavarder en lien avec cet échange&lt;br /&gt;
+	&lt;span style="color:#0000FF"&gt;Act&lt;/span&gt; &lt;span style="color:#00FF00"&gt;A et B déclarent échange réussi&lt;/span&gt;&lt;br /&gt;
+&lt;/div&gt;</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_saa_recevoir_choix_existant" model="accorderie.workflow.state">
+            <field name="name">Choisir date</field>
+            <field name="key">init.saa.recevoir.choix.existant</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86588764</field>
+            <field name="message">Choisir une des dates</field>
+            <field name="type">calendrier</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Pour une offre publiée</field>
+            <field name="data">ses_temps_disponibles</field>
+            <field name="model_field_name_alias">date</field>
+            <field name="model_field_name">date_service</field>
+            <field name="model_field_depend">membre_id</field>
+            <field name="data_url_field">membre_id</field>
+            <field name="data_update_url">/accorderie/get_info/recevoir_service/%s</field>
+            <field name="force_update_data">True</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_saa_recevoir_choix_existant_temps_duree" model="accorderie.workflow.state">
+            <field name="name">Choisir temps et durée</field>
+            <field name="key">init.saa.recevoir.choix.existant.time</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86588766</field>
+            <field name="message">Horaires - Date demandée à recevoir le service</field>
+            <field name="type">temps_duree</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Le %s</field>
+            <field name="breadcrumb_field_value">date_service</field>
+            <field name="model_field_name_alias">time</field>
+            <field name="model_field_name">time_service</field>
+            <field name="model_field_depend">membre_id;date_service</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_va" model="accorderie.workflow.state">
+            <field name="name">Valider un échange de service</field>
+            <field name="key">init.va</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86537845</field>
+            <field name="message">Avez-vous créé un échange de service?</field>
+            <field name="type">selection_static</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Valider un échange de service</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_va_oui" model="accorderie.workflow.state">
+            <field name="name">Échange d'un service existant</field>
+            <field name="key">init.va.oui</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86537847</field>
+            <field name="message">Quel est votre échange de service?</field>
+            <field name="type">selection_dynamique</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Avec une demande de service</field>
+            <field name="model_field_name_alias">echange_service</field>
+            <field name="model_field_name">echange_service_id</field>
+            <field name="data">mes_echanges_de_service_non_valide</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_va_oui_form" model="accorderie.workflow.state">
+            <field name="name">Formulaire échange d'un service existant</field>
+            <field name="key">init.va.oui.form</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86537849</field>
+            <field name="message">Déclaration du service effectué</field>
+            <field name="type">form</field>
+            <field name="show_breadcrumb">False</field>
+            <field name="submit_button_text">Je déclare que le service a bien été effectué</field>
+            <field name="submit_response_title">La transaction de l'échange de service a bien été déclarée!</field>
+            <field name="submit_response_description">Merci de contribuer continuellement à la communauté. Que souhaitez-vous faire maintenant?</field>
+<!--            <field name="submit_response_description">Merci de contribuer continuellement à la communauté de l'Accorderie de ??. Que souhaitez-vous faire maintenant?</field>-->
+            <field name="model_field_depend">echange_service_id</field>
+            <field name="help_section">Échange de service</field>
+            <field name="help_sub_section">Valider un échange</field>
+            <field name="help_title">Valider un échange existant</field>
+            <field name="help_description">Permettre de faire la déclaration d’une transaction suite à un échange de service qui a été créé sur une demande de service.</field>
+            <field name="help_caract_lst">Valider échange;Échange existant</field>
+            <field name="caract_valider_echange">True</field>
+            <field name="caract_echange_nouvel_existant">Échange existant</field>
+            <field name="help_fast_btn_title">Valider un échange</field>
+            <field name="help_fast_btn_url">participer#!?state=init.va.oui</field>
+            <field name="help_video_url">//player.vimeo.com/video/753491978?autoplay=0</field>
+            <field name="help_fast_btn_guide_url">participer#!?animation=Valider un échange existant</field>
+            <field name="help_date_last_update" eval="(DateTime.today() - timedelta(minutes=5)).strftime('%Y-%m-%d %H:%M')" />
+            <field name="help_validate_bug">&lt;i class="fa fa-check" style="color:#00FF00"/&gt;</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+
+        <record id="accorderie_workflow_state_va_non" model="accorderie.workflow.state">
+            <field name="name">Échange d'un nouveau service</field>
+            <field name="key">init.va.non</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86537965</field>
+            <field name="message">Qui êtes-vous?</field>
+            <field name="type">selection_static</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Sans demande</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_va_non_offert" model="accorderie.workflow.state">
+            <field name="name">Choisir un échange ou en créer</field>
+            <field name="key">init.va.non.offert</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86537978</field>
+            <field name="message">Quel service avez-vous offert?</field>
+            <field name="type">selection_dynamique</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">J'ai offert un service</field>
+            <field name="model_field_name_alias">offre_service</field>
+            <field name="model_field_name">offre_service_id</field>
+            <field name="data">mes_offres_de_service</field>
+            <field name="list_is_first_position">False</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_va_non_offert_existant" model="accorderie.workflow.state">
+            <field name="name">Choisir un membre</field>
+            <field name="key">init.va.non.offert.existant</field>
+            <field name="message">À qui avez-vous offert le service?</field>
+            <field name="type">choix_membre</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Que j'ai publié</field>
+            <field name="model_field_name_alias">membre</field>
+            <field name="model_field_name">membre_id</field>
+            <field name="data">membre</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_va_non_offert_existant_formulaire" model="accorderie.workflow.state">
+            <field name="name">Formulaire valider transaction sans demande service existant offert</field>
+            <field name="key">init.va.non.offert.existant.form</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86537980</field>
+            <field name="message">Déclaration du service effectué</field>
+            <field name="type">form</field>
+            <field name="show_breadcrumb">False</field>
+            <field name="submit_button_text">Je déclare que le service a bien été effectué</field>
+            <field name="submit_response_title">La transaction de l'échange de service a bien été déclarée!</field>
+            <field name="submit_response_description">Merci de contribuer continuellement à la communauté. Que souhaitez-vous faire maintenant?</field>
+            <field name="model_field_depend">membre_id;offre_service_id</field>
+            <field name="help_section">Échange de service</field>
+            <field name="help_sub_section">Valider un échange</field>
+            <field name="help_title">Valider un échange inexistant lorsqu’on est la personne qui a offert le service sur une offre créée</field>
+            <field name="help_description">Permettre de faire la déclaration d’une transaction suite à un échange de service qui n’a pas encore été créé, lorsqu’on est la personne qui a offert le service et que l’offre est créée.</field>
+            <field name="help_caract_lst">Valider échange;Nouvel échange;Offre existante;Service à offrir</field>
+            <field name="caract_valider_echange">True</field>
+            <field name="caract_echange_nouvel_existant">Nouvel échange</field>
+            <field name="caract_offre_demande_nouveau_existante">Offre existante</field>
+            <field name="caract_echange_nouvel_existant">Nouvel échange</field>
+            <field name="caract_service_offrir_recevoir">Service à offrir</field>
+            <field name="help_fast_btn_title">Valider un échange</field>
+            <field name="help_fast_btn_url">participer#!?state=init.va.non.offert</field>
+            <field name="help_fast_btn_guide_url">participer#!?animation=Valider un échange inexistant lorsqu’on est la personne qui a offert le service sur une offre créée</field>
+            <field name="help_date_last_update" eval="(DateTime.today() - timedelta(minutes=5)).strftime('%Y-%m-%d %H:%M')" />
+            <field name="help_validate_bug">&lt;i class="fa fa-check" style="color:#00FF00"/&gt;</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_va_non_recu" model="accorderie.workflow.state">
+            <field name="name">Choisir un membre</field>
+            <field name="key">init.va.non.recu</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86538192</field>
+            <field name="message">Qui vous a offert le service?</field>
+            <field name="type">choix_membre</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Service reçu</field>
+            <field name="model_field_name_alias">membre</field>
+            <field name="model_field_name">membre_id</field>
+            <field name="data">membre</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_va_non_recu_choix" model="accorderie.workflow.state">
+            <field name="name">Choisir un échange ou en créer</field>
+            <field name="key">init.va.non.recu.choix</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86538195</field>
+            <field name="message">Quel service avez-vous reçu?</field>
+            <field name="type">selection_dynamique</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">De %s</field>
+            <field name="breadcrumb_field_value">membre_id</field>
+            <field name="model_field_name_alias">offre_service</field>
+            <field name="model_field_name">offre_service_id</field>
+            <field name="data">ses_offres_de_service</field>
+            <field name="model_field_depend">membre_id</field>
+            <field name="data_url_field">membre_id</field>
+            <field name="data_update_url">/accorderie/get_info/offre_service/%s</field>
+            <field name="force_update_data">True</field>
+            <field name="list_is_first_position">False</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_va_non_recu_choix_existant_formulaire" model="accorderie.workflow.state">
+            <field name="name">Formulaire valider transaction sans demande service existant reçu</field>
+            <field name="key">init.va.non.recu.choix.form</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86608523</field>
+            <field name="message">Déclaration du service effectué</field>
+            <field name="type">form</field>
+            <field name="show_breadcrumb">False</field>
+            <field name="submit_button_text">Je déclare que le service a bien été effectué</field>
+            <field name="submit_response_title">La transaction de l'échange de service a bien été déclarée!</field>
+            <field name="submit_response_description">Merci de contribuer continuellement à la communauté. Que souhaitez-vous faire maintenant?</field>
+            <field name="model_field_depend">membre_id;offre_service_id</field>
+            <field name="help_section">Échange de service</field>
+            <field name="help_sub_section">Valider un échange</field>
+            <field name="help_title">Valider un échange inexistant lorsqu’on est la personne qui a demandé le service sur une offre créée</field>
+            <field name="help_description">Permettre de faire la déclaration d’une transaction suite à un échange de service qui n’a pas encore été créé, lorsqu’on est la personne qui a demandé le service et que l’offre a déjà été créée.</field>
+            <field name="help_caract_lst">Valider échange;Nouvel échange;Offre existante;Service à recevoir</field>
+            <field name="caract_valider_echange">True</field>
+            <field name="caract_echange_nouvel_existant">Nouvel échange</field>
+            <field name="caract_offre_demande_nouveau_existante">Offre existante</field>
+            <field name="caract_echange_nouvel_existant">Nouvel échange</field>
+            <field name="caract_service_offrir_recevoir">Service à recevoir</field>
+            <field name="help_fast_btn_title">Valider un échange</field>
+            <field name="help_fast_btn_url">participer#!?state=init.va.non.recu</field>
+            <field name="help_fast_btn_guide_url">participer#!?animation=Valider un échange inexistant lorsqu’on est la personne qui a demandé le service sur une offre créée</field>
+            <field name="help_date_last_update" eval="(DateTime.today() - timedelta(minutes=5)).strftime('%Y-%m-%d %H:%M')" />
+            <field name="help_validate_bug">&lt;i class="fa fa-check" style="color:#00FF00"/&gt;</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_va_non_recu_choix_nouveau" model="accorderie.workflow.state">
+            <field name="name">Choisir une catégorie de service</field>
+            <field name="key">init.va.non.recu.choix.nouveau</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86609091</field>
+            <field name="message">Dans quelle catégorie s'inscrit l'offre de service privée reçue?</field>
+            <field name="type">choix_categorie_de_service</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Privé</field>
+            <field name="data">type_service_categorie</field>
+            <field name="model_field_name_alias">categorie</field>
+            <field name="model_field_name">type_service_id</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_va_non_offert_nouveau" model="accorderie.workflow.state">
+            <field name="name">Choisir un membre</field>
+            <field name="key">init.va.non.offert.nouveau</field>
+            <field name="message">À qui avez-vous offert le service?</field>
+            <field name="type">choix_membre</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Que j'ai publié</field>
+            <field name="model_field_name_alias">membre</field>
+            <field name="model_field_name">membre_id</field>
+            <field name="data">membre</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_va_non_offert_nouveau_cat" model="accorderie.workflow.state">
+            <field name="name">Choisir une catégorie de service</field>
+            <field name="key">init.va.non.offert.nouveau.cat</field>
+            <field name="message">Dans quelle catégorie s'inscrit votre offre de service privée?</field>
+            <field name="type">choix_categorie_de_service</field>
+            <field name="show_breadcrumb">True</field>
+            <field name="breadcrumb_value">Pour %s</field>
+            <field name="breadcrumb_field_value">membre_id</field>
+            <field name="data">type_service_categorie</field>
+            <field name="model_field_name_alias">categorie</field>
+            <field name="model_field_name">type_service_id</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_va_non_offert_nouveau_cat_formulaire" model="accorderie.workflow.state">
+            <field name="name">Formulaire valider transaction sans demande service nouveau offert</field>
+            <field name="key">init.va.non.offert.nouveau.cat.form</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86594545</field>
+            <field name="message">Déclaration du service effectué</field>
+            <field name="type">form</field>
+            <field name="show_breadcrumb">False</field>
+            <field name="submit_button_text">Je déclare que le service a bien été effectué</field>
+            <field name="submit_response_title">La transaction de l'échange de service a bien été déclarée!</field>
+            <field name="submit_response_description">Merci de contribuer continuellement à la communauté. Que souhaitez-vous faire maintenant?</field>
+            <field name="model_field_depend">membre_id;type_service_id</field>
+            <field name="help_section">Échange de service</field>
+            <field name="help_sub_section">Valider un échange</field>
+            <field name="help_title">Valider un échange inexistant lorsqu’on est la personne qui a offert le service sur une offre qui doit être créée</field>
+            <field name="help_description">Permettre de faire la déclaration d’une transaction suite à un échange de service qui n’a pas encore été créé, lorsqu’on est la personne qui a offert le service et que l’offre n’a pas été créée.</field>
+            <field name="help_caract_lst">Valider échange;Nouvel échange;Nouvelle offre;Service à offrir;Offre ponctuelle;Offre privée</field>
+            <field name="caract_valider_echange">True</field>
+            <field name="caract_echange_nouvel_existant">Nouvel échange</field>
+            <field name="caract_offre_demande_nouveau_existante">Nouvelle offre</field>
+            <field name="caract_echange_nouvel_existant">Nouvel échange</field>
+            <field name="caract_service_offrir_recevoir">Service à offrir</field>
+            <field name="help_fast_btn_title">Valider un échange</field>
+            <field name="help_fast_btn_url">participer#!?state=init.va.non.offert</field>
+            <field name="help_fast_btn_guide_url">participer#!?animation=Valider un échange inexistant lorsqu’on est la personne qui a offert le service sur une offre qui doit être créée</field>
+            <field name="help_date_last_update" eval="(DateTime.today() - timedelta(minutes=5)).strftime('%Y-%m-%d %H:%M')" />
+            <field name="help_validate_bug">&lt;i class="fa fa-check" style="color:#00FF00"/&gt;</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_state_va_non_recu_choix_nouveau_formulaire" model="accorderie.workflow.state">
+            <field name="name">Formulaire valider transaction sans demande service nouveau reçu</field>
+            <field name="key">init.va.non.recu.choix.nouveau.form</field>
+            <field name="maquette_link">https://marvelapp.com/prototype/1773h559/screen/86609563</field>
+            <field name="message">Déclaration du service effectué</field>
+            <field name="type">form</field>
+            <field name="show_breadcrumb">False</field>
+            <field name="submit_button_text">Je déclare que le service a bien été effectué</field>
+            <field name="submit_response_title">La transaction de l'échange de service a bien été déclarée!</field>
+            <field name="submit_response_description">Merci de contribuer continuellement à la communauté. Que souhaitez-vous faire maintenant?</field>
+            <field name="model_field_depend">membre_id;type_service_id</field>
+            <field name="help_section">Échange de service</field>
+            <field name="help_sub_section">Valider un échange</field>
+            <field name="help_title">Valider un échange inexistant lorsqu’on est la personne qui a demandé le service sur une demande qui doit être créée</field>
+            <field name="help_description">Permettre de faire la déclaration d’une transaction suite à un échange de service qui n’a pas encore été créé, lorsqu’on est la personne qui a demandé le service et que l’offre n’a pas été créée.</field>
+            <field name="help_caract_lst">Valider échange;Nouvel échange;Nouvelle demande;Demande privée;Demande ponctuelle;Service à recevoir</field>
+            <field name="caract_valider_echange">True</field>
+            <field name="caract_echange_nouvel_existant">Nouvel échange</field>
+            <field name="caract_offre_demande_nouveau_existante">Nouvelle demande</field>
+            <field name="caract_echange_nouvel_existant">Nouvel échange</field>
+            <field name="caract_service_offrir_recevoir">Service à recevoir</field>
+            <field name="help_fast_btn_title">Valider un échange</field>
+            <field name="help_fast_btn_url">participer#!?state=init.va.non.recu</field>
+            <field name="help_fast_btn_guide_url">participer#!?animation=Valider un échange inexistant lorsqu’on est la personne qui a demandé le service sur une demande qui doit être créée</field>
+            <field name="help_date_last_update" eval="(DateTime.today() - timedelta(minutes=5)).strftime('%Y-%m-%d %H:%M')" />
+            <field name="help_validate_bug">&lt;i class="fa fa-check" style="color:#00FF00"/&gt;</field>
+            <field name="diagram_id" ref="accorderie_workflow_participer" />
+        </record>
+        <record id="accorderie_workflow_dev_show_hide_developpement" model="accorderie.workflow.state">
+            <field name="name">Montrer/Masquer le développement</field>
+            <field name="key">dev.show_hide_dev</field>
+            <field name="help_section">Fonctionnalité développeur</field>
+            <field name="help_title">Montrer/Masquer le développement</field>
+            <field name="help_description">Comment voir ou masquer les fonctionnalités en cours de développement, les sections statiques de la maquette.</field>
+            <field name="help_video_url">//player.vimeo.com/video/753485258?autoplay=0</field>
+            <field name="diagram_id" ref="accorderie_workflow_developpeur" />
+        </record>
+    </data>
+</odoo>
