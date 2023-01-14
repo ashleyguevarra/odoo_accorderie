@@ -22,7 +22,7 @@ except (ImportError, AssertionError):
     )
 
 # TODO update me with your backup version
-BACKUP_PATH = "/home/mathben/Documents/technolibre/accorderie/accorderie20200826/Intranet"
+BACKUP_PATH = "/accorderie_canada/Intranet"
 FILE_PATH = f"{BACKUP_PATH}/document/doc"
 SECRET_PASSWORD = ""
 DEBUG_LIMIT = False
@@ -82,7 +82,7 @@ class MigrationAccorderie:
         self.host = "localhost"
         self.user = "accorderie"
         self.passwd = "accorderie"
-        self.db_name = "accorderie_log_2019_2"
+        self.db_name = "accorderie_log_2019"
         self.conn = MySQLdb.connect(
             host=self.host, user=self.user, passwd=self.passwd, db=self.db_name
         )
