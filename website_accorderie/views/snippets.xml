@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <!-- Snippets -->
+    <template id="s_accorderie_liste_offre_et_demande_service" name="Accorderie Liste Offre Et Demande Service">
+        <section class="o_accorderie_liste_offre_et_demande_service oe_snippet_body">
+            <div class="container" />
+        </section>
+    </template>
+    <template id="s_accorderie_liste_type_service_categorie" name="Accorderie Liste Type Service Categorie">
+        <section class="o_accorderie_liste_type_service_categorie oe_snippet_body">
+            <div class="container" />
+        </section>
+    </template>
+    <!-- Add snippets to menu -->
+    <template id="snippet_structure" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+            <t
+                t-snippet="website_accorderie.s_accorderie_liste_offre_et_demande_service"
+                t-thumbnail="/website_accorderie/static/description/icon.png"
+            />
+            <t
+                t-snippet="website_accorderie.s_accorderie_liste_type_service_categorie"
+                t-thumbnail="/website_accorderie/static/description/icon.png"
+            />
+        </xpath>
+    </template>
+</odoo>
