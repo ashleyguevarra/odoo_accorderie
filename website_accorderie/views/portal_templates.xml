@@ -200,42 +200,44 @@
                             <!--                            </li>-->
                             <li class="nav-item" t-ignore="true">
                             </li>
-                            <li
-                                class="nav-item dropdown"
-                                t-ignore="true"
-                                t-if="not user_id._is_public()"
-                                ng-if="animationRecord.enable"
-                            >
-                                <a class="nav-link" data-toggle="dropdown" role="menu_item" style="cursor:pointer">
-                                    <span
-                                        class="fa fa-2x fa-video-camera text-primary"
-                                        data-oe-model="website.menu"
-                                        data-oe-id="10"
-                                        data-oe-field="name"
-                                        data-oe-type="char"
-                                        data-oe-expression="submenu.name"
-                                    />
-                                </a>
-                                <div class="dropdown-menu submenu shadow" role="menu">
-                                    <div
-                                        role="menuitem"
-                                        class="dropdown-item"
-                                        style="cursor:pointer"
-                                        ng-click="selectWindowsRecording()"
-                                    >
-                                        <p>Préparer l'enregistrer</p>
+                            <span ng-controller="AnimationController">
+                                <li
+                                    class="nav-item dropdown"
+                                    t-ignore="true"
+                                    t-if="not user_id._is_public()"
+                                    ng-if="animationRecord.enable"
+                                >
+                                    <a class="nav-link" data-toggle="dropdown" role="menu_item" style="cursor:pointer">
+                                        <span
+                                            class="fa fa-2x fa-video-camera text-primary"
+                                            data-oe-model="website.menu"
+                                            data-oe-id="10"
+                                            data-oe-field="name"
+                                            data-oe-type="char"
+                                            data-oe-expression="submenu.name"
+                                        />
+                                    </a>
+                                    <div class="dropdown-menu submenu shadow" role="menu">
+                                        <div
+                                            role="menuitem"
+                                            class="dropdown-item"
+                                            style="cursor:pointer"
+                                            ng-click="selectWindowsRecording()"
+                                        >
+                                            <p>Préparer l'enregistrer</p>
+                                        </div>
+                                        <div
+                                            role="menuitem"
+                                            class="dropdown-item"
+                                            style="cursor:pointer"
+                                            ng-click="animationRecord.animationName = animation; animationRecord.stateAnimation = 1"
+                                            ng-repeat="animation in animationRecord.lstAnimation"
+                                        >
+                                            <p><i class="fa fa-play" /> {{animation}}</p>
+                                        </div>
                                     </div>
-                                    <div
-                                        role="menuitem"
-                                        class="dropdown-item"
-                                        style="cursor:pointer"
-                                        ng-click="animationRecord.animationName = animation; animationRecord.stateAnimation = 1"
-                                        ng-repeat="animation in animationRecord.lstAnimation"
-                                    >
-                                        <p><i class="fa fa-play" /> {{animation}}</p>
-                                    </div>
-                                </div>
-                            </li>
+                                </li>
+                            </span>
                             <li class="nav-item dropdown debug-item" t-ignore="true">
                                 <t t-if="not user_id._is_public()">
                                     <a class="nav-link" data-toggle="dropdown" role="menu_item" style="cursor:pointer">
@@ -277,11 +279,11 @@
                                             role="menuitem"
                                             class="dropdown-item"
                                             style="cursor:pointer; background-color: unset"
-                                            ng-style="animationRecord.enable &amp;&amp; {'background-color':'lightgrey'}"
-                                            ng-click="animationRecord.enable = !animationRecord.enable"
+                                            ng-style="animation_controller_enable &amp;&amp; {'background-color':'lightgrey'}"
+                                            ng-click="toggle_animation_record_show()"
                                         >
-                                            <p ng-show="!animationRecord.enable">Afficher l'enregistrement</p>
-                                            <p ng-show="animationRecord.enable">Cacher l'enregistrement</p>
+                                            <p ng-show="!animation_controller_enable">Afficher l'enregistrement</p>
+                                            <p ng-show="animation_controller_enable">Cacher l'enregistrement</p>
                                         </div>
                                     </div>
                                 </t>
