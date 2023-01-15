@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <template id="website_accorderie_notification_loader" inherit_id="website.layout" name="Accorderie Notification">
+        <xpath expr="//div[@id='wrapwrap']" position="after">
+            <script>
+                <t t-translation="off">
+                    document.addEventListener("DOMContentLoaded", function(event) {
+                        odoo.define('website.accorderie_notification.instance', function (require) {
+                            var rootWidget = require('root.widget');
+                            var accorderie_notification = require('website.accorderie_notification');
+                            var button = new accorderie_notification.AccorderieNotification(rootWidget);
+                            button.appendTo($('body'));
+                            window.accorderie_notification = button;
+                        });
+                    });
+                </t>
+            </script>
+        </xpath>
+    </template>
+
+</odoo>

@@ -82,7 +82,7 @@ class MigrationAccorderie:
         self.host = "localhost"
         self.user = "accorderie"
         self.passwd = "accorderie"
-        self.db_name = "accorderie_log_2019_2"
+        self.db_name = "accorderie_log_2019"
         self.conn = MySQLdb.connect(
             host=self.host, user=self.user, passwd=self.passwd, db=self.db_name
         )
