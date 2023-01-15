@@ -41,10 +41,15 @@
             <script type="text/javascript" src="/bus/static/src/js/services/bus_service.js" />
 
             <script type="text/javascript" src="/website_accorderie/static/src/js/accorderie_notification.js" />
+            <script type="text/javascript" src="/website_accorderie/static/src/js/accorderie_angularjs_global.js" />
             <script type="text/javascript" src="/website_accorderie/static/src/js/accorderie_animation.js" />
-
             <script type="text/javascript" src="/website_accorderie/static/src/js/accorderie_aide.js" />
-
+            <script type="text/javascript" src="/website_accorderie/static/src/js/participer.js" />
+            <script type="text/javascript" src="/website_accorderie/static/src/js/pub_offre.js" />
+            <script type="text/javascript" src="/website_accorderie/static/src/js/navbar_tab.js" />
+            <script type="text/javascript" src="/website_accorderie/static/src/js/debug_not_implemented.js" />
+            <script type="text/javascript" src="/website_accorderie/static/src/js/messagerie_privee.js" />
+            <script type="text/javascript" src="/website_accorderie/static/src/js/dialog_monaccorderie.js" />
             <script
                 type="text/javascript"
                 src="/website_accorderie/static/src/js/snippet_accorderie_liste_offre_et_demande_service.js"
@@ -53,12 +58,6 @@
                 type="text/javascript"
                 src="/website_accorderie/static/src/js/snippet_accorderie_liste_type_service_categorie.js"
             />
-            <script type="text/javascript" src="/website_accorderie/static/src/js/participer.js" />
-            <script type="text/javascript" src="/website_accorderie/static/src/js/pub_offre.js" />
-            <script type="text/javascript" src="/website_accorderie/static/src/js/navbar_tab.js" />
-            <script type="text/javascript" src="/website_accorderie/static/src/js/debug_not_implemented.js" />
-            <script type="text/javascript" src="/website_accorderie/static/src/js/messagerie_privee.js" />
-            <script type="text/javascript" src="/website_accorderie/static/src/js/dialog_monaccorderie.js" />
         </xpath>
     </template>
 </odoo>
