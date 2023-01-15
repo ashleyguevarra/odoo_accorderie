@@ -4,7 +4,7 @@
     "author": "TechnoLibre",
     "license": "AGPL-3",
     "website": "https://technolibre.ca",
-    "depends": ["accorderie_data"],
+    "depends": ["accorderie", "accorderie_data"],
     "data": [
         "data/accorderie_accorderie.xml",
         "data/user_demo.xml",
