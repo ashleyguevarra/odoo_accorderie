@@ -259,9 +259,7 @@ def post_init_hook(cr, e):
         db_column.update_column(
             "tbl_accorderie",
             "datemaj_accorderie",
-            new_field_name="date_mise_a_jour",
-            new_description="Dernière mise à jour",
-            new_help="Date de la dernière mise à jour",
+            delete=True,
         )
 
         # tbl_achat_ponctuel
@@ -1248,7 +1246,7 @@ def post_init_hook(cr, e):
         )
         db_column.update_column(
             "tbl_membre",
-            "codepostal",
+            "code_postal",
         )
         db_column.update_column(
             "tbl_membre",
@@ -1416,8 +1414,7 @@ def post_init_hook(cr, e):
         db_column.update_column(
             "tbl_membre",
             "memo",
-            new_description="Mémo",
-            is_hide_blacklist_list_view=True,
+            ignore_field=True,
         )
         db_column.update_column(
             "tbl_membre",

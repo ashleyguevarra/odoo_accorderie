@@ -22,7 +22,7 @@ class AccorderieDemandeAdhesion(models.Model):
                     "nom": val.nom,
                     "prenom": val.prenom,
                     "user_id": val.user_id.id,
-                    "membre_partner_id": val.user_id.partner_id.id,
+                    "partner_id": val.user_id.partner_id.id,
                     "region": self.env.ref(
                         "accorderie_data.accorderie_region_capitale_nationale"
                     ).id,

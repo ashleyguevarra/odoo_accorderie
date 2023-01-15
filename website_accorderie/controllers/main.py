@@ -141,13 +141,13 @@ class AccorderieController(http.Controller):
             "id": offre_id.id,
             "description": offre_id.description,
             "titre": offre_id.titre,
-            "publie": offre_id.publie,
+            "website_published": offre_id.website_published,
             "is_favorite": me_membre_id.id in offre_id.membre_favoris_ids.ids,
             "distance": "8m",
             "membre_id": offre_id.membre.id,
             "membre": {
                 "id": offre_id.membre.id,
-                "full_name": offre_id.membre.nom_complet,
+                "full_name": offre_id.membre.nom,
             },
             "diff_create_date": self._transform_str_diff_time_creation(
                 offre_id.create_date
@@ -164,26 +164,26 @@ class AccorderieController(http.Controller):
     )
     def get_all_offre_service(self, **kw):
         me_membre_id = http.request.env.user.partner_id.accorderie_membre_ids
-        # don't return not publie if not same member
+        # don't return not website_published if not same member
         value = {
             a.id: {
                 "id": a.id,
                 "description": a.description,
                 "titre": a.titre,
-                "publie": a.publie,
+                "website_published": a.website_published,
                 "is_favorite": me_membre_id.id in a.membre_favoris_ids.ids,
                 "distance": "8m",
                 "membre_id": a.membre.id,
                 "membre": {
                     "id": a.membre.id,
-                    "full_name": a.membre.nom_complet,
+                    "full_name": a.membre.nom,
                 },
                 "diff_create_date": self._transform_str_diff_time_creation(
                     a.create_date
                 ),
             }
             for a in http.request.env["accorderie.offre.service"].search([])
-            if a.membre.id == me_membre_id.id or a.publie
+            if a.membre.id == me_membre_id.id or a.website_published
         }
         return value
 
@@ -197,7 +197,7 @@ class AccorderieController(http.Controller):
     )
     def get_all_demande_service(self, **kw):
         me_membre_id = http.request.env.user.partner_id.accorderie_membre_ids
-        # don't return not publie if not same member
+        # don't return not website_published if not same member
         value = {
             a.id: {
                 "id": a.id,
@@ -208,14 +208,14 @@ class AccorderieController(http.Controller):
                 "membre_id": a.membre.id,
                 "membre": {
                     "id": a.membre.id,
-                    "full_name": a.membre.nom_complet,
+                    "full_name": a.membre.nom,
                 },
                 "diff_create_date": self._transform_str_diff_time_creation(
                     a.create_date
                 ),
             }
             for a in http.request.env["accorderie.demande.service"].search([])
-            if a.membre.id == me_membre_id.id or a.publie
+            if a.membre.id == me_membre_id.id or a.website_published
         }
         return value
 
@@ -233,14 +233,14 @@ class AccorderieController(http.Controller):
             "id": demande_id.id,
             "description": demande_id.description,
             "titre": demande_id.titre,
-            "publie": demande_id.publie,
+            "website_published": demande_id.website_published,
             "is_favorite": me_membre_id.id
             in demande_id.membre_favoris_ids.ids,
             "distance": "8m",
             "membre_id": demande_id.membre.id,
             "membre": {
                 "id": demande_id.membre.id,
-                "full_name": demande_id.membre.nom_complet,
+                "full_name": demande_id.membre.nom,
             },
             "diff_create_date": self._transform_str_diff_time_creation(
                 demande_id.create_date
@@ -317,7 +317,7 @@ class AccorderieController(http.Controller):
 
         data["membre"] = {
             "id": membre.id,
-            "full_name": membre.nom_complet,
+            "full_name": membre.nom,
         }
         data["membre_id"] = membre.id
 
@@ -394,7 +394,11 @@ class AccorderieController(http.Controller):
         # TODO use write_date instead of create_date ?
         accorderie_offre_service_ids = (
             accorderie_offre_service_cls.sudo()
-            .search([("publie", "=", True)], order="create_date desc", limit=3)
+            .search(
+                [("website_published", "=", True)],
+                order="create_date desc",
+                limit=3,
+            )
             .ids
         )
         offre_services = accorderie_offre_service_cls.sudo().browse(
@@ -402,7 +406,7 @@ class AccorderieController(http.Controller):
         )
         offre_services_count = (
             accorderie_offre_service_cls.sudo().search_count(
-                [("publie", "=", True)]
+                [("website_published", "=", True)]
             )
         )
         lst_icon_offre_service = []
@@ -426,7 +430,11 @@ class AccorderieController(http.Controller):
         accorderie_demande_service_cls = env["accorderie.demande.service"]
         accorderie_demande_service_ids = (
             accorderie_demande_service_cls.sudo()
-            .search([("publie", "=", True)], order="create_date desc", limit=3)
+            .search(
+                [("website_published", "=", True)],
+                order="create_date desc",
+                limit=3,
+            )
             .ids
         )
         demande_services = accorderie_demande_service_cls.sudo().browse(
@@ -434,7 +442,7 @@ class AccorderieController(http.Controller):
         )
         demande_services_count = (
             accorderie_demande_service_cls.sudo().search_count(
-                [("publie", "=", True)]
+                [("website_published", "=", True)]
             )
         )
         lst_icon_demande_service = []
@@ -641,9 +649,9 @@ class AccorderieController(http.Controller):
                 "id": echange_service_id.membre_vendeur.id
                 if est_acheteur
                 else echange_service_id.membre_acheteur.id,
-                "full_name": echange_service_id.membre_vendeur.nom_complet
+                "full_name": echange_service_id.membre_vendeur.nom
                 if est_acheteur
-                else echange_service_id.membre_acheteur.nom_complet,
+                else echange_service_id.membre_acheteur.nom,
             },
             "sujet_offre_service": echange_service_id.offre_service.titre,
             "description_offre_service": echange_service_id.offre_service.description,
@@ -691,14 +699,14 @@ class AccorderieController(http.Controller):
                 "id": a.id,
                 "description": a.description,
                 "titre": a.titre,
-                "publie": a.publie,
+                "website_published": a.website_published,
                 "is_favorite": membre_id.id in a.membre_favoris_ids.ids,
                 "diff_create_date": self._transform_str_diff_time_creation(
                     a.create_date
                 ),
                 "membre": {
                     "id": a.membre.id,
-                    "full_name": a.membre.nom_complet,
+                    "full_name": a.membre.nom,
                 },
                 "distance": "8m",
             }
@@ -716,14 +724,14 @@ class AccorderieController(http.Controller):
                 ),
                 "membre": {
                     "id": a.membre.id,
-                    "full_name": a.membre.nom_complet,
+                    "full_name": a.membre.nom,
                 },
                 "distance": "8m",
             }
             for a in http.request.env["accorderie.offre.service"].search(
                 [("membre_favoris_ids", "=", membre_id.id)]
             )
-            if a.publie
+            if a.website_published
         }
 
         dct_demande_service = {
@@ -731,14 +739,14 @@ class AccorderieController(http.Controller):
                 "id": a.id,
                 "description": a.description,
                 "titre": a.titre,
-                "publie": a.publie,
+                "website_published": a.website_published,
                 "is_favorite": membre_id.id in a.membre_favoris_ids.ids,
                 "diff_create_date": self._transform_str_diff_time_creation(
                     a.create_date
                 ),
                 "membre": {
                     "id": a.membre.id,
-                    "full_name": a.membre.nom_complet,
+                    "full_name": a.membre.nom,
                 },
                 "distance": "8m",
             }
@@ -756,14 +764,14 @@ class AccorderieController(http.Controller):
                 ),
                 "membre": {
                     "id": a.membre.id,
-                    "full_name": a.membre.nom_complet,
+                    "full_name": a.membre.nom,
                 },
                 "distance": "8m",
             }
             for a in http.request.env["accorderie.demande.service"].search(
                 [("membre_favoris_ids", "=", membre_id.id)]
             )
-            if a.publie
+            if a.website_published
         }
 
         dct_membre_favoris = {
@@ -772,7 +780,7 @@ class AccorderieController(http.Controller):
                 "description": a.membre_id.introduction,
                 "age": 35,
                 "is_favorite": True,
-                "full_name": a.membre_id.nom_complet,
+                "full_name": a.membre_id.nom,
                 "distance": "8m",
             }
             for a in membre_id.membre_favoris_ids
@@ -830,7 +838,7 @@ class AccorderieController(http.Controller):
             "lst_notification": lst_notification,
             "personal": {
                 "id": membre_id.id,
-                "full_name": membre_id.nom_complet,
+                "full_name": membre_id.nom,
                 # "actual_bank_hours": bank_time,
                 "actual_bank_hours": membre_id.bank_time,
                 # "actual_month_bank_hours": month_bank_time,
@@ -882,14 +890,14 @@ class AccorderieController(http.Controller):
                 "id": a.id,
                 "description": a.description,
                 "titre": a.titre,
-                "publie": a.publie,
+                "website_published": a.website_published,
                 "is_favorite": me_membre_id.id in a.membre_favoris_ids.ids,
                 "diff_create_date": self._transform_str_diff_time_creation(
                     a.create_date
                 ),
                 "membre": {
                     "id": a.membre.id,
-                    "full_name": a.membre.nom_complet,
+                    "full_name": a.membre.nom,
                 },
                 "distance": "8m",
             }
@@ -907,12 +915,12 @@ class AccorderieController(http.Controller):
                 ),
                 "membre": {
                     "id": a.membre.id,
-                    "full_name": a.membre.nom_complet,
+                    "full_name": a.membre.nom,
                 },
                 "distance": "8m",
             }
             for a in membre_id.demande_service_ids
-            if a.publie
+            if a.website_published
         }
 
         is_favorite = membre_id.id in [
@@ -922,8 +930,7 @@ class AccorderieController(http.Controller):
         return {
             "membre_info": {
                 "id": membre_id.id,
-                "full_name": membre_id.nom_complet,
-                "prenom": membre_id.prenom,
+                "full_name": membre_id.nom,
                 "bank_max_service_offert": membre_id.bank_max_service_offert,
                 "actual_bank_hours": membre_id.bank_time,
                 "actual_month_bank_hours": membre_id.bank_month_time,
@@ -1013,7 +1020,7 @@ class AccorderieController(http.Controller):
         dct_membre = {
             a.id: {
                 "age": a.age,
-                "full_name": a.nom_complet,
+                "full_name": a.nom,
                 "annee_naissance": a.annee_naissance,
                 "antecedent_judiciaire_verifier": a.antecedent_judiciaire_verifier,
                 "bank_time": a.bank_time,
@@ -1038,7 +1045,7 @@ class AccorderieController(http.Controller):
         nb_offre_service = (
             http.request.env["accorderie.offre.service"]
             .sudo()
-            .search_count([("publie", "=", True)])
+            .search_count([("website_published", "=", True)])
         )
         return {"nb_offre_service": nb_offre_service}
 
@@ -1138,7 +1145,7 @@ class AccorderieController(http.Controller):
         )
         lst_membre = [
             {
-                "title": a.nom_complet,
+                "title": a.nom,
                 "id": a.id,
                 "img": "/web/image/website_accorderie.ir_attachment_henrique_castilho_l8kmx3rzt7s_unsplash_jpg/henrique-castilho-L8kMx3rzt7s-unsplash.jpg",
             }
@@ -1199,7 +1206,7 @@ class AccorderieController(http.Controller):
         lst_echange_acheteur = [
             {
                 "id": a.id,
-                "html": f"Par {a.membre_vendeur.nom_complet}",
+                "html": f"Par {a.membre_vendeur.nom}",
                 "right_html": self.datetime_to_local(a.create_date),
                 "title": a.titre,
             }
@@ -1211,7 +1218,7 @@ class AccorderieController(http.Controller):
         lst_echange_vendeur = [
             {
                 "id": a.id,
-                "html": f"Pour {a.membre_acheteur.nom_complet}",
+                "html": f"Pour {a.membre_acheteur.nom}",
                 "right_html": self.datetime_to_local(a.create_date),
                 "title": a.titre,
             }
@@ -1521,7 +1528,7 @@ class AccorderieController(http.Controller):
             .sudo()
             .search(
                 [
-                    ("membre_partner_id.user_ids", "!=", env.user.id),
+                    ("partner_id.user_ids", "!=", env.user.id),
                 ],
                 limit=1,
             )
@@ -1532,7 +1539,7 @@ class AccorderieController(http.Controller):
             actual_membre_id = None
         else:
             actual_membre_id = env["accorderie.membre"].search(
-                [("membre_partner_id.user_ids", "=", env.user.id)]
+                [("partner_id.user_ids", "=", env.user.id)]
             )
 
         set_caract = set()
@@ -2052,7 +2059,7 @@ class AccorderieController(http.Controller):
     )
     def accorderie_demande_publish_submit(self, demande_id, **kw):
         status = {}
-        publie = kw.get("publie")
+        website_published = kw.get("website_published")
         me_membre_id = http.request.env.user.partner_id.accorderie_membre_ids
         if demande_id.membre.id != me_membre_id.id:
             status["error"] = (
@@ -2060,9 +2067,9 @@ class AccorderieController(http.Controller):
                 " demande."
             )
         else:
-            demande_id.publie = publie
+            demande_id.website_published = website_published
             status["id"] = demande_id
-            status["publie"] = publie
+            status["website_published"] = website_published
         return status
 
     @http.route(
@@ -2094,7 +2101,7 @@ class AccorderieController(http.Controller):
     )
     def accorderie_offre_publish_submit(self, offre_id, **kw):
         status = {}
-        publie = kw.get("publie")
+        website_published = kw.get("website_published")
         me_membre_id = http.request.env.user.partner_id.accorderie_membre_ids
         if offre_id.membre.id != me_membre_id.id:
             status["error"] = (
@@ -2102,9 +2109,9 @@ class AccorderieController(http.Controller):
                 " offre."
             )
         else:
-            offre_id.publie = publie
+            offre_id.website_published = website_published
             status["id"] = offre_id
-            status["publie"] = publie
+            status["website_published"] = website_published
         return status
 
     @http.route(
@@ -2239,7 +2246,7 @@ class AccorderieController(http.Controller):
         return {
             "list": [
                 {
-                    "text": a.nom_complet,
+                    "text": a.nom,
                     "id": a.id,
                     "img": "/web/image/website_accorderie.ir_attachment_henrique_castilho_l8kmx3rzt7s_unsplash_jpg/henrique-castilho-L8kMx3rzt7s-unsplash.jpg",
                 }

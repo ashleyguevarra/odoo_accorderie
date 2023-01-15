@@ -45,7 +45,7 @@ class AccorderieChatGroup(models.Model):
                 # "id": obj.id,
                 "id": other_membre_id.id,
                 "id_group": obj.id,
-                "name": other_membre_id.nom_complet,
+                "name": other_membre_id.nom,
                 "resume_msg": last_msg,
                 "lst_msg": [a.first_to_json() for a in obj.msg_ids],
             }

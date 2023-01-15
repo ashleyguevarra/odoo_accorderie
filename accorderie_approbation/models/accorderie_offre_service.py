@@ -2,9 +2,9 @@ from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
 
 
-class AccorderieDemandeService(models.Model):
-    _name = "accorderie.demande.service"
-    _inherit = ["accorderie.demande.service", "tier.validation"]
+class AccorderieOffreService(models.Model):
+    _name = "accorderie.offre.service"
+    _inherit = ["accorderie.offre.service", "tier.validation"]
 
     state = fields.Selection(
         [
@@ -16,7 +16,7 @@ class AccorderieDemandeService(models.Model):
         copy=False,
         index=True,
         readonly=True,
-        help="Status de la demande de service",
+        help="Status de l'offre de service",
     )
 
     @api.multi
@@ -27,7 +27,6 @@ class AccorderieDemandeService(models.Model):
         revert_state = False
         set_field_ignore_tier_validation = {
             "website_published",
-            "commentaire",
             "membre_favoris_ids",
         }
 
@@ -36,7 +35,7 @@ class AccorderieDemandeService(models.Model):
         ):
             tier_review_ids = self.env["tier.review"].search(
                 [
-                    ("model", "=", "accorderie.demande.service"),
+                    ("model", "=", "accorderie.offre.service"),
                     ("res_id", "=", self.id),
                 ]
             )
