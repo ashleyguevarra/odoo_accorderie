@@ -46,15 +46,11 @@
 
             <script
                 type="text/javascript"
-                src="/website_accorderie/static/src/js/website.accorderie_liste_offre_et_demande_service.animation.js"
+                src="/website_accorderie/static/src/js/snippet_accorderie_liste_offre_et_demande_service.js"
             />
             <script
                 type="text/javascript"
-                src="/website_accorderie/static/src/js/website.accorderie_liste_type_service_categorie.animation.js"
-            />
-            <script
-                type="text/javascript"
-                src="/website_accorderie/static/src/js/website.accorderie_publication.animation.js"
+                src="/website_accorderie/static/src/js/snippet_accorderie_liste_type_service_categorie.js"
             />
             <script type="text/javascript" src="/website_accorderie/static/src/js/participer.js" />
             <script type="text/javascript" src="/website_accorderie/static/src/js/pub_offre.js" />
