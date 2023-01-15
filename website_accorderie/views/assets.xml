@@ -46,6 +46,7 @@
             <script type="text/javascript" src="/bus/static/src/js/services/bus_service.js" />
 
             <script type="text/javascript" src="/website_accorderie/static/src/js/accorderie_notification.js" />
+            <script type="text/javascript" src="/website_accorderie/static/src/js/accorderie_animation.js" />
 
             <script type="text/javascript" src="/website_accorderie/static/src/js/accorderie_aide.js" />
 
