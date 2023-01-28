@@ -3,8 +3,6 @@
 from . import (
     accorderie_accorderie,
     accorderie_arrondissement,
-    accorderie_chat_group,
-    accorderie_chat_message,
     accorderie_commentaire,
     accorderie_demande_adhesion,
     accorderie_demande_service,

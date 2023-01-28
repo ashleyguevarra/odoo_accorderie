@@ -146,7 +146,7 @@ odoo.define('website.accorderie_angularjs_global', function (require) {
         $scope.animation_controller_enable = false;
 
         $scope.lst_notification = [];
-        $scope.lst_membre_message = [];
+
         $scope.notif_filter_unread = function (notif) {
             return !_.isUndefined(notif.is_read) && !notif.is_read;
         }
@@ -530,7 +530,6 @@ odoo.define('website.accorderie_angularjs_global', function (require) {
                     $scope.global = data.global;
                     $scope.personal = data.personal;
                     $scope.lst_notification = data.lst_notification;
-                    $scope.lst_membre_message = data.lst_membre_message;
 
                     $scope.update_personal_data();
                     console.debug($scope.personal);

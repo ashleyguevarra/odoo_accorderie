@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <template
+        id="website_accorderie_notification_chat_loader"
+        inherit_id="website.layout"
+        name="Accorderie Notification Chat"
+    >
+        <xpath expr="//div[@id='wrapwrap']" position="after">
+            <script>
+                <t t-translation="off">
+                    document.addEventListener("DOMContentLoaded", function(event) {
+                        odoo.define('website.accorderie_angularjs_chat.instance', function (require) {
+                            var rootWidget = require('root.widget');
+                            var accorderie_angularjs_chat = require('website.accorderie_angularjs_chat');
+                            var button = new accorderie_angularjs_chat.AccorderieAngularJSChat(rootWidget);
+                            button.appendTo($('body'));
+                            window.accorderie_angularjs_chat = button;
+                        });
+                    });
+                </t>
+            </script>
+        </xpath>
+    </template>
+
+</odoo>

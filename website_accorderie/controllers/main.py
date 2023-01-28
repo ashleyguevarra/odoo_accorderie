@@ -820,19 +820,11 @@ class AccorderieController(http.Controller):
             ].search([("membre_id", "=", membre_id.id)])
         ]
 
-        lst_membre_message = [
-            a.first_to_json(membre_id.id)
-            for a in http.request.env["accorderie.chat.group"].search(
-                [("membre_ids", "in", [membre_id.id])]
-            )
-        ]
-
         return {
             "global": {
                 "dbname": http.request.env.cr.dbname,
             },
             "lst_notification": lst_notification,
-            "lst_membre_message": lst_membre_message,
             "personal": {
                 "id": membre_id.id,
                 "full_name": membre_id.nom_complet,
@@ -2068,36 +2060,6 @@ class AccorderieController(http.Controller):
             demande_id.publie = publie
             status["id"] = demande_id
             status["publie"] = publie
-        return status
-
-    @http.route(
-        "/accorderie/submit/chat_msg",
-        type="json",
-        auth="user",
-        website=True,
-        csrf=True,
-    )
-    def accorderie_chat_msg_submit(self, **kw):
-        msg = kw.get("msg")
-        group_id = kw.get("group_id")
-        membre_id = kw.get("membre_id")
-        me_membre_id = http.request.env.user.partner_id.accorderie_membre_ids
-        if not group_id:
-            group_value = {
-                "membre_ids": [(6, 0, [membre_id, me_membre_id.id])]
-            }
-            group_id_id = http.request.env["accorderie.chat.group"].create(
-                group_value
-            )
-            group_id = group_id_id.id
-        value = {
-            "name": msg,
-            "membre_writer_id": me_membre_id.id,
-            "msg_group_id": group_id,
-        }
-        message_id = http.request.env["accorderie.chat.message"].create(value)
-
-        status = {"msg_id": message_id}
         return status
 
     @http.route(

@@ -2039,13 +2039,8 @@
                                                 <span class="img img-fluid mx-auto fa fa-pencil" />
                                                 Modifier le profil
                                             </div>
-                                            <div class="modif_btn btn btn-primary debug_unimplemented" ng-if="!membre_info.estPersonnel">
+                                            <div class="modif_btn btn btn-primary btn_saccorder debug_unimplemented" ng-if="!membre_info.estPersonnel">
                                                 S'accorder avec {{membre_info.prenom}}
-                                            </div>
-                                            <div class="modif_btn btn btn-primary" ng-if="!membre_info.estPersonnel">
-                                                <a ng-href="/notification#!?section=message&amp;membre={{membre_info.id}}">
-                                                    Contacter {{membre_info.prenom}}
-                                                </a>
                                             </div>
                                             <div class="modif_btn btn btn-primary" ng-click="add_to_my_favorite('accorderie.membre', membre_info)">
                                                 <span class="img img-fluid mx-auto fa" ng-class="{'fa-heart': membre_info.is_favorite, 'fa-heart-o': !membre_info.is_favorite}" />
@@ -2873,112 +2868,33 @@
                                     {{error}}
                                 </p>
                                 <div class="debug_debug">
-                                    <div ng-if="section==='message' &amp;&amp; section_membre===''">
-                                        Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371550">https://marvelapp.com/prototype/1773h559/screen/86371550</a>
-                                    </div>
-                                    <div ng-if="section==='message' &amp;&amp; section_membre!==''">
-                                        Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371581">https://marvelapp.com/prototype/1773h559/screen/86371581</a><br />
-                                        Lien mobile : <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84804859">https://marvelapp.com/prototype/6dbaaf8/screen/84804859</a>
-                                    </div>
                                     <div ng-if="section==='notification'">
                                         Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371534">https://marvelapp.com/prototype/1773h559/screen/86371534</a>
                                     </div>
                                 </div>
-                                <span ng-if="section_membre!==''">
-                                    <section class="s_back">
-                                        <a href="/notification#!?section=message">
-                                            <i class="fa fa-arrow-left text-primary" />
-                                            Revenir à mes messages
-                                        </a>
-                                        <div class="actions">
-                                            <a ng-if="!_.isUndefined(section_membre_dct) &amp;&amp; _.isNumber(section_membre_dct.id_group)" ng-href="https://meet.jit.si/accorderie_conference_{{section_membre_dct.id_group}}_jitsi">
-                                                <div>
-                                                    <i class="fa fa-video text-primary icon_padding_right" />
-                                                Vidéoconférence
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </section>
-                                    <section class="s_chat pt80 pb160">
-                                        <div class="chat_container">
-                                            <div class="chat_box">
-                                                <div class="chat_header">
-                                                    <img src="/web/image/website_accorderie.ir_attachment_freestocks_9uvmlib0wju_unsplash_jpg/freestocks-9UVmlIb0wJU-unsplash.jpg" />
-                                                    <div class="header_info">
-                                                        <p class="chat_contact">{{section_membre_dct.name}}</p>
-<!--                                                        <p class="chat_title">Aide au déménagement</p>-->
-<!--                                                        <p class="chat_desc">J'ai des bras fort et des sourires à partager-->
-<!--                                                        </p>-->
-                                                    </div>
-                                                </div>
-                                                <div class="chat_body">
-                                                    <div class="chat_msg" ng-repeat="msg in section_membre_dct.lst_msg">
-                                                        <img ng-if="section_membre_dct.id===msg.m_id &amp;&amp; personal.id!==section_membre_dct.id" class="contact_pic rounded-circle" src="/web/image/website_accorderie.ir_attachment_freestocks_9uvmlib0wju_unsplash_jpg/freestocks-9UVmlIb0wJU-unsplash.jpg" />
-                                                        <div class="msg" ng-class="{'my_msg': personal.id===msg.m_id, 'their_msg': section_membre_dct.id===msg.m_id &amp;&amp; personal.id!==section_membre_dct.id}">{{msg.name}}</div>
-<!--                                                        <div class="msg_time">5 minutes</div>-->
-                                                    </div>
-                                                </div>
-                                                <div class="chat_footer">
-                                                    <div class="input_container">
-                                                        <span class="fa fa-camera debug_unimplemented" />
-                                                        <input id="input_text_chat" type="text" placeholder="Écrire un message" ng-keypress="press_enter_send_chat_msg($event)" />
-                                                        <span class="fa fa-send" ng-click="send_chat_msg()" />
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="right_cards_container">
-                                                <div class="card info-4" ng-include="'/accorderie/template/votre_contact_full'" />
-                                            </div>
-                                        </div>
-                                    </section>
-                                </span>
-                                <span ng-if="section_membre===''">
+<!--                                <span ng-if="$parent.section_membre===''">-->
+                                <span class="span_section_message_and_notification_body">
                                     <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                         <!-- TODO missing link back -->
                                         <!--                                        <p>Mon profil > Mes préférences générales</p>-->
                                         <div class="row s_nb_column_fixed">
                                             <div class="col-lg-12 s_title pt16 pb16">
-                                                <p class="s_title_default text-gamma">
-                                                    Messages et notifications
+                                                <p class="s_title_default text-gamma titre_message_and_notification">
+                                                    Notifications
                                                 </p>
                                             </div>
                                         </div>
                                     </section>
                                     <nav class="sub-navbar navbar navbar-light bg-light">
                                         <ul class="nav navbar-nav">
-                                            <li class="nav-item">
-                                                <a class="nav-link" role="menu_item" href="/notification#!?section=message" ng-class="{'active': section=='message'}">
-                                                    <span>Messages</span>
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
+                                            <li class="nav-item nav_notification">
                                                 <a class="nav-link" role="menu_item" href="/notification#!?section=notification" ng-class="{'active': section=='notification'}">
                                                     <span>Notifications</span>
                                                 </a>
                                             </li>
                                         </ul>
                                     </nav>
-                                    <section class="s_vertical_list_lg pt0" ng-if="section==='message' &amp;&amp; section_membre===''">
-                                        <div class="container_lists">
-                                            <div class="row vertical_list">
-                                                <a ng-href="/notification#!?section=message&amp;membre={{msg.id}}" ng-repeat="msg in lst_membre_message">
-                                                    <div class="activite message btn" ng-class="{'read':msg.is_read}">
-                                                        <div class="activite_img img-fluid rounded-circle" style="background-image: url(&quot;/web/image/website_accorderie.ir_attachment_freestocks_9uvmlib0wju_unsplash_jpg/freestocks-9UVmlIb0wJU-unsplash.jpg&quot;);">
-                                                            <div class="unread rounded-circle" ng-if="!msg.is_read" />
-                                                        </div>
-
-                                                        <div class="infos">
-                                                            <h4 class="message_auteur">{{msg.name}}</h4>
-                                                            <p class="message">{{msg.resume_msg}}</p>
-                                                        </div>
-                                                        <span class="debug_unimplemented">{{msg.last_date}}</span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </section>
-                                    <section class="s_vertical_list_lg pt0" ng-if="section=='notification'">
+                                    <section class="s_vertical_list_lg pt0 section_notification" ng-if="section=='notification'">
                                         <div class="container_lists">
                                             <div class="row vertical_list">
                                                 <a ng-href="/monactivite/echange#!?echange={{notif.echange_service_id}}" ng-repeat="notif in lst_notification">
@@ -3073,12 +2989,12 @@
                                             <br />
                                             <span class="txt">Voir mes offres, demandes et membres favoris.</span>
                                         </a>
-                                        <a class="information information-5 btn" href="/notification">
+                                        <a class="information information-5 btn btn_message_and_notification" href="notification">
                                             <img src="/web/image/website_accorderie.ir_attachment_profil_preferences_png/Profil-Preferences.png" />
                                             <br />
-                                            <span class="nbr">Mes messages et notifications</span>
+                                            <span class="nbr">Mes notifications</span>
                                             <br />
-                                            <span class="txt">Voir mes messages et notifications</span>
+                                            <span class="txt">Voir mes notifications</span>
                                         </a>
                                         <a class="information information-6 btn debug_unimplemented" href="monprofil/mespreferences">
                                             <img src="/web/image/website_accorderie.ir_attachment_profil_preferences_png/Profil-Preferences.png" />

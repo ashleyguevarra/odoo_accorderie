@@ -505,49 +505,14 @@
                                         data-oe-expression="submenu.name"
                                     />
                                 </a>
-                                <div class="dropdown-menu submenu shadow" role="menu">
-                                    <p style="font-size: 1.5rem;">Messages et notifications</p>
+                                <div class="dropdown-menu submenu shadow menu_message_and_notification" role="menu">
+                                    <p style="font-size: 1.5rem;">Notifications</p>
                                     <div class="dropdown-nav">
-                                        <button id="BtnTabMessages">Messages</button>
                                         <button id="BtnTabNotifications">Notifications</button>
                                     </div>
                                     <div class="dropdown-cat">
-                                        <div id="tabMessages" class="navbar-tab">
-                                            <div class="tab-items-container">
-                                                <a
-                                                    role="menuitem"
-                                                    class="dropdown-item"
-                                                    ng-href="/notification#!?section=message&amp;membre={{msg.id}}"
-                                                    ng-repeat="msg in lst_membre_message"
-                                                >
-                                                    <div class="cat activite btn">
-                                                        <img
-                                                            class="activite_img img-fluid rounded-circle"
-                                                            src="/web/image/website_accorderie.ir_attachment_liuba_bilyk_wu_tbwqdpji_unsplash_jpg/liuba-bilyk-wU_TbWqdPJI-unsplash.jpg"
-                                                        />
-                                                        <div class="infos">
-                                                            <span class="activite_title">{{msg.resume_msg}}</span>
-                                                            <span class="activite_auteur">{{msg.name}}</span>
-                                                        </div>
-                                                        <div class="infos right">
-                                                            <span>{{msg.last_date}}</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <a
-                                                role="menuitem"
-                                                href="/notification#!?section=message"
-                                                class="dropdown-item"
-                                            >
-                                                <div class="cat activite btn btn-primary">
-                                                    <font class="text-gamma" style="font-size: 1rem;">
-                                                        Voir tous les messages
-                                                    </font>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div id="tabNotifications" class="navbar-tab" style="display:none;">
+                                        <div id="tabMessages" class="navbar-tab menu_chat" style="display:none;" />
+                                        <div id="tabNotifications" class="navbar-tab">
                                             <div class="tab-items-container">
                                                 <a
                                                     role="menuitem"

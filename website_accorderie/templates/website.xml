@@ -1738,11 +1738,6 @@
                         > sur {{contact_info.prenom}}</span>
                     </div>
                 </a>
-                <a ng-href="/notification#!?section=message&amp;membre={{contact_info.id}}">
-                    <div class="btn btn-primary rounded-circle"><span ng-if="contact_info === 'femme'">La</span><span
-                            ng-if="contact_info !== 'femme'"
-                        >Le</span> contacter</div>
-                </a>
             </div>
         </div>
     </template>

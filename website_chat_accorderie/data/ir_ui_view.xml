@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ir_ui_view_messages_et_notifications_inherit" model="ir.ui.view">
+            <field name="arch" type="xml">
+                <data inherit_id="website_accorderie.ir_ui_view_messages_et_notifications">
+                    <xpath expr="//p[hasclass('titre_message_and_notification')]" position="replace">
+                        <p class="s_title_default text-gamma titre_message_and_notification">
+                            Messages et notifications
+                        </p>
+                    </xpath>
+                    <xpath expr="//div[hasclass('debug_debug')]" position="inside">
+                        <div ng-if="section==='message' &amp;&amp; $parent.section_membre===''">
+                            Lien maquette :
+                            <a href="https://marvelapp.com/prototype/1773h559/screen/86371550">
+                                https://marvelapp.com/prototype/1773h559/screen/86371550
+                            </a>
+                        </div>
+                        <div ng-if="section==='message' &amp;&amp; $parent.section_membre!==''">
+                            Lien maquette :
+                            <a href="https://marvelapp.com/prototype/1773h559/screen/86371581">
+                                https://marvelapp.com/prototype/1773h559/screen/86371581
+                            </a>
+                            <br />
+                            Lien mobile :
+                            <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84804859">
+                                https://marvelapp.com/prototype/6dbaaf8/screen/84804859
+                            </a>
+                        </div>
+                    </xpath>
+                    <xpath expr="//span[hasclass('span_section_message_and_notification_body')]" position="attributes">
+                        <attribute name="ng-if">$parent.section_membre===''</attribute>
+                    </xpath>
+                    <xpath expr="//span[hasclass('span_section_message_and_notification_body')]" position="before">
+                        <span ng-if="$parent.section_membre!==''">
+                            <section class="s_back">
+                                <a href="/notification#!?section=message">
+                                    <i class="fa fa-arrow-left text-primary" />
+                                    Revenir à mes messages
+                                </a>
+                                <div class="actions">
+                                    <a ng-if="!_.isUndefined($parent.section_membre_dct) &amp;&amp; _.isNumber($parent.section_membre_dct.id_group)" ng-href="https://meet.jit.si/accorderie_conference_{{$parent.section_membre_dct.id_group}}_jitsi">
+                                        <div>
+                                            <i class="fa fa-video text-primary icon_padding_right" />
+                                            Vidéoconférence
+                                        </div>
+                                    </a>
+                                </div>
+                            </section>
+                            <section class="s_chat pt80 pb160">
+                                <div class="chat_container">
+                                    <div class="chat_box">
+                                        <div class="chat_header">
+                                            <img src="/web/image/website_accorderie.ir_attachment_freestocks_9uvmlib0wju_unsplash_jpg/freestocks-9UVmlIb0wJU-unsplash.jpg" />
+                                            <div class="header_info">
+                                                <p class="chat_contact">{{$parent.section_membre_dct.name}}</p>
+<!--                                                        <p class="chat_title">Aide au déménagement</p>-->
+<!--                                                        <p class="chat_desc">J'ai des bras fort et des sourires à partager-->
+<!--                                                        </p>-->
+                                            </div>
+                                        </div>
+                                        <div class="chat_body">
+                                            <div class="chat_msg" ng-repeat="msg in $parent.section_membre_dct.lst_msg">
+                                                <img ng-if="$parent.section_membre_dct.id===msg.m_id &amp;&amp; personal.id!==$parent.section_membre_dct.id" class="contact_pic rounded-circle" src="/web/image/website_accorderie.ir_attachment_freestocks_9uvmlib0wju_unsplash_jpg/freestocks-9UVmlIb0wJU-unsplash.jpg" />
+                                                <div class="msg" ng-class="{'my_msg': personal.id===msg.m_id, 'their_msg': $parent.section_membre_dct.id===msg.m_id &amp;&amp; personal.id!==$parent.section_membre_dct.id}">
+                                                    {{msg.name}}
+                                                </div>
+<!--                                                        <div class="msg_time">5 minutes</div>-->
+                                            </div>
+                                        </div>
+                                        <div class="chat_footer">
+                                            <div class="input_container">
+                                                <span class="fa fa-camera debug_unimplemented" />
+                                                <input id="input_text_chat" type="text" placeholder="Écrire un message" ng-keypress="$parent.press_enter_send_chat_msg($event)" />
+                                                <span class="fa fa-send" ng-click="$parent.send_chat_msg()" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="right_cards_container">
+                                        <div class="card info-4" ng-include="'/accorderie/template/votre_contact_full'" />
+                                    </div>
+                                </div>
+                            </section>
+                        </span>
+                    </xpath>
+                    <xpath expr="//li[hasclass('nav_notification')]" position="before">
+                        <li class="nav-item">
+                            <a class="nav-link" role="menu_item" href="/notification#!?section=message" ng-class="{'active': section=='message'}">
+                                <span>Messages</span>
+                            </a>
+                        </li>
+                    </xpath>
+                    <xpath expr="//section[hasclass('section_notification')]" position="before">
+                        <section class="s_vertical_list_lg pt0" ng-if="section==='message' &amp;&amp; section_membre===''">
+                            <div class="container_lists">
+                                <div class="row vertical_list">
+                                    <a ng-href="/notification#!?section=message&amp;membre={{msg.id}}" ng-repeat="msg in lst_membre_message">
+                                        <div class="activite message btn" ng-class="{'read':msg.is_read}">
+                                            <div class="activite_img img-fluid rounded-circle" style="background-image: url(&quot;/web/image/website_accorderie.ir_attachment_freestocks_9uvmlib0wju_unsplash_jpg/freestocks-9UVmlIb0wJU-unsplash.jpg&quot;);">
+                                                <div class="unread rounded-circle" ng-if="!msg.is_read" />
+                                            </div>
+
+                                            <div class="infos">
+                                                <h4 class="message_auteur">{{msg.name}}</h4>
+                                                <p class="message">{{msg.resume_msg}}</p>
+                                            </div>
+                                            <span class="debug_unimplemented">{{msg.last_date}}</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </xpath>
+                </data>
+            </field>
+            <field name="inherit_id" ref="website_accorderie.ir_ui_view_messages_et_notifications" />
+            <field name="key">website_chat_accorderie.ir_ui_view_messages_et_notifications_inherit</field>
+            <field name="name">message_chat_accorderie</field>
+            <field name="type">qweb</field>
+        </record>
+        <record id="ir_ui_view_mon_profil_inherit" model="ir.ui.view">
+            <field name="arch" type="xml">
+                <data inherit_id="website_accorderie.ir_ui_view_mon_profil">
+                    <xpath expr="//a[hasclass('btn_message_and_notification')]" position="replace">
+                        <a class="information information-5 btn btn_message_and_notification" href="notification">
+                            <img src="/web/image/website_accorderie.ir_attachment_profil_preferences_png/Profil-Preferences.png" />
+                            <br />
+                            <span class="nbr">Mes messages et notifications</span>
+                            <br />
+                            <span class="txt">Voir mes messages et notifications</span>
+                        </a>
+                    </xpath>
+                </data>
+            </field>
+            <field name="inherit_id" ref="website_accorderie.ir_ui_view_mon_profil" />
+            <field name="key">website_chat_accorderie.ir_ui_view_mon_profil_inherit</field>
+            <field name="name">ir_ui_view_mon_profil</field>
+            <field name="type">qweb</field>
+        </record>
+        <record id="ir_ui_view_ma_presentation_inherit" model="ir.ui.view">
+            <field name="arch" type="xml">
+                <data inherit_id="website_accorderie.ir_ui_view_ma_presentation">
+                    <xpath expr="//div[hasclass('btn_saccorder')]" position="after">
+                        <div class="modif_btn btn btn-primary" ng-if="!membre_info.estPersonnel">
+                            <a ng-href="/notification#!?section=message&amp;membre={{membre_info.id}}">
+                                Contacter {{membre_info.prenom}}
+                            </a>
+                        </div>
+                    </xpath>
+                </data>
+            </field>
+            <field name="inherit_id" ref="website_accorderie.ir_ui_view_ma_presentation" />
+            <field name="key">website_chat_accorderie.ir_ui_view_ma_presentation_inherit</field>
+            <field name="name">ir_ui_view_ma_presentation</field>
+            <field name="type">qweb</field>
+        </record>
+    </data>
+</odoo>

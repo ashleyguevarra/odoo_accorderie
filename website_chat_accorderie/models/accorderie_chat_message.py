@@ -68,6 +68,7 @@ class AccorderieChatMessage(models.Model):
 
                 self.env["bus.bus"].sendone(
                     # f'["{self._cr.dbname}","{self._name}",{rec.id}]',
+                    # TODO choose unique canal name for the member
                     "accorderie.notification.message",
                     {
                         "timestamp": str(datetime.now()),

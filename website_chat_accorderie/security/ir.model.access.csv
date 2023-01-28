@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+accorderie_chat_group_access_user_types_/_internal_user,accorderie_chat_group Access User types / Internal User,model_accorderie_chat_group,base.group_user,1,1,1,1
+accorderie_chat_group_access_user_types_/_portal,accorderie_chat_group Access User types / Portal,model_accorderie_chat_group,base.group_portal,1,1,1,1
+accorderie_chat_message_access_user_types_/_internal_user,accorderie_chat_message Access User types / Internal User,model_accorderie_chat_message,base.group_user,1,1,1,1
+accorderie_chat_message_access_user_types_/_portal,accorderie_chat_message Access User types / Portal,model_accorderie_chat_message,base.group_portal,1,1,1,1

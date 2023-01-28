@@ -53,7 +53,6 @@
             <script type="text/javascript" src="/website_accorderie/static/src/js/pub_offre.js" />
             <script type="text/javascript" src="/website_accorderie/static/src/js/navbar_tab.js" />
             <script type="text/javascript" src="/website_accorderie/static/src/js/debug_not_implemented.js" />
-            <script type="text/javascript" src="/website_accorderie/static/src/js/messagerie_privee.js" />
             <script type="text/javascript" src="/website_accorderie/static/src/js/dialog_monaccorderie.js" />
             <script
                 type="text/javascript"
