@@ -586,6 +586,9 @@ odoo.define("website.accorderie.participer", function (require) {
 
         // History
         $scope.$on('$locationChangeSuccess', function (object, newLocation, previousLocation) {
+            if (window.location.pathname !== "/participer") {
+                return;
+            }
             // Check this is not call before ajax to fill $scope.workflow
             // TODO has_init is always false
             // TODO optimization, each time click next, $locationChangeSuccess and init_controller is recall
