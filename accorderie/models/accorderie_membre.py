@@ -276,26 +276,23 @@ class AccorderieMembre(models.Model):
     )
     def _bank_time(self):
         # TODO wrong dependency
+        # TODO use recompute instead of is_time_updated to force recompute
         # TODO calculate transaction difference
         for rec in self:
-            # TODO bank 15 hours suppose to be calculate somewhere else
             this_month = datetime.now().month
-            bank_time = (
-                15
-                + sum(
-                    [
-                        a.nb_heure + a.nb_heure_duree_trajet
-                        for a in rec.echange_service_vendeur_ids
-                        if a.transaction_valide
-                    ]
-                )
-                - sum(
-                    [
-                        a.nb_heure + a.nb_heure_duree_trajet
-                        for a in rec.echange_service_acheteur_ids
-                        if a.transaction_valide
-                    ]
-                )
+            this_year = datetime.now().year
+            bank_time = sum(
+                [
+                    a.nb_heure + a.nb_heure_duree_trajet
+                    for a in rec.echange_service_vendeur_ids
+                    if a.transaction_valide
+                ]
+            ) - sum(
+                [
+                    a.nb_heure + a.nb_heure_duree_trajet
+                    for a in rec.echange_service_acheteur_ids
+                    if a.transaction_valide
+                ]
             )
             bank_max_service_offert = sum(
                 [
@@ -311,6 +308,7 @@ class AccorderieMembre(models.Model):
                     if a.transaction_valide
                     and a.date_echange
                     and a.date_echange.month == this_month
+                    and a.date_echange.year == this_year
                 ]
             ) - sum(
                 [
@@ -319,6 +317,7 @@ class AccorderieMembre(models.Model):
                     if a.transaction_valide
                     and a.date_echange
                     and a.date_echange.month == this_month
+                    and a.date_echange.year == this_year
                 ]
             )
 
