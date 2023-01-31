@@ -12,6 +12,11 @@
             <link
                 rel="stylesheet"
                 type="text/scss"
+                href="/website_accorderie/static/src/scss/website_accorderie.scss"
+            />
+            <link
+                rel="stylesheet"
+                type="text/scss"
                 href="/website_accorderie/static/src/scss/accorderie_publication.scss"
             />
         </xpath>

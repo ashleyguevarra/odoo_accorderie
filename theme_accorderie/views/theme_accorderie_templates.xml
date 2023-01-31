@@ -8,7 +8,6 @@
     >
         <xpath expr="//link[last()]" position="after">
             <link rel="stylesheet" type="text/scss" href="/theme_accorderie/static/src/scss/_variables.scss" />
-            <link rel="stylesheet" type="text/scss" href="/theme_accorderie/static/src/scss/custom.scss" />
         </xpath>
     </template>
     <template id="theme_accorderie_assets_primary_variables" inherit_id="website._assets_primary_variables">
