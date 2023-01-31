@@ -2,7 +2,7 @@
 <odoo>
     <!--Root menu-->
 
-    <menuitem id="accorderie" name="Accorderie" sequence="20" web_icon="accorderie,static/description/icon.png" />
+    <menuitem id="accorderie" name="Accorderie" sequence="20" web_icon="accorderie,static/description/icon_menu.png" />
 
     <!--Sub menu-->
 
