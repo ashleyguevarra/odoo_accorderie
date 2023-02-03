@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ir_attachment_patrick_tomasso_ajgebwgnru4_unsplash_jpg" model="ir.attachment">
+            <field name="datas_fname">patrick-tomasso-AjgebwgNrU4-unsplash.jpg</field>
+            <field name="name">patrick-tomasso-AjgebwgNrU4-unsplash.jpg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/patrick-tomasso-AjgebwgNrU4-unsplash.jpg</field>
+        </record>
+        <record id="ir_attachment_eric_prouzet_z62b9jiltgm_unsplash_jpg" model="ir.attachment">
+            <field name="datas_fname">eric-prouzet-Z62b9jIltGM-unsplash.jpg</field>
+            <field name="name">eric-prouzet-Z62b9jIltGM-unsplash.jpg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/eric-prouzet-Z62b9jIltGM-unsplash.jpg</field>
+        </record>
+        <record id="ir_attachment_j_spaggiari_guitaristes_jpg" model="ir.attachment">
+            <field name="datas_fname">j-spaggiari-guitaristes.jpg</field>
+            <field name="name">j-spaggiari-guitaristes.jpg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/j-spaggiari-guitaristes.jpg</field>
+        </record>
+        <record id="ir_attachment_freestocks_9uvmlib0wju_unsplash_jpg" model="ir.attachment">
+            <field name="datas_fname">freestocks-9UVmlIb0wJU-unsplash.jpg</field>
+            <field name="name">freestocks-9UVmlIb0wJU-unsplash.jpg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/freestocks-9UVmlIb0wJU-unsplash.jpg</field>
+        </record>
+        <record id="ir_attachment_henrique_castilho_l8kmx3rzt7s_unsplash_jpg" model="ir.attachment">
+            <field name="datas_fname">henrique-castilho-L8kMx3rzt7s-unsplash.jpg</field>
+            <field name="name">henrique-castilho-L8kMx3rzt7s-unsplash.jpg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/henrique-castilho-L8kMx3rzt7s-unsplash.jpg</field>
+        </record>
+        <record id="ir_attachment_gabriel_silverio_u3wmdykgsry_unsplash_jpg" model="ir.attachment">
+            <field name="datas_fname">gabriel-silverio-u3WmDyKGsrY-unsplash.jpg</field>
+            <field name="name">gabriel-silverio-u3WmDyKGsrY-unsplash.jpg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/gabriel-silverio-u3WmDyKGsrY-unsplash.jpg</field>
+        </record>
+        <record id="ir_attachment_jonathan_cosens_photography_9kdxgxfrmo8_unsplash_jpg" model="ir.attachment">
+            <field name="datas_fname">jonathan-cosens-photography-9kDXgXFRmO8-unsplash.jpg</field>
+            <field name="name">jonathan-cosens-photography-9kDXgXFRmO8-unsplash.jpg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/jonathan-cosens-photography-9kDXgXFRmO8-unsplash.jpg</field>
+        </record>
+        <record id="ir_attachment_categorie_voyage_png" model="ir.attachment">
+            <field name="datas_fname">Categorie-Voyage.png</field>
+            <field name="name">Categorie-Voyage.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Categorie-Voyage.png</field>
+        </record>
+        <record id="ir_attachment_categorie_education_png" model="ir.attachment">
+            <field name="datas_fname">Categorie-Education.png</field>
+            <field name="name">Categorie-Education.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Categorie-Education.png</field>
+        </record>
+        <record id="ir_attachment_categorie_cuisine_png" model="ir.attachment">
+            <field name="datas_fname">Categorie-cuisine.png</field>
+            <field name="name">Categorie-cuisine.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Categorie-cuisine.png</field>
+        </record>
+        <record id="ir_attachment_categorie_informatique_png" model="ir.attachment">
+            <field name="datas_fname">Categorie-Informatique.png</field>
+            <field name="name">Categorie-Informatique.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Categorie-Informatique.png</field>
+        </record>
+        <record id="ir_attachment_categorie_divers_png" model="ir.attachment">
+            <field name="datas_fname">Categorie-divers.png</field>
+            <field name="name">Categorie-divers.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Categorie-divers.png</field>
+        </record>
+        <record id="ir_attachment_categorie_sante_png" model="ir.attachment">
+            <field name="datas_fname">Categorie-Sante.png</field>
+            <field name="name">Categorie-Sante.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Categorie-Sante.png</field>
+        </record>
+        <record id="ir_attachment_categorie_litterature_png" model="ir.attachment">
+            <field name="datas_fname">Categorie-Litterature.png</field>
+            <field name="name">Categorie-Litterature.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Categorie-Litterature.png</field>
+        </record>
+        <record id="ir_attachment_categorie_jardinage_png" model="ir.attachment">
+            <field name="datas_fname">Categorie-Jardinage.png</field>
+            <field name="name">Categorie-Jardinage.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Categorie-Jardinage.png</field>
+        </record>
+        <record id="ir_attachment_categorie_transport_png" model="ir.attachment">
+            <field name="datas_fname">Categorie-Transport.png</field>
+            <field name="name">Categorie-Transport.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Categorie-Transport.png</field>
+        </record>
+        <record id="ir_attachment_categorie_administration_png" model="ir.attachment">
+            <field name="datas_fname">Categorie-administration.png</field>
+            <field name="name">Categorie-administration.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Categorie-administration.png</field>
+        </record>
+        <record id="ir_attachment_categorie_location_png" model="ir.attachment">
+            <field name="datas_fname">Categorie-Location.png</field>
+            <field name="name">Categorie-Location.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Categorie-Location.png</field>
+        </record>
+        <record id="ir_attachment_categorie_loisir_png" model="ir.attachment">
+            <field name="datas_fname">Categorie-Loisir.png</field>
+            <field name="name">Categorie-Loisir.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Categorie-Loisir.png</field>
+        </record>
+        <record id="ir_attachment_categorie_couture_png" model="ir.attachment">
+            <field name="datas_fname">Categorie-Couture.png</field>
+            <field name="name">Categorie-Couture.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Categorie-Couture.png</field>
+        </record>
+        <record id="ir_attachment_categorie_animaux_png" model="ir.attachment">
+            <field name="datas_fname">Categorie-Animaux.png</field>
+            <field name="name">Categorie-Animaux.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Categorie-Animaux.png</field>
+        </record>
+        <record id="ir_attachment_nathan_dumlao_71u2foofi_u_unsplash_jpg" model="ir.attachment">
+            <field name="datas_fname">nathan-dumlao-71u2fOofI-U-unsplash.jpg</field>
+            <field name="name">nathan-dumlao-71u2fOofI-U-unsplash.jpg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/nathan-dumlao-71u2fOofI-U-unsplash.jpg</field>
+        </record>
+        <record id="ir_attachment_product_school_gajroen6m4_unsplash_jpg" model="ir.attachment">
+            <field name="datas_fname">product-school--GajrOEN6m4-unsplash.jpg</field>
+            <field name="name">product-school--GajrOEN6m4-unsplash.jpg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/product-school--GajrOEN6m4-unsplash.jpg</field>
+        </record>
+        <record id="ir_attachment_miti_vsws0g1kjxi_unsplash_jpg" model="ir.attachment">
+            <field name="datas_fname">miti-vSws0g1KjxI-unsplash.jpg</field>
+            <field name="name">miti-vSws0g1KjxI-unsplash.jpg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/miti-vSws0g1KjxI-unsplash.jpg</field>
+        </record>
+        <record id="ir_attachment_thisisengineering_raeng_fgdmh3iqvmw_unsplash_jpg" model="ir.attachment">
+            <field name="datas_fname">thisisengineering-raeng-fgdmH3iqvMw-unsplash.jpg</field>
+            <field name="name">thisisengineering-raeng-fgdmH3iqvMw-unsplash.jpg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/thisisengineering-raeng-fgdmH3iqvMw-unsplash.jpg</field>
+        </record>
+        <record id="ir_attachment_jonathan_kemper_cbzh3kapxre_unsplash_jpg" model="ir.attachment">
+            <field name="datas_fname">jonathan-kemper-CbZh3kaPxrE-unsplash.jpg</field>
+            <field name="name">jonathan-kemper-CbZh3kaPxrE-unsplash.jpg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/jonathan-kemper-CbZh3kaPxrE-unsplash.jpg</field>
+        </record>
+        <record id="ir_attachment_liuba_bilyk_wu_tbwqdpji_unsplash_jpg" model="ir.attachment">
+            <field name="datas_fname">liuba-bilyk-wU_TbWqdPJI-unsplash.jpg</field>
+            <field name="name">liuba-bilyk-wU_TbWqdPJI-unsplash.jpg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/liuba-bilyk-wU_TbWqdPJI-unsplash.jpg</field>
+        </record>
+        <record id="ir_attachment_meritt_thomas_u_hb93v6iwi_unsplash_jpg" model="ir.attachment">
+            <field name="datas_fname">meritt-thomas-u-Hb93V6IWI-unsplash.jpg</field>
+            <field name="name">meritt-thomas-u-Hb93V6IWI-unsplash.jpg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/meritt-thomas-u-Hb93V6IWI-unsplash.jpg</field>
+        </record>
+        <record id="ir_attachment_jean_louis_aubert_l49iaamlmdc_unsplash_jpg" model="ir.attachment">
+            <field name="datas_fname">jean-louis-aubert-L49iaAmLMDc-unsplash.jpg</field>
+            <field name="name">jean-louis-aubert-L49iaAmLMDc-unsplash.jpg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/jean-louis-aubert-L49iaAmLMDc-unsplash.jpg</field>
+        </record>
+        <record id="ir_attachment_adobestock_147894347_preview_jpeg" model="ir.attachment">
+            <field name="datas_fname">AdobeStock_147894347_Preview.jpeg</field>
+            <field name="name">AdobeStock_147894347_Preview.jpeg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/AdobeStock_147894347_Preview.jpeg</field>
+        </record>
+        <record id="ir_attachment_adobestock_250064219_preview_jpeg" model="ir.attachment">
+            <field name="datas_fname">AdobeStock_250064219_Preview.jpeg</field>
+            <field name="name">AdobeStock_250064219_Preview.jpeg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/AdobeStock_250064219_Preview.jpeg</field>
+        </record>
+        <record id="ir_attachment_map_02_png" model="ir.attachment">
+            <field name="datas_fname">Map-02.png</field>
+            <field name="name">Map-02.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Map-02.png</field>
+        </record>
+        <record id="ir_attachment_adobestock_309423704_preview_jpeg" model="ir.attachment">
+            <field name="datas_fname">AdobeStock_309423704_Preview.jpeg</field>
+            <field name="name">AdobeStock_309423704_Preview.jpeg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/AdobeStock_309423704_Preview.jpeg</field>
+        </record>
+        <record id="ir_attachment_accueil_illustration_05@2x_png" model="ir.attachment">
+            <field name="datas_fname">Accueil-Illustration-05@2x.png</field>
+            <field name="name">Accueil-Illustration-05@2x.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Accueil-Illustration-05@2x.png</field>
+        </record>
+        <record id="ir_attachment_profil_annonces_png" model="ir.attachment">
+            <field name="datas_fname">Profil-Annonces.png</field>
+            <field name="name">Profil-Annonces.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Profil-Annonces.png</field>
+        </record>
+        <record id="ir_attachment_profil_favoris_02_png" model="ir.attachment">
+            <field name="datas_fname">Profil-Favoris-02.png</field>
+            <field name="name">Profil-Favoris-02.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Profil-Favoris-02.png</field>
+        </record>
+        <record id="ir_attachment_profil_preferences_png" model="ir.attachment">
+            <field name="datas_fname">Profil-Preferences.png</field>
+            <field name="name">Profil-Preferences.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Profil-Preferences.png</field>
+        </record>
+        <record id="ir_attachment_profil_presentation_png" model="ir.attachment">
+            <field name="datas_fname">Profil-Presentation.png</field>
+            <field name="name">Profil-Presentation.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Profil-Presentation.png</field>
+        </record>
+        <record id="ir_attachment_profil_informationspersonnelles_png" model="ir.attachment">
+            <field name="datas_fname">Profil-InformationsPersonnelles.png</field>
+            <field name="name">Profil-InformationsPersonnelles.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Profil-InformationsPersonnelles.png</field>
+        </record>
+        <record id="ir_attachment_mathieu_benoit_logo_jpg" model="ir.attachment">
+            <field name="datas_fname">Mathieu-Benoit-Logo.jpg</field>
+            <field name="name">Mathieu-Benoit-Logo.jpg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/Mathieu-Benoit-Logo.jpg</field>
+        </record>
+        <record id="ir_attachment_famille_trottier_logo_png" model="ir.attachment">
+            <field name="datas_fname">famille_trottier_logo.png</field>
+            <field name="name">famille_trottier_logo.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/famille_trottier_logo.png</field>
+        </record>
+        <record id="ir_attachment_technolibre_circle_logo_svg" model="ir.attachment">
+            <field name="datas_fname">technolibre_circle_logo.svg</field>
+            <field name="name">technolibre_circle_logo.svg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/technolibre_circle_logo.svg</field>
+        </record>
+        <record id="ir_attachment_marieplume_logo_png" model="ir.attachment">
+            <field name="datas_fname">marieplume_logo.png</field>
+            <field name="name">marieplume_logo.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/marieplume_logo.png</field>
+        </record>
+        <record id="ir_attachment_labac_logo_png" model="ir.attachment">
+            <field name="datas_fname">LABAC_logo.png</field>
+            <field name="name">LABAC_logo.png</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/LABAC_logo.png</field>
+        </record>
+        <record id="ir_attachment_samuel_bassetto_jpeg" model="ir.attachment">
+            <field name="datas_fname">samuel_bassetto.jpeg</field>
+            <field name="name">samuel_bassetto.jpeg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/samuel_bassetto.jpeg</field>
+        </record>
+        <record id="ir_attachment_abstract_blue_and_green_fluid_shape_modern_background_vector_jpg" model="ir.attachment">
+            <field name="datas_fname">abstract-blue-and-green-fluid-shape-modern-background-vector.jpg</field>
+            <field name="name">abstract-blue-and-green-fluid-shape-modern-background-vector.jpg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg</field>
+        </record>
+    </data>
+</odoo>

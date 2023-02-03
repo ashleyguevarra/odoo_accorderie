@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<odoo>
-    <data noupdate="1">
-        <record id="msg_group_1" model="accorderie.chat.group">
-            <field name="membre_ids" eval="[(4, ref('accorderie_membre_administrateur_mathieu_benoit')), (4, ref('accorderie_membre_alice_poitier'))]" />
-        </record>
-    </data>
-</odoo>

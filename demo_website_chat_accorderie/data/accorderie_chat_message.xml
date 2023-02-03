@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="msg_1" model="accorderie.chat.message">
+            <field name="name">Bonjour!</field>
+            <field name="is_read" eval="True" />
+            <field name="membre_writer_id" ref="demo_accorderie.accorderie_membre_administrateur_mathieu_benoit" />
+            <field name="msg_group_id" ref="msg_group_1" />
+        </record>
+        <record id="msg_2" model="accorderie.chat.message">
+            <field name="name">Ça va bien?</field>
+            <field name="is_read" eval="True" />
+            <field name="membre_writer_id" ref="demo_accorderie.accorderie_membre_administrateur_mathieu_benoit" />
+            <field name="msg_group_id" ref="msg_group_1" />
+        </record>
+        <record id="msg_3" model="accorderie.chat.message">
+            <field name="name">Oui toi?</field>
+            <field name="membre_writer_id" ref="demo_accorderie.accorderie_membre_alice_poitier" />
+            <field name="msg_group_id" ref="msg_group_1" />
+        </record>
+    </data>
+</odoo>
