@@ -23,6 +23,9 @@ odoo.define('website.accorderie_notification', function (require) {
         $scope.default_section = "notification";
 
         $scope.$on('$locationChangeSuccess', function (object, newLocation, previousLocation) {
+            if (window.location.pathname !== "/notification") {
+                return;
+            }
             $scope.error = "";
 
             let section = $location.search()["section"];

@@ -54,12 +54,10 @@ class AccorderieChatMessage(models.Model):
                         if a.id != membre_id.id
                     ][0]
                     data["membre_id"] = other_membre_id.id
-                    data["membre_name"] = other_membre_id.nom_complet
+                    data["membre_name"] = other_membre_id.nom
                 elif len(rec.msg_group_id.membre_ids) == 1:
                     data["membre_id"] = rec.msg_group_id.membre_ids[0].id
-                    data["membre_name"] = rec.msg_group_id.membre_ids[
-                        0
-                    ].nom_complet
+                    data["membre_name"] = rec.msg_group_id.membre_ids[0].nom
                 else:
                     _logger.warning(
                         "Why message is missing members, len member is"

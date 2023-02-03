@@ -1,10 +1,51 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <data noupdate="1">
+        <record id="accorderie_echange_service_new_membre_mathieu_benoit" model="accorderie.echange.service">
+            <field name="date_echange" eval="(DateTime.today() - timedelta(minutes=30)).strftime('%Y-%m-%d %H:%M')" />
+            <field name="nb_heure">15</field>
+            <field name="type_echange">offre_ponctuel</field>
+            <field name="transaction_valide">true</field>
+            <field name="membre_acheteur" ref="accorderie_membre_accorderie_laval" />
+            <field name="membre_vendeur" ref="accorderie_membre_administrateur_mathieu_benoit" />
+        </record>
+        <record id="accorderie_echange_service_new_membre_alice_poitier" model="accorderie.echange.service">
+            <field name="date_echange" eval="(DateTime.today() - timedelta(minutes=30)).strftime('%Y-%m-%d %H:%M')" />
+            <field name="nb_heure">15</field>
+            <field name="type_echange">offre_ponctuel</field>
+            <field name="transaction_valide">true</field>
+            <field name="membre_acheteur" ref="accorderie_membre_accorderie_laval" />
+            <field name="membre_vendeur" ref="accorderie_membre_alice_poitier" />
+        </record>
+        <record id="accorderie_echange_service_new_membre_martin_petit" model="accorderie.echange.service">
+            <field name="date_echange" eval="(DateTime.today() - timedelta(minutes=30)).strftime('%Y-%m-%d %H:%M')" />
+            <field name="nb_heure">15</field>
+            <field name="type_echange">offre_ponctuel</field>
+            <field name="transaction_valide">true</field>
+            <field name="membre_acheteur" ref="accorderie_membre_accorderie_laval" />
+            <field name="membre_vendeur" ref="accorderie_membre_martin_petit" />
+        </record>
+        <record id="accorderie_echange_service_new_membre_denis_lemarchand" model="accorderie.echange.service">
+            <field name="date_echange" eval="(DateTime.today() - timedelta(minutes=30)).strftime('%Y-%m-%d %H:%M')" />
+            <field name="nb_heure">15</field>
+            <field name="type_echange">offre_ponctuel</field>
+            <field name="transaction_valide">true</field>
+            <field name="membre_acheteur" ref="accorderie_membre_accorderie_laval" />
+            <field name="membre_vendeur" ref="accorderie_membre_denis_lemarchand" />
+        </record>
+        <record id="accorderie_echange_service_new_membre_martin_bergeron" model="accorderie.echange.service">
+            <field name="date_echange" eval="(DateTime.today() - timedelta(minutes=30)).strftime('%Y-%m-%d %H:%M')" />
+            <field name="nb_heure">15</field>
+            <field name="type_echange">offre_ponctuel</field>
+            <field name="transaction_valide">true</field>
+            <field name="membre_acheteur" ref="accorderie_membre_accorderie_laval" />
+            <field name="membre_vendeur" ref="accorderie_membre_martin_bergeron" />
+        </record>
         <record id="accorderie_echange_service_conception_site_web" model="accorderie.echange.service">
             <field name="date_echange" eval="(DateTime.today() + timedelta(minutes=5)).strftime('%Y-%m-%d %H:%M')" />
             <field name="offre_service" ref="accorderie_offre_service_conception_site_web" />
             <field name="nb_heure_estime">2.5</field>
+            <field name="type_echange">offre_ordinaire</field>
             <field name="membre_acheteur" ref="accorderie_membre_alice_poitier" />
             <field name="membre_vendeur" ref="accorderie_membre_administrateur_mathieu_benoit" />
         </record>
@@ -13,6 +54,7 @@
             <field name="offre_service" ref="accorderie_offre_service_cours_de_violon" />
             <field name="demande_service" ref="accorderie_demande_service_cours_de_violon" />
             <field name="nb_heure_estime">1</field>
+            <field name="type_echange">offre_ordinaire</field>
             <field name="membre_acheteur" ref="accorderie_membre_administrateur_mathieu_benoit" />
             <field name="membre_vendeur" ref="accorderie_membre_martin_bergeron" />
         </record>
@@ -20,6 +62,7 @@
             <field name="date_echange" eval="(DateTime.today() - relativedelta(months=16)).strftime('%Y-%m-%d %H:%M')" />
             <field name="offre_service" ref="accorderie_offre_service_je_vous_fais_decouvrir_la_ville_et_toutes_les_bonnes_choses_a_savoir" />
             <field name="nb_heure">4</field>
+            <field name="type_echange">offre_ordinaire</field>
             <field name="transaction_valide">true</field>
             <field name="membre_acheteur" ref="accorderie_membre_administrateur_mathieu_benoit" />
             <field name="membre_vendeur" ref="accorderie_membre_alice_poitier" />
@@ -28,6 +71,7 @@
             <field name="date_echange" eval="(DateTime.today() - timedelta(days=1)).strftime('%Y-%m-%d %H:%M')" />
             <field name="offre_service" ref="accorderie_offre_service_initiation_gnu_linux" />
             <field name="nb_heure">8.25</field>
+            <field name="type_echange">offre_ordinaire</field>
             <field name="transaction_valide">true</field>
             <field name="membre_acheteur" ref="accorderie_membre_denis_lemarchand" />
             <field name="membre_vendeur" ref="accorderie_membre_administrateur_mathieu_benoit" />
@@ -36,6 +80,7 @@
             <field name="date_echange" eval="(DateTime.today() + timedelta(hours=5)).strftime('%Y-%m-%d %H:%M')" />
             <field name="demande_service" ref="accorderie_demande_service_garder_mon_chien_svp" />
             <field name="nb_heure_estime">7.75</field>
+            <field name="type_echange">offre_ordinaire</field>
             <field name="membre_acheteur" ref="accorderie_membre_martin_petit" />
             <field name="membre_vendeur" ref="accorderie_membre_administrateur_mathieu_benoit" />
         </record>

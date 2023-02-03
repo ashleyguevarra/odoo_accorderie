@@ -29,6 +29,9 @@ odoo.define('website.accorderie_aide', function (require) {
         }
 
         $scope.$on('$locationChangeSuccess', function (object, newLocation, previousLocation) {
+            if (window.location.pathname !== "/aide") {
+                return;
+            }
             let section = $location.search()["section"];
             if (!_.isEmpty(section)) {
                 $scope.section = section;

@@ -1386,7 +1386,7 @@ for accorderie_fichier in self:
                 "field_description": "Membre conjoint",
                 "ttype": "integer",
             },
-            "membre_partner_id": {
+            "partner_id": {
                 "code_generator_form_simple_view_sequence": 13,
                 "code_generator_sequence": 5,
                 "field_description": "Membre",
@@ -1663,7 +1663,7 @@ for accorderie_fichier in self:
     rec.bank_time = 9.25
     rec.bank_month_time = -2""",
                     "name": "_bank_time",
-                    "decorator": '@api.depends("membre_partner_id")',
+                    "decorator": '@api.depends("partner_id")',
                     "param": "self",
                     "sequence": 0,
                     "m2o_module": code_generator_id.id,
@@ -16567,8 +16567,8 @@ for accorderie_ville in self:
                 {
                     "section_type": "body",
                     "item_type": "field",
-                    "name": "membre_partner_id",
-                    "action_name": "membre_partner_id",
+                    "name": "partner_id",
+                    "action_name": "partner_id",
                     "parent_id": view_item_body_group_4.id,
                     "sequence": 1,
                 }

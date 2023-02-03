@@ -1,6 +1,7 @@
 import logging
 
 from odoo import _, http
+from odoo.http import request
 
 _logger = logging.getLogger(__name__)
 
@@ -13,7 +14,9 @@ class AccorderieController(http.Controller):
         if not partner_id or http.request.auth_method == "public":
             return {"error": _("User not connected")}
 
-        membre_id = partner_id.accorderie_membre_ids
+        membre_id = request.env["accorderie.membre"].search(
+            [("partner_id", "=", partner_id.id)], limit=1
+        )
 
         if not membre_id:
             return {

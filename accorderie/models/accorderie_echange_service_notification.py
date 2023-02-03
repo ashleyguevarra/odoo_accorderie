@@ -65,8 +65,7 @@ class AccorderieEchangeServiceNotification(models.Model):
                 != rec.membre_id.id
             ):
                 lst_msg.append(
-                    "Membre :"
-                    f" '{rec.echange_service_id.membre_acheteur.nom_complet}'"
+                    f"Membre : '{rec.echange_service_id.membre_acheteur.nom}'"
                 )
             if (
                 rec.echange_service_id.membre_vendeur
@@ -74,8 +73,7 @@ class AccorderieEchangeServiceNotification(models.Model):
                 != rec.membre_id.id
             ):
                 lst_msg.append(
-                    "Membre :"
-                    f" '{rec.echange_service_id.membre_vendeur.nom_complet}'"
+                    f"Membre : '{rec.echange_service_id.membre_vendeur.nom}'"
                 )
             if rec.echange_service_id.offre_service:
                 lst_msg.append(
@@ -92,7 +90,7 @@ class AccorderieEchangeServiceNotification(models.Model):
     def _compute_membre_name(self):
         for rec in self:
             if rec.membre_id:
-                rec.membre_name = rec.membre_id.nom_complet
+                rec.membre_name = rec.membre_id.nom
             else:
                 rec.membre_name = ""
 

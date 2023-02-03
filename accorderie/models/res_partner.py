@@ -7,5 +7,5 @@ class ResPartner(models.Model):
     accorderie_membre_ids = fields.One2many(
         comodel_name="accorderie.membre",
         string="Membre",
-        inverse_name="membre_partner_id",
+        inverse_name="partner_id",
     )

@@ -3003,7 +3003,7 @@
                                             <br />
                                             <span class="txt">Gérer les paramètres de votre espace membre (langues, moyens de communications, ...)</span>
                                         </a>
-                                        <a class="information logout btn" href="/web/login">
+                                        <a class="information logout btn" href="web/session/logout?redirect=/">
                                             <span class="nbr">
                                                 <i class="fa fa-power-off" />&amp;nbsp;D&#233;connecter
                                             </span>
