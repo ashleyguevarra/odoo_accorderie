@@ -1330,11 +1330,17 @@ class MigrationAccorderie:
                         # "create_date": membre.Date_MAJ_Membre,
                     }
                     if membre.NoTypeTel1 and membre.NoTypeTel1 > 1:
-                        value_membre["telephone_type_1"] = membre.NoTypeTel1 - 1
+                        value_membre["telephone_type_1"] = (
+                            membre.NoTypeTel1 - 1
+                        )
                     if membre.NoTypeTel2 and membre.NoTypeTel2 > 1:
-                        value_membre["telephone_type_2"] = membre.NoTypeTel2 - 1
+                        value_membre["telephone_type_2"] = (
+                            membre.NoTypeTel2 - 1
+                        )
                     if membre.NoTypeTel3 and membre.NoTypeTel3 > 1:
-                        value_membre["telephone_type_3"] = membre.NoTypeTel3 - 1
+                        value_membre["telephone_type_3"] = (
+                            membre.NoTypeTel3 - 1
+                        )
 
                     if associate_point_service:
                         value_membre["partner_id"] = associate_point_service.id
