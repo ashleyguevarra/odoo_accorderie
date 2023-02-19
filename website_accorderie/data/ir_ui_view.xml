@@ -14,14 +14,14 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-alpha">
                                                 Mon activit&#233;
                                             </p>
                                         </div>
                                     </div>
                                 </section>
-                                <nav class="sub-navbar navbar navbar-light bg-light">
-                                    <ul class="nav navbar-nav">
+                                <nav class="sub-navbar navbar-light bg-light" style="background-color: #d6d0d5">
+                                    <ul class="nav navbar-nav" style="background-color: #d6d0d5">
                                         <li class="nav-item">
                                             <a class="nav-link" role="menu_item" href="/monactivite" data-original-title="" title="">
                                                 <span>Bilan</span>
@@ -132,14 +132,14 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-alpha">
                                                 {{personal.mon_accorderie.name}}
                                             </p>
                                         </div>
                                     </div>
                                 </section>
-                                <nav class="sub-navbar navbar navbar-light bg-light">
-                                    <ul class="nav navbar-nav">
+                                <nav class="sub-navbar navbar-light bg-light" style="background-color: #d6d0d5">
+                                    <ul class="nav navbar-nav" style="background-color: #d6d0d5">
                                         <li class="nav-item debug_unimplemented">
                                             <a class="nav-link active" role="menu_item" href="/communaute/actualite">
                                                 <span>Actualit&#233;</span>
@@ -440,14 +440,14 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-alpha">
                                                 {{personal.mon_accorderie.name}}
                                             </p>
                                         </div>
                                     </div>
                                 </section>
-                                <nav class="sub-navbar navbar navbar-light bg-light">
-                                    <ul class="nav navbar-nav">
+                                <nav class="sub-navbar navbar-light bg-light" style="background-color: #d6d0d5">
+                                    <ul class="nav navbar-nav" style="background-color: #d6d0d5">
                                         <li class="nav-item debug_unimplemented">
                                             <a class="nav-link" role="menu_item" href="/communaute/actualite">
                                                 <span>Actualit&#233;</span>
@@ -710,14 +710,14 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-alpha">
                                                 {{personal.mon_accorderie.name}}
                                             </p>
                                         </div>
                                     </div>
                                 </section>
-                                <nav class="sub-navbar navbar navbar-light bg-light">
-                                    <ul class="nav navbar-nav">
+                                <nav class="sub-navbar navbar-light bg-light" style="background-color: #d6d0d5">
+                                    <ul class="nav navbar-nav" style="background-color: #d6d0d5">
                                         <li class="nav-item">
                                             <a class="nav-link" role="menu_item" href="/communaute/actualite">
                                                 <span>Actualit&#233;</span>
@@ -1551,7 +1551,7 @@
                                                         </p>
                                                     </div>
                                                     <div class="banner_btn s_btn col-lg-5 text-center" data-name="Button" style="">
-                                                        <a href="/participer#!?state=init.pos" class="btn btn-gamma rounded-circle" data-original-title="" title="" aria-describedby="tooltip742376" style="">
+                                                        <a href="/participer#!?state=init.pos" class="btn btn-gamma rounded-circle text-gamma" data-original-title="" title="" aria-describedby="tooltip742376" style="">
                                                             <font class="text-primary" style="" data-original-title="" title="" aria-describedby="tooltip195285">
                                                                 Publier une offre
                                                             </font>
@@ -2036,30 +2036,32 @@
                                                 </label>
                                                 <i class="fa fa-shield text-epsilon" ng-if="membre_info.antecedent_judiciaire_verifier" />
                                             </div>
-                                            <span class="nbr">
+                                            <span class="text desc" style="font-size: 1.4rem;">
                                                 Bonjour, je m'appelle
                                                 <br />
                                                 <font style="font-weight:bold;">{{membre_info.full_name}}</font>
                                             </span>
-                                            <div class="modif_btn btn btn-primary" ng-if="membre_info.estPersonnel &amp;&amp; !ask_modification_profile" ng-click="change_ask_modification_profile(true)">
-                                                <span class="img img-fluid mx-auto fa fa-pencil" />
-                                                Modifier le profil
-                                            </div>
-                                            <div class="modif_btn btn btn-primary" ng-if="membre_info.estPersonnel &amp;&amp; ask_modification_profile" ng-click="change_ask_modification_profile(false)">
-                                                <span class="img img-fluid mx-auto fa fa-save" />
-                                                Enregistrer le profil
-                                            </div>
-                                            <div class="modif_btn btn btn-primary" ng-if="membre_info.estPersonnel &amp;&amp; ask_modification_profile" ng-click="annuler_ask_modification_profile()">
-                                                <span class="img img-fluid mx-auto fa fa-close" />
-                                                Annuler les modifications
-                                            </div>
-                                            <div class="modif_btn btn btn-primary btn_saccorder debug_unimplemented" ng-if="!membre_info.estPersonnel">
-                                                S'accorder avec {{membre_info.prenom}}
-                                            </div>
-                                            <div class="modif_btn btn btn-primary" ng-click="add_to_my_favorite('accorderie.membre', membre_info)">
-                                                <span class="img img-fluid mx-auto fa" ng-class="{'fa-heart': membre_info.is_favorite, 'fa-heart-o': !membre_info.is_favorite}" />
-                                                <span ng-if="!membre_info.is_favorite">Ajouter à mes favoris</span>
-                                                <span ng-if="membre_info.is_favorite">Retirer de mes favoris</span>
+                                            <div class="container_profil">
+                                                <div class="modif_btn btn btn-primary text-gamma" ng-if="membre_info.estPersonnel &amp;&amp; !ask_modification_profile" ng-click="change_ask_modification_profile(true)">
+                                                    <span class="img img-fluid mx-auto fa fa-pencil" />
+                                                    Modifier le profil
+                                                </div>
+                                                <div class="modif_btn btn btn-primary text-gamma" ng-if="membre_info.estPersonnel &amp;&amp; ask_modification_profile" ng-click="change_ask_modification_profile(false)">
+                                                    <span class="img img-fluid mx-auto fa fa-save" />
+                                                    Enregistrer le profil
+                                                </div>
+                                                <div class="modif_btn btn btn-primary text-gamma" ng-if="membre_info.estPersonnel &amp;&amp; ask_modification_profile" ng-click="annuler_ask_modification_profile()">
+                                                    <span class="img img-fluid mx-auto fa fa-close" />
+                                                    Annuler les modifications
+                                                </div>
+                                                <div class="modif_btn btn btn-primary btn_saccorder debug_unimplemented text-gamma" ng-if="!membre_info.estPersonnel">
+                                                    S'accorder avec {{membre_info.prenom}}
+                                                </div>
+                                                <div class="modif_btn btn btn-primary text-gamma" style="right: 50px;" ng-click="add_to_my_favorite('accorderie.membre', membre_info)">
+                                                    <span class="img img-fluid mx-auto fa coeur" ng-class="{'fa-heart': membre_info.is_favorite, 'fa-heart-o': !membre_info.is_favorite}" />
+                                                    <span class="text-gamma" ng-if="!membre_info.is_favorite">Ajouter à mes favoris</span>
+                                                    <span class="text-gamma" ng-if="membre_info.is_favorite">Retirer de mes favoris</span>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="information information-2">
@@ -2182,7 +2184,7 @@
                                                         </a>
                                                         <div class="infos right">
                                                             <p>{{offre.diff_create_date}}</p>
-                                                            <p class="fa text-epsilon" ng-class="{'fa-heart': offre.is_favorite, 'fa-heart-o': !offre.is_favorite}" ng-click="add_to_my_favorite('accorderie.offre.service', offre)" />
+                                                            <p class="fa text-epsilon coeur" ng-class="{'fa-heart': offre.is_favorite, 'fa-heart-o': !offre.is_favorite}" ng-click="add_to_my_favorite('accorderie.offre.service', offre)" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2212,7 +2214,7 @@
                                                         </a>
                                                         <div class="infos right">
                                                             <p>{{demande.diff_create_date}}</p>
-                                                            <p class="fa text-epsilon" ng-class="{'fa-heart': demande.is_favorite, 'fa-heart-o': !demande.is_favorite}" ng-click="add_to_my_favorite('accorderie.demande.service', demande)" />
+                                                            <p class="fa text-epsilon coeur" ng-class="{'fa-heart': demande.is_favorite, 'fa-heart-o': !demande.is_favorite}" ng-click="add_to_my_favorite('accorderie.demande.service', demande)" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2252,14 +2254,14 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-alpha">
                                                 {{personal.mon_accorderie.name}}
                                             </p>
                                         </div>
                                     </div>
                                 </section>
-                                <nav class="sub-navbar navbar navbar-light bg-light">
-                                    <ul class="nav navbar-nav">
+                                <nav class="sub-navbar navbar-light bg-light" style="background-color: #d6d0d5">
+                                    <ul class="nav navbar-nav" style="background-color: #d6d0d5">
                                         <li class="nav-item debug_unimplemented">
                                             <a class="nav-link" role="menu_item" href="/communaute/actualite">
                                                 <span>Actualit&#233;</span>
@@ -2308,17 +2310,21 @@
                                     </div>
                                     <div class="horizontal_list">
                                         <div class="list_item" ng-repeat="(membre_id, membre) in dct_membre">
-                                            <div class="item_card btn shadow">
+                                            <div class="item_card btn shadow" style="height: 350px">
                                                 <a ng-href="/monprofil/mapresentation#!?membre_id={{membre_id}}">
-                                                    <div class="item_img oe_img_bg oe_custom_bg" ng-style="{'background-image': 'url(' + membre.ma_photo + ')'}">
-                                                        <icon class="fa text-gamma" ng-class="{'fa-heart': membre.is_favorite, 'fa-heart-o': !membre.is_favorite}" />
-                                                        <div class="name text-gamma">
-                                                            {{membre.full_name}}&amp;nbsp;
-                                                            <icon class="fa fa-shield" ng-if="membre.antecedent_judiciaire_verifier" />
-                                                        </div>
-                                                        <div class="infos text-gamma"><span ng-if="membre.age > 0">{{membre.age}} ans</span><span ng-if="membre.age > 0 &amp;&amp; !_.isUndefined(membre.distance)"> - </span><span ng-if="!_.isUndefined(membre.distance)">{{membre.distance}} m</span></div>
+                                                    <div class="item_img oe_img_bg oe_custom_bg" style="height:100px;" ng-style="{'background-image': 'url(' + membre.ma_photo + ')'}">
+                                                        <icon class="fa coeur" ng-class="{'fa-heart': membre.is_favorite, 'fa-heart-o': !membre.is_favorite}" />
                                                     </div>
-                                                    <div class="item_desc centered" ng-if="!_.isEmpty(membre.introduction)">
+                                                    <div class="name text-black" style="text-align:center;">
+                                                        <span style="font-size: 1.2rem;">{{membre.full_name}}&amp;nbsp;</span>
+                                                        <icon class="fa fa-shield" ng-if="membre.antecedent_judiciaire_verifier" style="font-size: 1.2rem;" />
+                                                    </div>
+                                                    <div class="infos text-black" style="text-align:center;">
+                                                        <span ng-if="membre.age > 0" style="font-size: 1.2rem;">{{membre.age}} ans</span>
+                                                        <span ng-if="membre.age > 0 &amp;&amp; !_.isUndefined(membre.distance)" style="font-size: 1.2rem;"> - </span>
+                                                        <span ng-if="!_.isUndefined(membre.distance)" style="font-size: 1.2rem;">{{membre.distance}} m</span>
+                                                    </div>
+                                                    <div class="item_desc centered" ng-if="!_.isEmpty(membre.introduction)" style="width:auto; height:20px; word-wrap: break-word;">
                                                         <font style="color: rgb(99, 99, 99);"><q>{{membre.introduction}}</q></font>
                                                     </div>
                                                     <div class="item_foot debug_unimplemented">
@@ -2392,7 +2398,7 @@
                                                 </a>
                                                 <div class="infos_right">
                                                     <p>{{offre_service.diff_create_date}}</p>
-                                                    <i class="fa text-epsilon" ng-class="{'fa-heart': offre_service.is_favorite, 'fa-heart-o': !offre_service.is_favorite}" style="font-size:1.5rem;" ng-click="add_to_my_favorite('accorderie.offre.service', offre_service)" />
+                                                    <i class="fa text-epsilon coeur" ng-class="{'fa-heart': offre_service.is_favorite, 'fa-heart-o': !offre_service.is_favorite}" style="font-size:1.5rem;" ng-click="add_to_my_favorite('accorderie.offre.service', offre_service)" />
                                                 </div>
                                             </div>
                                             <a href="/participer#!?state=init.pos" class="btn btn-primary rounded-circle text-gamma add_service"><i class="fa fa-plus-circle icon_padding_right" /> Ajouter une offre de service</a>
@@ -2421,7 +2427,7 @@
                                                 </a>
                                                 <div class="infos_right">
                                                     <p>{{demande_service.diff_create_date}}</p>
-                                                    <i class="fa text-epsilon" ng-class="{'fa-heart': demande_service.is_favorite, 'fa-heart-o': !demande_service.is_favorite}" style="font-size:1.5rem;" ng-click="add_to_my_favorite('accorderie.demande.service', demande_service)" />
+                                                    <i class="fa text-epsilon coeur" ng-class="{'fa-heart': demande_service.is_favorite, 'fa-heart-o': !demande_service.is_favorite}" style="font-size:1.5rem;" ng-click="add_to_my_favorite('accorderie.demande.service', demande_service)" />
                                                 </div>
                                             </div>
                                             <a href="/participer#!?state=init.pds" class="btn btn-primary rounded-circle text-gamma add_service"><i class="fa fa-plus-circle icon_padding_right" /> Ajouter une demande de service</a>
@@ -2479,7 +2485,7 @@
                                                 </a>
                                                 <div class="infos right">
                                                     <h5>{{offre_service.diff_create_date}}</h5>
-                                                    <h2 class="fa text-epsilon" ng-class="{'fa-heart': offre_service.is_favorite, 'fa-heart-o': !offre_service.is_favorite}" ng-click="add_to_my_favorite('accorderie.offre.service', offre_service)" />
+                                                    <h2 class="fa text-epsilon coeur" ng-class="{'fa-heart': offre_service.is_favorite, 'fa-heart-o': !offre_service.is_favorite}" ng-click="add_to_my_favorite('accorderie.offre.service', offre_service)" />
                                                 </div>
                                             </div>
                                             <div class="list_title s_title pb40">
@@ -2505,7 +2511,7 @@
                                                 </a>
                                                 <div class="infos right">
                                                     <h5>{{demande_service.diff_create_date}}</h5>
-                                                    <h2 class="fa text-epsilon" ng-class="{'fa-heart': demande_service.is_favorite, 'fa-heart-o': !demande_service.is_favorite}" ng-click="add_to_my_favorite('accorderie.demande.service', demande_service)" />
+                                                    <h2 class="fa text-epsilon coeur" ng-class="{'fa-heart': demande_service.is_favorite, 'fa-heart-o': !demande_service.is_favorite}" ng-click="add_to_my_favorite('accorderie.demande.service', demande_service)" />
                                                 </div>
                                             </div>
                                             <div class="list_title s_title pb40">
@@ -2532,7 +2538,7 @@
                                                 </a>
                                                 <div class="infos right">
                                                     <h5>{{membre_favoris.distance}}</h5>
-                                                    <h2 class="fa text-epsilon" ng-class="{'fa-heart': membre_favoris.is_favorite, 'fa-heart-o': !membre_favoris.is_favorite}" ng-click="add_to_my_favorite('accorderie.membre', membre_favoris)" />
+                                                    <h2 class="fa text-epsilon coeur" ng-class="{'fa-heart': membre_favoris.is_favorite, 'fa-heart-o': !membre_favoris.is_favorite}" ng-click="add_to_my_favorite('accorderie.membre', membre_favoris)" />
                                                 </div>
                                             </div>
                                         </div>
@@ -2560,14 +2566,14 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-alpha">
                                                 Mon activit&#233;
                                             </p>
                                         </div>
                                     </div>
                                 </section>
-                                <nav class="sub-navbar navbar navbar-light bg-light">
-                                    <ul class="nav navbar-nav">
+                                <nav class="sub-navbar navbar-light bg-light" style="background-color: #d6d0d5">
+                                    <ul class="nav navbar-nav" style="background-color: #d6d0d5">
                                         <li class="nav-item">
                                             <a class="nav-link" role="menu_item" href="/monactivite">
                                                 <span>Bilan</span>
@@ -2899,8 +2905,8 @@
                                             </div>
                                         </div>
                                     </section>
-                                    <nav class="sub-navbar navbar navbar-light bg-light">
-                                        <ul class="nav navbar-nav">
+                                    <nav class="sub-navbar navbar-light bg-light" style="background-color: #d6d0d5">
+                                        <ul class="nav navbar-nav" style="background-color: #d6d0d5">
                                             <li class="nav-item nav_notification">
                                                 <a class="nav-link" role="menu_item" href="/notification#!?section=notification" ng-class="{'active': section=='notification'}">
                                                     <span>Notifications</span>
@@ -2951,22 +2957,22 @@
                                     <div class="banner_profile">
                                         <div class="profile_infos">
                                             <div class="profile_pic rounded-circle" ng-style="{'background-image': 'url(' + personal.ma_photo + ')'}">
-                                                <i class="fa fa-shield text-gamma" />
+                                                <i class="fa fa-shield text-alpha" />
                                             </div>
                                             <div class="profile_banner_info">
-                                                <p class="profile_name text-gamma">{{personal.full_name}}</p>
-                                                <p class="profile_hrs text-gamma">
+                                                <p class="profile_name text-alpha">{{personal.full_name}}</p>
+                                                <p class="profile_hrs text-alpha">
                                                     <i class="fa fa-clock-o" />&amp;nbsp;<span ng-class="{neg_time_2: !personal.actual_bank_sign}">{{personal.actual_bank_time_human_simplify}}</span>
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="profile_btn btn accorderie text-gamma debug_unimplemented">
+                                        <div class="profile_btn btn accorderie text-alpha debug_unimplemented">
                                             <i class="fa fa-smile-o" />
                                             Mon accorderie: {{personal.mon_accorderie.name}}
                                             <i class="fa fa-chevron-right" />
                                         </div>
                                         <a href="web/session/logout?redirect=/">
-                                            <div class="profile_btn btn disconnect text-gamma">
+                                            <div class="profile_btn btn disconnect text-alpha">
                                                 <i class="fa fa-power-off" />&amp;nbsp;Se déconnecter
                                             </div>
                                         </a>
@@ -3045,17 +3051,17 @@
                                 </div>
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="banner_profile s_title pt16 pb16">
-                                        <p class="s_title_default text-gamma">
+                                        <p class="s_title_default text-alpha">
                                             Mon activité
                                         </p>
-                                        <div class="solde_container text-gamma">
+                                        <div class="solde_container text-alpha">
                                             <div class="txt">Solde de mon compte <i class="fa fa-question-circle-o debug_unimplemented" /></div>
-                                            <div class="solde text-gamma" ng-class="{neg_time: !personal.actual_bank_sign}">{{personal.actual_bank_time_human_short | uppercase}}</div>
+                                            <div class="solde text-alpha" ng-class="{neg_time: !personal.actual_bank_sign}">{{personal.actual_bank_time_human_short | uppercase}}</div>
                                         </div>
                                     </div>
                                 </section>
-                                <nav class="sub-navbar navbar navbar-light bg-light">
-                                    <ul class="nav navbar-nav">
+                                <nav class="sub-navbar navbar-light bg-light" style="background-color: #d6d0d5">
+                                    <ul class="nav navbar-nav" style="background-color: #d6d0d5">
                                         <li class="nav-item">
                                             <a class="nav-link active" role="menu_item" href="/monactivite">
                                                 <span>Bilan</span>
@@ -3083,28 +3089,28 @@
                                 <div class="bilan_container">
                                     <nav class="bilan_left">
                                         <a href="/monactivite/echanges" class="bilan_left bilan-1 btn" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;)">
-                                            <span class="txt">Soldes en heures:</span>
-                                            <span class="nbr">{{personal.actual_bank_time_human | uppercase}}</span>
+                                            <span class="txt-activite">Soldes en heures:</span>
+                                            <span class="nbr-activite">{{personal.actual_bank_time_human | uppercase}}</span>
                                         </a>
                                     </nav>
                                     <section class="bilan_main">
                                         <a href="/monactivite/echanges" class="bilan_main bilan-2 btn" style="background-image: url(&quot;https://i.pinimg.com/originals/60/43/bf/6043bf9787ade7d5b2e746ad0960cd5a.jpg&quot;)">
-                                            <span class="nbr">{{personal.nb_echange_a_venir}}</span>
-                                            <span class="txt">échange &#224; venir</span>
+                                            <span class="nbr-activite">{{personal.nb_echange_a_venir}}</span>
+                                            <span class="txt-activite">échange &#224; venir</span>
                                         </a>
                                         <a href="/monactivite/echanges" class="bilan_main bilan-3 btn" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;)">
-                                            <span class="nbr">{{personal.actual_month_bank_time_human_short | uppercase}}</span>
-                                            <span class="txt">ce mois-ci</span>
+                                            <span class="nbr-activite">{{personal.actual_month_bank_time_human_short | uppercase}}</span>
+                                            <span class="txt-activite">ce mois-ci</span>
                                         </a>
                                     </section>
                                     <nav class="bilan_right">
                                         <a href="/monactivite/echanges" class="bilan_right bilan-4 btn" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;)">
-                                            <span class="nbr">{{personal.nb_echange_en_cours}}</span>
-                                            <span class="txt">échange en cours</span>
+                                            <span class="nbr-activite">{{personal.nb_echange_en_cours}}</span>
+                                            <span class="txt-activite">échange en cours</span>
                                         </a>
                                         <a href="/evenement" class="bilan_right bilan-5 btn" style="background-image: url(&quot;https://i.pinimg.com/originals/60/43/bf/6043bf9787ade7d5b2e746ad0960cd5a.jpg&quot;)">
-                                            <span class="nbr">1</span>
-                                            <span class="txt">évènement</span>
+                                            <span class="nbr-activite">1</span>
+                                            <span class="txt-activite">évènement</span>
                                         </a>
                                     </nav>
                                         <!--
@@ -3223,14 +3229,14 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-alpha">
                                                 Mon activit&#233;
                                             </p>
                                         </div>
                                     </div>
                                 </section>
-                                <nav class="sub-navbar navbar navbar-light bg-light">
-                                    <ul class="nav navbar-nav">
+                                <nav class="sub-navbar navbar-light bg-light" style="background-color: #d6d0d5">
+                                    <ul class="nav navbar-nav" style="background-color: #d6d0d5">
                                         <li class="nav-item">
                                             <a class="nav-link" role="menu_item" href="/monactivite">
                                                 <span>Bilan</span>
@@ -3281,117 +3287,123 @@
                                     </section>
                                     <div class="horizontal_list">
                                         <div class="list_item">
-                                            <div class="item_card btn shadow">
+                                            <div class="item_card btn shadow" style="height: 350px">
                                                 <div class="item_img oe_img_bg oe_custom_bg" style="background-image: url(&quot;/web/image/website_accorderie.ir_attachment_jonathan_cosens_photography_9kdxgxfrmo8_unsplash_jpg/jonathan-cosens-photography-9kDXgXFRmO8-unsplash.jpg&quot;">
-                                                    <icon class="fa fa-heart text-gamma" />
-                                                    <div class="name text-gamma">
-                                                        Alice Poitier&amp;nbsp;
-                                                        <icon class="fa fa-shield" />
-                                                    </div>
-                                                    <div class="infos text-gamma">35 ans - 200 m</div>
+                                                    <icon class="fa fa-heart coeur" />
                                                 </div>
-                                                <div class="item_desc centered">
-                                                    <font style="color: rgb(99, 99, 99);">&amp;nbsp;J'adore rencontrer
-                                                        de nouvelles personnes, n'h&#233;sitez pas &#224; me contacter&amp;nbsp;
+                                                <div class="name text-black" style="text-align:center;">
+                                                    <span style="font-size: 1.2rem;">Alice Poitier&amp;nbsp;</span>
+                                                    <icon class="fa fa-shield" style="font-size: 1.2rem;" />
+                                                </div>
+                                                <div class="infos text-black" style="text-align:center; font-size: 0.9rem;">35 ans - 200 m</div>
+                                                <div class="item_desc centered" style="width:auto; height:20px; word-wrap: break-word;">
+                                                    <font style="color: rgb(99, 99, 99);">
+                                                        &amp;nbsp;J'adore rencontrer de nouvelles personnes, n'h&#233;sitez pas &#224; me contacter&amp;nbsp;
                                                     </font>
-                                                </div>
-                                                <div class="item_foot">
-                                                    <span class="tag">Marche</span>
-                                                    <span class="tag">Violoncelle</span>
-                                                    <span class="tag">Gym</span>
+                                                    <div class="item_foot debug_implemented">
+                                                        <span class="tag">Marche</span>
+                                                        <span class="tag">Violoncelle</span>
+                                                        <span class="tag">Gym</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="list_item">
-                                            <div class="item_card btn shadow">
+                                            <div class="item_card btn shadow" style="height: 350px">
                                                 <div class="item_img oe_img_bg oe_custom_bg" style="background-image: url(&quot;/web/image/website_accorderie.ir_attachment_gabriel_silverio_u3wmdykgsry_unsplash_jpg/gabriel-silverio-u3WmDyKGsrY-unsplash.jpg&quot;">
-                                                    <icon class="fa fa-heart text-gamma" />
-                                                    <div class="name text-gamma">
-                                                        Alice Poitier&amp;nbsp;
-                                                        <icon class="fa fa-shield" />
-                                                    </div>
-                                                    <div class="infos text-gamma">35 ans - 200 m</div>
+                                                    <icon class="fa fa-heart coeur" />
                                                 </div>
-                                                <div class="item_desc centered">
-                                                    <font style="color: rgb(99, 99, 99);">&amp;nbsp;J'adore rencontrer
-                                                        de nouvelles personnes, n'h&#233;sitez pas &#224; me contacter&amp;nbsp;
+                                                <div class="name text-black" style="text-align:center;">
+                                                    <span style="font-size: 1.2rem;">Alice Poitier&amp;nbsp;</span>
+                                                    <icon class="fa fa-shield" style="font-size: 1.2rem;" />
+                                                </div>
+                                                <div class="infos text-black" style="text-align:center; font-size: 0.9rem;">35 ans - 200 m</div>
+                                                <div class="item_desc centered" style="width:auto; height:20px; word-wrap: break-word;">
+                                                    <font style="color: rgb(99, 99, 99);">
+                                                        &amp;nbsp;J'adore rencontrer de nouvelles personnes, n'h&#233;sitez pas &#224; me contacter&amp;nbsp;
                                                     </font>
-                                                </div>
-                                                <div class="item_foot">
-                                                    <span class="tag">Marche</span>
-                                                    <span class="tag">Violoncelle</span>
-                                                    <span class="tag">Gym</span>
+                                                    <div class="item_foot debug_implemented">
+                                                        <span class="tag">Marche</span>
+                                                        <span class="tag">Violoncelle</span>
+                                                        <span class="tag">Gym</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="list_item">
-                                            <div class="item_card btn shadow">
+                                            <div class="item_card btn shadow" style="height: 350px">
                                                 <div class="item_img oe_img_bg oe_custom_bg" style="background-image: url(&quot;/web/image/website_accorderie.ir_attachment_henrique_castilho_l8kmx3rzt7s_unsplash_jpg/henrique-castilho-L8kMx3rzt7s-unsplash.jpg&quot;">
-                                                    <icon class="fa fa-heart text-gamma" />
-                                                    <div class="name text-gamma">
-                                                        Alice Poitier&amp;nbsp;
-                                                        <icon class="fa fa-shield" />
-                                                    </div>
-                                                    <div class="infos text-gamma">35 ans - 200 m</div>
+                                                    <icon class="fa fa-heart coeur" />
                                                 </div>
-                                                <div class="item_desc centered">
-                                                    <font style="color: rgb(99, 99, 99);">&amp;nbsp;J'adore rencontrer
-                                                        de nouvelles personnes, n'h&#233;sitez pas &#224; me contacter&amp;nbsp;
+                                                <div class="name text-black" style="text-align:center;">
+                                                    <span style="font-size: 1.2rem;">Alice Poitier&amp;nbsp;</span>
+                                                    <icon class="fa fa-shield" style="font-size: 1.2rem;" />
+                                                </div>
+                                                <div class="infos text-black" style="text-align:center; font-size: 0.9rem;">35 ans - 200 m</div>
+                                                <div class="item_desc centered" style="width:auto; height:20px; word-wrap: break-word;">
+                                                    <font style="color: rgb(99, 99, 99);">
+                                                        &amp;nbsp;J'adore rencontrer de nouvelles personnes, n'h&#233;sitez pas &#224; me contacter&amp;nbsp;
                                                     </font>
-                                                </div>
-                                                <div class="item_foot">
-                                                    <span class="tag">Marche</span>
-                                                    <span class="tag">Violoncelle</span>
-                                                    <span class="tag">Gym</span>
+                                                    <div class="item_foot debug_implemented">
+                                                        <span class="tag">Marche</span>
+                                                        <span class="tag">Violoncelle</span>
+                                                        <span class="tag">Gym</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="list_item">
-                                            <div class="item_card btn shadow">
+                                            <div class="item_card btn shadow" style="height: 350px">
                                                 <div class="item_img oe_img_bg oe_custom_bg" style="background-image: url(&quot;/web/image/website_accorderie.ir_attachment_gabriel_silverio_u3wmdykgsry_unsplash_jpg/gabriel-silverio-u3WmDyKGsrY-unsplash.jpg&quot;">
-                                                    <icon class="fa fa-heart text-gamma" />
-                                                    <div class="name text-gamma">
-                                                        Alice Poitier&amp;nbsp;
-                                                        <icon class="fa fa-shield" />
-                                                    </div>
-                                                    <div class="infos text-gamma">35 ans - 200 m</div>
+                                                    <icon class="fa fa-heart coeur" />
                                                 </div>
-                                                <div class="item_desc centered">
-                                                    <font style="color: rgb(99, 99, 99);">&amp;nbsp;J'adore rencontrer
-                                                        de nouvelles personnes, n'h&#233;sitez pas &#224; me contacter&amp;nbsp;
+                                                <div class="name text-black" style="text-align:center;">
+                                                    <span style="font-size: 1.2rem;">Alice Poitier&amp;nbsp;</span>
+                                                    <icon class="fa fa-shield" style="font-size: 1.2rem;" />
+                                                </div>
+                                                <div class="infos text-black" style="text-align:center; font-size: 0.9rem;">35 ans - 200 m</div>
+                                                <div class="item_desc centered" style="width:auto; height:20px; word-wrap: break-word;">
+                                                    <font style="color: rgb(99, 99, 99);">
+                                                        &amp;nbsp;J'adore rencontrer de nouvelles personnes, n'h&#233;sitez pas &#224; me contacter&amp;nbsp;
                                                     </font>
-                                                </div>
-                                                <div class="item_foot">
-                                                    <span class="tag">Marche</span>
-                                                    <span class="tag">Violoncelle</span>
-                                                    <span class="tag">Gym</span>
+                                                    <div class="item_foot debug_implemented">
+                                                        <span class="tag">Marche</span>
+                                                        <span class="tag">Violoncelle</span>
+                                                        <span class="tag">Gym</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="list_item">
-                                            <div class="item_card btn shadow">
+                                            <div class="item_card btn shadow" style="height: 350px">
                                                 <div class="item_img oe_img_bg oe_custom_bg" style="background-image: url(&quot;/web/image/website_accorderie.ir_attachment_henrique_castilho_l8kmx3rzt7s_unsplash_jpg/henrique-castilho-L8kMx3rzt7s-unsplash.jpg&quot;">
-                                                    <icon class="fa fa-heart text-gamma" />
-                                                    <div class="name text-gamma">
-                                                        Alice Poitier&amp;nbsp;
-                                                        <icon class="fa fa-shield" />
-                                                    </div>
-                                                    <div class="infos text-gamma">35 ans - 200 m</div>
+                                                    <icon class="fa fa-heart coeur" />
                                                 </div>
-                                                <div class="item_desc centered">
-                                                    <font style="color: rgb(99, 99, 99);">&amp;nbsp;J'adore rencontrer
-                                                        de nouvelles personnes, n'h&#233;sitez pas &#224; me contacter&amp;nbsp;
+                                                <div class="name text-black" style="text-align:center;">
+                                                    <span style="font-size: 1.2rem;">Alice Poitier&amp;nbsp;</span>
+                                                    <icon class="fa fa-shield" style="font-size: 1.2rem;" />
+                                                </div>
+                                                <div class="infos text-black" style="text-align:center; font-size: 0.9rem;">35 ans - 200 m</div>
+                                                <div class="item_desc centered" style="width:auto; height:20px; word-wrap: break-word;">
+                                                    <font style="color: rgb(99, 99, 99);">
+                                                        &amp;nbsp;J'adore rencontrer de nouvelles personnes, n'h&#233;sitez pas &#224; me contacter&amp;nbsp;
                                                     </font>
-                                                </div>
-                                                <div class="item_foot">
-                                                    <span class="tag">Marche</span>
-                                                    <span class="tag">Violoncelle</span>
-                                                    <span class="tag">Gym</span>
+                                                    <div class="item_foot debug_implemented">
+                                                        <span class="tag">Marche</span>
+                                                        <span class="tag">Violoncelle</span>
+                                                        <span class="tag">Gym</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </section>
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
                                 <section class="s_map_btn pt32 pb32">
                                     <div class="btn_map btn btn-primary rounded-circle text-gamma pt16 pb16">
                                         <icon class="fa fa-map" />
@@ -3667,8 +3679,8 @@
                                         </div>
                                     </div>
                                 </section>
-                                <nav class="sub-navbar navbar navbar-light bg-light mobile-display-none">
-                                    <ul class="nav navbar-nav">
+                                <nav class="sub-navbar navbar-light bg-light mobile-display-none" style="background-color: #d6d0d5">
+                                    <ul class="nav navbar-nav" style="background-color: #d6d0d5">
                                         <li class="nav-item">
                                             <a class="nav-link active" role="menu_item" href="#">
                                                 <span>Mer 1 oct</span>
@@ -3942,7 +3954,7 @@
 <!--                                                </div>-->
 <!--                                                <div class="infos right">-->
 <!--                                                    <h5>5m</h5>-->
-<!--                                                    <h2 class="fa fa-heart-o text-epsilon" />-->
+<!--                                                    <h2 class="fa fa-heart-o text-epsilon coeur" />-->
 <!--                                                </div>-->
 <!--                                            </div>-->
                                         </div>
@@ -4072,29 +4084,29 @@
                                                 <br />
                                                 {{contact_info.full_name}}
                                             </span>
-                                            <div class="btn btn-primary text-gamma debug_unimplemented">
+                                            <div class="btn btn-primary debug_unimplemented">
 <!--                                                <a ng-href="{{get_href_participer_service_effectue(echange_service_info)}}">-->
-                                                    <i class="fa fa-thumbs-up" />
+                                                    <i class="fa fa-thumbs-up text-gamma" />
                                                     <!-- TODO faire apparaitre un formulaire pour demander des commentaires et informer l'autre utilisateur d'avoir accepter. Quel est la prochaine étape? -->
                                                     <!-- TODO faire afficher seulement pour celui qui recois le service, celui qui a créer cet échange a déjà accepté, puis sinon faire accepter par un administrateur -->
-                                                    <span>Accepter</span>
+                                                    <span class="text-gamma">Accepter</span>
 <!--                                                </a>-->
                                             </div>
-                                            <div class="btn btn-primary text-gamma">
+                                            <div class="btn btn-primary">
                                                 <a ng-href="{{get_href_participer_service_effectue(echange_service_info)}}">
-                                                    <i class="fa fa-check" />
-                                                    <span>Service effectué</span>
+                                                    <i class="fa fa-check text-gamma" />
+                                                    <span class="text-gamma">Service effectué</span>
                                                 </a>
                                             </div>
-                                            <div class="btn btn-epsilon text-gamma debug_unimplemented">
-                                                <i class="fa fa-pencil" />
+                                            <div class="btn btn-epsilon debug_unimplemented">
+                                                <i class="fa fa-pencil text-gamma" />
                                                 <!-- TODO faire apparaitre un formulaire pour que l'autre utilisateur change une information DEMANDE DE RÉVISION ou modifier soi même une information -->
-                                                <span>Modifier l'entente</span>
+                                                <span class="text-gamma">Modifier l'entente</span>
                                             </div>
-                                            <div class="btn btn-epsilon text-gamma debug_unimplemented">
-                                                <i class="fa fa-times-circle" />
+                                            <div class="btn btn-epsilon debug_unimplemented">
+                                                <i class="fa fa-times-circle text-gamma" />
                                                 <!-- TODO faire apparaitre un formulaire pour demander des commentaires et informer l'autre utilisateur du refus -->
-                                                <span>Annuler l'entente</span>
+                                                <span class="text-gamma">Annuler l'entente</span>
                                             </div>
                                         </div>
                                         <div class="information information-1" ng-if="echange_service_info.transaction_valide">
@@ -4107,7 +4119,8 @@
                                                 {{echange_service_info.show_start_time}} - {{echange_service_info.show_end_time}}
                                             </span>
                                             <div class="info_depot" ng-class="{'neg_time': echange_service_info.estAcheteur}">
-                                                <span ng-if="!echange_service_info.estAcheteur">DÉPOT</span><span ng-if="echange_service_info.estAcheteur">RETRAIT</span> SUR MON COMPTE
+                                                <span ng-if="!echange_service_info.estAcheteur">DÉPOT</span>
+                                                <span ng-if="echange_service_info.estAcheteur">RETRAIT</span> SUR MON COMPTE
                                                 <div class="heures" ng-class="{'neg_time_b': echange_service_info.estAcheteur}">
                                                     {{echange_service_info.transaction_valide ? echange_service_info.show_total_dure_pos : echange_service_info.show_total_dure_estime_pos}}
                                                 </div>
@@ -4183,7 +4196,7 @@
                                                 <p>{{echange_service_info.show_duree_estime_pos}}</p>
                                                 <p class="condition_desc">Durée du trajet estimée à effectuer</p>
                                                 <p>{{echange_service_info.show_duree_trajet_estime_pos}}</p>
-                                                <div class="bar_time">
+                                                <div class="bar_time" style="background-color:#b4114a; color:white;">
                                                     <b>
                                                         Montant total de temps estimé :
                                                     </b>
@@ -4318,7 +4331,7 @@
                                                 </b>
                                                 <p class="condition_desc">{{echange_service_info.commentaire}}</p>
                                             </div>
-                                            <div class="bar_time">
+                                            <div class="bar_time" style="background-color:#b4114a; color:white;">
                                                 <b>
                                                     Montant total de temps transféré :
                                                 </b>
@@ -4501,8 +4514,8 @@
                             <p class="alert alert-danger" ng-if="!_.isEmpty(error)" role="alert">
                                 {{error}}
                             </p>
-                            <nav class="sub-navbar navbar navbar-light bg-light">
-                                <ul class="nav navbar-nav">
+                            <nav class="sub-navbar navbar-light bg-light" style="background-color: #d6d0d5">
+                                <ul class="nav navbar-nav" style="background-color: #d6d0d5">
                                     <li class="nav-item">
                                         <a href="/aide#!?section=guide_utilisation" class="nav-link" role="menu_item" ng-class="{'active': section=='guide_utilisation'}">
                                             <span>Guides d'utilisation</span>
