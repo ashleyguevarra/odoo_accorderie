@@ -77,6 +77,18 @@
   text-align: left !important;
 }
 
+.txt-activite {
+  font-size: clamp(18px, 1.5vw, 1.5vw) !important;
+  text-align: left !important;
+  color: white !important;
+}
+
+.nbr-activite {
+  font-size: clamp(24px, 2.35vw, 2.35vw) !important;
+  font-weight: bold;
+  color: white !important;
+}
+
 .lg-btn.btn {
   font-size: 1.2rem;
   padding: 1.3rem;
