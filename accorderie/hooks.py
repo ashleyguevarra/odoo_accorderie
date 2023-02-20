@@ -12,46 +12,42 @@ def pre_init_hook(cr):
     with api.Environment.manage():
         env = api.Environment(cr, SUPERUSER_ID, {})
 
-        # Update all partner
-        partners = env["res.partner"].search([("name", "=", "My Company")])
-        for partner in partners:
-            partner.website = "https://accorderie.ca"
-            partner.name = "Accorderie"
-            partner.email = "reseau@accorderie.ca"
-            partner.street = "160, rue St-Joseph Est"
-            partner.city = "Québec"
-            partner.zip = "G1K 3A7"
-            partner.country_id = env.ref("base.ca")
-            partner.state_id = env["res.country.state"].search(
-                [("code", "ilike", "QC")], limit=1
-            )
-            partner.phone = "(418) 524-2597"
-
-        company_id = env["res.company"].browse(1)
+        company_id = env["res.partner"].browse(env.ref("base.main_company").id)
+        company_id.website = "https://accorderie.ca"
+        company_id.name = "Accorderie"
+        company_id.email = "reseau@accorderie.ca"
+        company_id.street = "160, rue St-Joseph Est"
+        company_id.city = "Québec"
+        company_id.zip = "G1K 3A7"
+        company_id.country_id = env.ref("base.ca")
+        company_id.state_id = env["res.country.state"].search(
+            [("code", "ilike", "QC")], limit=1
+        )
+        company_id.phone = "(418) 524-2597"
         company_id.sequence = 1
 
-        partners = env["res.partner"].search([("name", "=", "Administrator")])
-        for partner in partners:
-            partner.website = "https://technolibre.ca"
-            partner.name = "Mathieu Benoit"
-            partner.email = "mathieu.benoit@technolibre.ca"
-            partner.country_id = env.ref("base.ca")
-            partner.state_id = env["res.country.state"].search(
-                [("code", "ilike", "QC")], limit=1
-            )
+        user_admin_id = env["res.partner"].browse(
+            env.ref("base.partner_root").id
+        )
+        user_admin_id.website = "https://technolibre.ca"
+        user_admin_id.name = "Mathieu Benoit"
+        user_admin_id.email = "mathieu.benoit@technolibre.ca"
+        user_admin_id.country_id = env.ref("base.ca")
+        user_admin_id.state_id = env["res.country.state"].search(
+            [("code", "ilike", "QC")], limit=1
+        )
 
 
 def post_init_hook(cr, e):
     with api.Environment.manage():
         env = api.Environment(cr, SUPERUSER_ID, {})
 
-        # Update all partner
-        partners = env["res.partner"].search([("name", "=", "Accorderie")])
-        for partner in partners:
-            partner_img_attachment = env.ref(
-                "accorderie.ir_attachment_logo_reseau_accorderie_png"
-            )
-            with tools.file_open(
-                partner_img_attachment.local_url[1:], "rb"
-            ) as desc_file:
-                partner.image = base64.b64encode(desc_file.read())
+        partner_id = env["res.partner"].browse(env.ref("base.main_company").id)
+
+        partner_img_attachment = env.ref(
+            "accorderie.ir_attachment_logo_reseau_accorderie_png"
+        )
+        with tools.file_open(
+            partner_img_attachment.local_url[1:], "rb"
+        ) as desc_file:
+            partner_id.image = base64.b64encode(desc_file.read())
