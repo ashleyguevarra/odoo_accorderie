@@ -380,7 +380,7 @@
                                                     <div class="cat activite btn">
                                                         <img
                                                             class="activite_img img-fluid"
-                                                            src="/web/image/website_accorderie.ir_attachment_liuba_bilyk_wu_tbwqdpji_unsplash_jpg/liuba-bilyk-wU_TbWqdPJI-unsplash.jpg"
+                                                            src="/web/image/website_accorderie.ir_attachment_meritt_thomas_u_hb93v6iwi_unsplash_jpg/meritt-thomas-u-Hb93V6IWI-unsplash.jpg"
                                                         />
                                                         <div class="infos">
                                                             <span class="activite_title">{{offre_service.titre}}</span>
@@ -415,7 +415,7 @@
                                                     <div class="cat activite btn">
                                                         <img
                                                             class="activite_img img-fluid"
-                                                            src="/web/image/website_accorderie.ir_attachment_liuba_bilyk_wu_tbwqdpji_unsplash_jpg/liuba-bilyk-wU_TbWqdPJI-unsplash.jpg"
+                                                            src="/web/image/website_accorderie.ir_attachment_meritt_thomas_u_hb93v6iwi_unsplash_jpg/meritt-thomas-u-Hb93V6IWI-unsplash.jpg"
                                                         />
                                                         <div class="infos">
                                                             <span
@@ -463,7 +463,7 @@
                                                     <div class="cat activite btn">
                                                         <img
                                                             class="activite_img img-fluid rounded-circle"
-                                                            src="/web/image/website_accorderie.ir_attachment_liuba_bilyk_wu_tbwqdpji_unsplash_jpg/liuba-bilyk-wU_TbWqdPJI-unsplash.jpg"
+                                                            ng-src="{{ membre_favoris.ma_photo }}"
                                                         />
                                                         <div class="infos">
                                                             <span
@@ -654,10 +654,7 @@
                                 t-ignore="true"
                                 t-if="not user_id._is_public()"
                             >
-                                <img
-                                    class="nav_pic rounded-circle"
-                                    src="/web/image/website_accorderie.ir_attachment_henrique_castilho_l8kmx3rzt7s_unsplash_jpg/henrique-castilho-L8kMx3rzt7s-unsplash.jpg"
-                                />
+                                <img class="nav_pic rounded-circle" ng-src="{{ membre_info.ma_photo }}" />
                                 <a
                                     class="nav-link dropdown-toggle text-gamma"
                                     data-toggle="dropdown"

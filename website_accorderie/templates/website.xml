@@ -1696,10 +1696,7 @@
             Information manquante sur le contact, veuillez informer votre administrateur du problème.
         </div>
         <div class="card-votre-relation" ng-if="!_.isEmpty(contact_info)">
-            <div
-                class="img rounded-circle"
-                style="background-image: url(&quot;/web/image/website_accorderie.ir_attachment_freestocks_9uvmlib0wju_unsplash_jpg/freestocks-9UVmlIb0wJU-unsplash.jpg&quot;);"
-            />
+            <div class="img rounded-circle" ng-style="{'background-image': 'url(' + contact_info.ma_photo + ')'}" />
             <h4><b>Votre contact :</b></h4>
             <h4>{{contact_info.full_name}}</h4>
             <div class="stats">

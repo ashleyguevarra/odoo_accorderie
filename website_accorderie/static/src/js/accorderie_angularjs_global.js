@@ -145,6 +145,60 @@ odoo.define('website.accorderie_angularjs_global', function (require) {
         $scope.nb_offre_service = 0;
         $scope.animation_controller_enable = false;
 
+        // TODO créer environnement modification
+        $scope.ask_modification = false;
+        $scope.ask_modification_profile = false;
+        $scope.ask_modif_copy = {membre_info: {}};
+        $scope.updateImage = function (input) {
+            let reader = new FileReader();
+            reader.onload = function () {
+                $scope.$apply(function () {
+                    $scope.membre_info.ma_photo = reader.result;
+                });
+            };
+            reader.readAsDataURL(input.files[0]);
+        };
+        $scope.annuler_ask_modification_profile = function() {
+            // revert
+            $scope.membre_info.ma_photo = $scope.ask_modif_copy.membre_info.ma_photo;
+            $scope.ask_modification_profile = false;
+        };
+        $scope.change_ask_modification_profile = function (enable) {
+            console.debug(enable);
+            $scope.ask_modification_profile = enable;
+            if (!enable) {
+                // Recording, check diff and rpc to server
+                if ($scope.ask_modif_copy.membre_info.ma_photo !== $scope.membre_info.ma_photo) {
+                    let form = {"ma_photo": $scope.membre_info.ma_photo}
+                    let url = "/accorderie/personal_information/submit"
+                    ajax.rpc(url, form).then(function (data) {
+                            console.debug("AJAX receive submit_form personal_information");
+                            console.debug(data);
+
+                            if (data.error) {
+                                $scope.error = data.error;
+                            } else if (_.isEmpty(data)) {
+                                $scope.error = "Empty data - " + url;
+                            } else {
+                            }
+
+                            // Process all the angularjs watchers
+                            $scope.$digest();
+                        }
+                    )
+                }
+            } else {
+                // Modification, make copy
+                // let file = $scope.membre_info.ma_photo;
+                if (!_.isUndefined($scope.membre_info.ma_photo)) {
+                    $scope.ask_modif_copy.membre_info.ma_photo = JSON.parse(JSON.stringify($scope.membre_info.ma_photo));
+                } else {
+                    $scope.ask_modif_copy.membre_info.ma_photo = undefined;
+                }
+            }
+        };
+        // End modification environnement
+
         $scope.lst_notification = [];
 
         $scope.notif_filter_unread = function (notif) {

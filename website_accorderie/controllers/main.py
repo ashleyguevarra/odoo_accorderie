@@ -1,15 +1,11 @@
-import base64
 import datetime as dt
 import logging
-import time
 import urllib.parse
-from collections import defaultdict
 from datetime import datetime, timedelta
 
 import humanize
 import pytz
 import requests
-import werkzeug
 
 from odoo import _, http
 from odoo.http import request
@@ -707,6 +703,7 @@ class AccorderieController(http.Controller):
                 "membre": {
                     "id": a.membre.id,
                     "full_name": a.membre.nom,
+                    "ma_photo": a.membre.logo_attachment_id.local_url,
                 },
                 "distance": "8m",
             }
@@ -725,6 +722,7 @@ class AccorderieController(http.Controller):
                 "membre": {
                     "id": a.membre.id,
                     "full_name": a.membre.nom,
+                    "ma_photo": a.membre.logo_attachment_id.local_url,
                 },
                 "distance": "8m",
             }
@@ -747,6 +745,7 @@ class AccorderieController(http.Controller):
                 "membre": {
                     "id": a.membre.id,
                     "full_name": a.membre.nom,
+                    "ma_photo": a.membre.logo_attachment_id.local_url,
                 },
                 "distance": "8m",
             }
@@ -765,6 +764,7 @@ class AccorderieController(http.Controller):
                 "membre": {
                     "id": a.membre.id,
                     "full_name": a.membre.nom,
+                    "ma_photo": a.membre.logo_attachment_id.local_url,
                 },
                 "distance": "8m",
             }
@@ -777,6 +777,7 @@ class AccorderieController(http.Controller):
         dct_membre_favoris = {
             a.membre_id.id: {
                 "id": a.membre_id.id,
+                "ma_photo": a.membre_id.logo_attachment_id.local_url,
                 "description": a.membre_id.introduction,
                 "age": 35,
                 "is_favorite": True,
@@ -831,7 +832,7 @@ class AccorderieController(http.Controller):
             ].search([("membre_id", "=", membre_id.id)])
         ]
 
-        return {
+        data = {
             "global": {
                 "dbname": http.request.env.cr.dbname,
             },
@@ -839,6 +840,7 @@ class AccorderieController(http.Controller):
             "personal": {
                 "id": membre_id.id,
                 "full_name": membre_id.nom,
+                "ma_photo": membre_id.logo_attachment_id.local_url,
                 # "actual_bank_hours": bank_time,
                 "actual_bank_hours": membre_id.bank_time,
                 # "actual_month_bank_hours": month_bank_time,
@@ -860,6 +862,27 @@ class AccorderieController(http.Controller):
                 "dct_echange": dct_echange,
             },
         }
+        return data
+
+    @http.route(
+        "/accorderie/personal_information/submit",
+        type="json",
+        auth="user",
+        website=True,
+        csrf=True,
+    )
+    def accorderie_personal_information_form_submit(self, **kw):
+        membre_id = self.get_membre_id()
+        if type(membre_id) is dict:
+            # This is an error
+            return membre_id
+
+        status = True
+        ma_photo = kw.get("ma_photo")
+        if ma_photo:
+            # TODO do we need validation? like extension or supported file
+            membre_id.logo = ma_photo.split(",")[1].encode("utf-8")
+        return status
 
     @http.route(
         [
@@ -931,6 +954,7 @@ class AccorderieController(http.Controller):
             "membre_info": {
                 "id": membre_id.id,
                 "full_name": membre_id.nom,
+                "ma_photo": membre_id.logo_attachment_id.local_url,
                 "bank_max_service_offert": membre_id.bank_max_service_offert,
                 "actual_bank_hours": membre_id.bank_time,
                 "actual_month_bank_hours": membre_id.bank_month_time,
@@ -1020,6 +1044,7 @@ class AccorderieController(http.Controller):
         dct_membre = {
             a.id: {
                 "age": a.age,
+                "ma_photo": a.logo_attachment_id.local_url,
                 "full_name": a.nom,
                 "annee_naissance": a.annee_naissance,
                 "antecedent_judiciaire_verifier": a.antecedent_judiciaire_verifier,
@@ -1147,7 +1172,7 @@ class AccorderieController(http.Controller):
             {
                 "title": a.nom,
                 "id": a.id,
-                "img": "/web/image/website_accorderie.ir_attachment_henrique_castilho_l8kmx3rzt7s_unsplash_jpg/henrique-castilho-L8kMx3rzt7s-unsplash.jpg",
+                "img": a.logo_attachment_id.local_url,
             }
             for a in accorderie_membre_ids
         ]
@@ -2248,7 +2273,7 @@ class AccorderieController(http.Controller):
                 {
                     "text": a.nom,
                     "id": a.id,
-                    "img": "/web/image/website_accorderie.ir_attachment_henrique_castilho_l8kmx3rzt7s_unsplash_jpg/henrique-castilho-L8kMx3rzt7s-unsplash.jpg",
+                    "img": a.logo_attachment_id.local_url,
                 }
                 for a in accorderie_membre_ids
             ]
