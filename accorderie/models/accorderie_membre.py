@@ -111,6 +111,8 @@ class AccorderieMembre(models.Model):
         track_visibility="onchange",
     )
 
+    logo_attachment_id = fields.Many2one("ir.attachment")
+
     membre_ca = fields.Boolean(
         string="Membre du CA",
         track_visibility="onchange",
@@ -357,11 +359,32 @@ class AccorderieMembre(models.Model):
         store=True,
     )
 
+    @api.model_create_multi
+    def create(self, vals_list):
+        status = super(AccorderieMembre, self).create(vals_list)
+        for stat in status:
+            ir_attach_id = self.env["ir.attachment"].create(
+                {
+                    "name": f"logo_accorderie_membre_{stat.id}",
+                    "datas": stat.logo,
+                    "res_model": "accorderie.membre",
+                    "res_id": stat.id,
+                    "type": "url",
+                }
+            )
+            stat.logo_attachment_id = ir_attach_id.id
+        return status
+
     @api.multi
     def write(self, vals):
         status = super().write(vals)
+
         # Detect user
         for rec in self:
+            if "logo" in vals.keys():
+                # Update attachment with logo
+                rec.sudo().logo_attachment_id.datas = vals.get("logo")
+
             self.env["bus.bus"].sendone(
                 # f'["{self._cr.dbname}","{self._name}",{rec.id}]',
                 "accorderie.notification.favorite",

@@ -51,7 +51,7 @@
                                 <div class="chat_container">
                                     <div class="chat_box">
                                         <div class="chat_header">
-                                            <img src="/web/image/website_accorderie.ir_attachment_freestocks_9uvmlib0wju_unsplash_jpg/freestocks-9UVmlIb0wJU-unsplash.jpg" />
+                                            <img ng-src="{{ $parent.section_membre_dct.ma_photo }}" />
                                             <div class="header_info">
                                                 <p class="chat_contact">{{$parent.section_membre_dct.name}}</p>
 <!--                                                        <p class="chat_title">Aide au déménagement</p>-->
@@ -61,7 +61,7 @@
                                         </div>
                                         <div class="chat_body">
                                             <div class="chat_msg" ng-repeat="msg in $parent.section_membre_dct.lst_msg">
-                                                <img ng-if="$parent.section_membre_dct.id===msg.m_id &amp;&amp; personal.id!==$parent.section_membre_dct.id" class="contact_pic rounded-circle" src="/web/image/website_accorderie.ir_attachment_freestocks_9uvmlib0wju_unsplash_jpg/freestocks-9UVmlIb0wJU-unsplash.jpg" />
+                                                <img ng-if="$parent.section_membre_dct.id===msg.m_id &amp;&amp; personal.id!==$parent.section_membre_dct.id" class="contact_pic rounded-circle" ng-src="{{ $parent.section_membre_dct.ma_photo }}" />
                                                 <div class="msg" ng-class="{'my_msg': personal.id===msg.m_id, 'their_msg': $parent.section_membre_dct.id===msg.m_id &amp;&amp; personal.id!==$parent.section_membre_dct.id}">
                                                     {{msg.name}}
                                                 </div>
@@ -97,7 +97,7 @@
                                 <div class="row vertical_list">
                                     <a ng-href="/notification#!?section=message&amp;membre={{msg.id}}" ng-repeat="msg in lst_membre_message">
                                         <div class="activite message btn" ng-class="{'read':msg.is_read}">
-                                            <div class="activite_img img-fluid rounded-circle" style="background-image: url(&quot;/web/image/website_accorderie.ir_attachment_freestocks_9uvmlib0wju_unsplash_jpg/freestocks-9UVmlIb0wJU-unsplash.jpg&quot;);">
+                                            <div class="activite_img img-fluid rounded-circle" ng-style="{'background-image': 'url(' + msg.ma_photo + ')'}">
                                                 <div class="unread rounded-circle" ng-if="!msg.is_read" />
                                             </div>
 
