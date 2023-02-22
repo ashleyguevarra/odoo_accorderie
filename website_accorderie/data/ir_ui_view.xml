@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-    <data noupdate="1">
+    <data>
         <record id="ir_ui_view_echanges" model="ir.ui.view">
             <field name="arch" type="xml">
                 <t name="About us" t-name="website.aboutus">
@@ -2013,6 +2013,7 @@
                             <div class="oe_structure">
                                 <div class="debug_debug">
                                     Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371556">https://marvelapp.com/prototype/1773h559/screen/86371556</a><br />
+                                    Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371573">https://marvelapp.com/prototype/1773h559/screen/86371573</a><br />
                                     Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86589551">https://marvelapp.com/prototype/1773h559/screen/86589551</a><br />
                                     Lien mobile : <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84804863">https://marvelapp.com/prototype/6dbaaf8/screen/84804863</a>
                                 </div>
