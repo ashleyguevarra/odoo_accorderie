@@ -49,6 +49,10 @@ $bg-red-2-alert: #9f0808;
   display: none !important;
 }
 
+.white_box {
+  background-color: white;
+}
+
 // Copy from odoo/addons/web_editor/static/src/scss/web_editor.ui.scss
 // INPUTS
 .o_switch {
