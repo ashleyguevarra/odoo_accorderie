@@ -3101,8 +3101,8 @@
                                             <span class="txt-activite">ce mois-ci</span>
                                         </a>
                                         <a href="/monprofil/mapresentation" class="bilan_main bilan-3 btn debug_unimplemented" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;)">
-                                            <span class="nbr">1</span>
-                                            <span class="txt">nouveau contact</span>
+                                            <span class="nbr-activite">1</span>
+                                            <span class="txt-activite">nouveau contact</span>
                                         </a>
                                     </nav>
                                     <nav class="bilan_right">
