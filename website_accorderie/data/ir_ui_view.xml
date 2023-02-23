@@ -14,7 +14,7 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-alpha">
                                                 Mon activit&#233;
                                             </p>
                                         </div>
@@ -132,7 +132,7 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-alpha">
                                                 {{personal.mon_accorderie.name}}
                                             </p>
                                         </div>
@@ -440,7 +440,7 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-alpha">
                                                 {{personal.mon_accorderie.name}}
                                             </p>
                                         </div>
@@ -710,7 +710,7 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-alpha">
                                                 {{personal.mon_accorderie.name}}
                                             </p>
                                         </div>
@@ -1551,7 +1551,7 @@
                                                         </p>
                                                     </div>
                                                     <div class="banner_btn s_btn col-lg-5 text-center" data-name="Button" style="">
-                                                        <a href="/participer#!?state=init.pos" class="btn btn-gamma rounded-circle" data-original-title="" title="" aria-describedby="tooltip742376" style="">
+                                                        <a href="/participer#!?state=init.pos" class="btn btn-gamma rounded-circle text-gamma" data-original-title="" title="" aria-describedby="tooltip742376" style="">
                                                             <font class="text-primary" style="" data-original-title="" title="" aria-describedby="tooltip195285">
                                                                 Publier une offre
                                                             </font>
@@ -2036,30 +2036,32 @@
                                                 </label>
                                                 <i class="fa fa-shield text-epsilon" ng-if="membre_info.antecedent_judiciaire_verifier" />
                                             </div>
-                                            <span class="nbr">
+                                            <span class="text desc" style="font-size: 1.4rem;">
                                                 Bonjour, je m'appelle
                                                 <br />
                                                 <font style="font-weight:bold;">{{membre_info.full_name}}</font>
                                             </span>
-                                            <div class="modif_btn btn btn-primary" ng-if="membre_info.estPersonnel &amp;&amp; !ask_modification_profile" ng-click="change_ask_modification_profile(true)">
-                                                <span class="img img-fluid mx-auto fa fa-pencil" />
-                                                Modifier le profil
-                                            </div>
-                                            <div class="modif_btn btn btn-primary" ng-if="membre_info.estPersonnel &amp;&amp; ask_modification_profile" ng-click="change_ask_modification_profile(false)">
-                                                <span class="img img-fluid mx-auto fa fa-save" />
-                                                Enregistrer le profil
-                                            </div>
-                                            <div class="modif_btn btn btn-primary" ng-if="membre_info.estPersonnel &amp;&amp; ask_modification_profile" ng-click="annuler_ask_modification_profile()">
-                                                <span class="img img-fluid mx-auto fa fa-close" />
-                                                Annuler les modifications
-                                            </div>
-                                            <div class="modif_btn btn btn-primary btn_saccorder debug_unimplemented" ng-if="!membre_info.estPersonnel">
-                                                S'accorder avec {{membre_info.prenom}}
-                                            </div>
-                                            <div class="modif_btn btn btn-primary" ng-click="add_to_my_favorite('accorderie.membre', membre_info)">
-                                                <span class="img img-fluid mx-auto fa" ng-class="{'fa-heart': membre_info.is_favorite, 'fa-heart-o': !membre_info.is_favorite}" />
-                                                <span ng-if="!membre_info.is_favorite">Ajouter à mes favoris</span>
-                                                <span ng-if="membre_info.is_favorite">Retirer de mes favoris</span>
+                                            <div class="container_profil">
+                                                <div class="modif_btn btn btn-primary text-gamma" ng-if="membre_info.estPersonnel &amp;&amp; !ask_modification_profile" ng-click="change_ask_modification_profile(true)">
+                                                    <span class="img img-fluid mx-auto fa fa-pencil" />
+                                                    Modifier le profil
+                                                </div>
+                                                <div class="modif_btn btn btn-primary text-gamma" ng-if="membre_info.estPersonnel &amp;&amp; ask_modification_profile" ng-click="change_ask_modification_profile(false)">
+                                                    <span class="img img-fluid mx-auto fa fa-save" />
+                                                    Enregistrer le profil
+                                                </div>
+                                                <div class="modif_btn btn btn-primary text-gamma" ng-if="membre_info.estPersonnel &amp;&amp; ask_modification_profile" ng-click="annuler_ask_modification_profile()">
+                                                    <span class="img img-fluid mx-auto fa fa-close" />
+                                                    Annuler les modifications
+                                                </div>
+                                                <div class="modif_btn btn btn-primary btn_saccorder debug_unimplemented text-gamma" ng-if="!membre_info.estPersonnel">
+                                                    S'accorder avec {{membre_info.prenom}}
+                                                </div>
+                                                <div class="modif_btn btn btn-primary text-gamma" style="right: 50px;" ng-click="add_to_my_favorite('accorderie.membre', membre_info)">
+                                                    <span class="img img-fluid mx-auto fa coeur" ng-class="{'fa-heart': membre_info.is_favorite, 'fa-heart-o': !membre_info.is_favorite}" />
+                                                    <span class="text-gamma" ng-if="!membre_info.is_favorite">Ajouter à mes favoris</span>
+                                                    <span class="text-gamma" ng-if="membre_info.is_favorite">Retirer de mes favoris</span>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="information information-2">
@@ -2252,7 +2254,7 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-alpha">
                                                 {{personal.mon_accorderie.name}}
                                             </p>
                                         </div>
@@ -2564,7 +2566,7 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-alpha">
                                                 Mon activit&#233;
                                             </p>
                                         </div>
@@ -2955,22 +2957,22 @@
                                     <div class="banner_profile">
                                         <div class="profile_infos">
                                             <div class="profile_pic rounded-circle" ng-style="{'background-image': 'url(' + personal.ma_photo + ')'}">
-                                                <i class="fa fa-shield text-gamma" />
+                                                <i class="fa fa-shield text-alpha" />
                                             </div>
                                             <div class="profile_banner_info">
-                                                <p class="profile_name text-gamma">{{personal.full_name}}</p>
-                                                <p class="profile_hrs text-gamma">
+                                                <p class="profile_name text-alpha">{{personal.full_name}}</p>
+                                                <p class="profile_hrs text-alpha">
                                                     <i class="fa fa-clock-o" />&amp;nbsp;<span ng-class="{neg_time_2: !personal.actual_bank_sign}">{{personal.actual_bank_time_human_simplify}}</span>
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="profile_btn btn accorderie text-gamma debug_unimplemented">
+                                        <div class="profile_btn btn accorderie text-alpha debug_unimplemented">
                                             <i class="fa fa-smile-o" />
                                             Mon accorderie: {{personal.mon_accorderie.name}}
                                             <i class="fa fa-chevron-right" />
                                         </div>
                                         <a href="web/session/logout?redirect=/">
-                                            <div class="profile_btn btn disconnect text-gamma">
+                                            <div class="profile_btn btn disconnect text-alpha">
                                                 <i class="fa fa-power-off" />&amp;nbsp;Se déconnecter
                                             </div>
                                         </a>
@@ -3049,12 +3051,12 @@
                                 </div>
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="banner_profile s_title pt16 pb16">
-                                        <p class="s_title_default text-gamma">
+                                        <p class="s_title_default text-alpha">
                                             Mon activité
                                         </p>
-                                        <div class="solde_container text-gamma">
+                                        <div class="solde_container text-alpha">
                                             <div class="txt">Solde de mon compte <i class="fa fa-question-circle-o debug_unimplemented" /></div>
-                                            <div class="solde" ng-class="{neg_time: !personal.actual_bank_sign}">{{personal.actual_bank_time_human_short | uppercase}}</div>
+                                            <div class="solde text-alpha" ng-class="{neg_time: !personal.actual_bank_sign}">{{personal.actual_bank_time_human_short | uppercase}}</div>
                                         </div>
                                     </div>
                                 </section>
@@ -3225,7 +3227,7 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-alpha">
                                                 Mon activit&#233;
                                             </p>
                                         </div>
@@ -4080,29 +4082,29 @@
                                                 <br />
                                                 {{contact_info.full_name}}
                                             </span>
-                                            <div class="btn btn-primary text-gamma debug_unimplemented">
+                                            <div class="btn btn-primary debug_unimplemented">
 <!--                                                <a ng-href="{{get_href_participer_service_effectue(echange_service_info)}}">-->
-                                                    <i class="fa fa-thumbs-up" />
+                                                    <i class="fa fa-thumbs-up text-gamma" />
                                                     <!-- TODO faire apparaitre un formulaire pour demander des commentaires et informer l'autre utilisateur d'avoir accepter. Quel est la prochaine étape? -->
                                                     <!-- TODO faire afficher seulement pour celui qui recois le service, celui qui a créer cet échange a déjà accepté, puis sinon faire accepter par un administrateur -->
-                                                    <span>Accepter</span>
+                                                    <span class="text-gamma">Accepter</span>
 <!--                                                </a>-->
                                             </div>
-                                            <div class="btn btn-primary text-gamma">
+                                            <div class="btn btn-primary">
                                                 <a ng-href="{{get_href_participer_service_effectue(echange_service_info)}}">
-                                                    <i class="fa fa-check" />
-                                                    <span>Service effectué</span>
+                                                    <i class="fa fa-check text-gamma" />
+                                                    <span class="text-gamma">Service effectué</span>
                                                 </a>
                                             </div>
-                                            <div class="btn btn-epsilon text-gamma debug_unimplemented">
-                                                <i class="fa fa-pencil" />
+                                            <div class="btn btn-epsilon debug_unimplemented">
+                                                <i class="fa fa-pencil text-gamma" />
                                                 <!-- TODO faire apparaitre un formulaire pour que l'autre utilisateur change une information DEMANDE DE RÉVISION ou modifier soi même une information -->
-                                                <span>Modifier l'entente</span>
+                                                <span class="text-gamma">Modifier l'entente</span>
                                             </div>
-                                            <div class="btn btn-epsilon text-gamma debug_unimplemented">
-                                                <i class="fa fa-times-circle" />
+                                            <div class="btn btn-epsilon debug_unimplemented">
+                                                <i class="fa fa-times-circle text-gamma" />
                                                 <!-- TODO faire apparaitre un formulaire pour demander des commentaires et informer l'autre utilisateur du refus -->
-                                                <span>Annuler l'entente</span>
+                                                <span class="text-gamma">Annuler l'entente</span>
                                             </div>
                                         </div>
                                         <div class="information information-1" ng-if="echange_service_info.transaction_valide">
@@ -4192,7 +4194,7 @@
                                                 <p>{{echange_service_info.show_duree_estime_pos}}</p>
                                                 <p class="condition_desc">Durée du trajet estimée à effectuer</p>
                                                 <p>{{echange_service_info.show_duree_trajet_estime_pos}}</p>
-                                                <div class="bar_time">
+                                                <div class="bar_time" style="color:white;">
                                                     <b>
                                                         Montant total de temps estimé :
                                                     </b>
@@ -4327,7 +4329,7 @@
                                                 </b>
                                                 <p class="condition_desc">{{echange_service_info.commentaire}}</p>
                                             </div>
-                                            <div class="bar_time">
+                                            <div class="bar_time" style="color:white;">
                                                 <b>
                                                     Montant total de temps transféré :
                                                 </b>

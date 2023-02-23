@@ -56,7 +56,8 @@
 }
 
 .tag.text-epsilon {
-  background-color: #e3f4f7;
+  color: $text-white !important;
+  background-color: $text-purple;
 }
 
 .item_foot:after {

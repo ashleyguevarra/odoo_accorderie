@@ -1464,6 +1464,7 @@
                                             <div
                                                 class="bar_time"
                                                 ng-if="form_is_service_and_service_prevu(state) &amp;&amp; !['init.saa.offrir.demande.existante.date.time.form'].includes(state.id)"
+                                                style="background-color: #b4114a; color: white;"
                                             >
                                                 <b>Montant total de temps à transférer</b>
                                                 <span>{{show_sum_total_time_echange()}}</span>

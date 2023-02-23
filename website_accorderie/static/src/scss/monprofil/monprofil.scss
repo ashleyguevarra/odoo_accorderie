@@ -97,12 +97,14 @@
   .information {
     border-radius: 7px;
     border: 1px solid $beta;
-    max-height: 300px;
+    max-height: 400px; //or max-height: none;
     overflow: hidden;
     padding: 2.5rem;
     text-align: left;
     text-decoration: none;
     white-space: normal;
+    font-size: 1.1rem;
+    line-height: 1.4;
 
     img {
       height: 15%;
@@ -116,6 +118,8 @@
     .txt {
       color: gray;
       font-size: 1.2rem;
+      max-width: 100%;
+      word-wrap: break-word;
     }
   }
 
