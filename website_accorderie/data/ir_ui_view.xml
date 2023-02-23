@@ -4196,7 +4196,7 @@
                                                 <p>{{echange_service_info.show_duree_estime_pos}}</p>
                                                 <p class="condition_desc">Durée du trajet estimée à effectuer</p>
                                                 <p>{{echange_service_info.show_duree_trajet_estime_pos}}</p>
-                                                <div class="bar_time" style="background-color:#b4114a; color:white;">
+                                                <div class="bar_time" style="color:white;">
                                                     <b>
                                                         Montant total de temps estimé :
                                                     </b>
@@ -4331,7 +4331,7 @@
                                                 </b>
                                                 <p class="condition_desc">{{echange_service_info.commentaire}}</p>
                                             </div>
-                                            <div class="bar_time" style="background-color:#b4114a; color:white;">
+                                            <div class="bar_time" style="color:white;">
                                                 <b>
                                                     Montant total de temps transféré :
                                                 </b>

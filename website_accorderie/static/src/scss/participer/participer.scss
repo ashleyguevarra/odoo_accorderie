@@ -32,7 +32,7 @@
 }
 
 .buttons_form_container .label:hover {
-  background-color: #d6d0d5;
+  background-color: $text-gray;
 }
 
 .buttons_form_container input[type="radio"] {
@@ -42,7 +42,7 @@
 }
 
 .buttons_form_container .label.checked {
-  background-color: #f26507;
+  background-color: $epsilon;
   color: $text-white;
 }
 
