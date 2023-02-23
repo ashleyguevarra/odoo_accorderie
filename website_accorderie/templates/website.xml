@@ -1773,7 +1773,7 @@
             <div class="infos_right">
                 <h5>{{service.diff_create_date}}</h5>
                 <i
-                    class="fa text-epsilon"
+                    class="fa text-epsilon coeur"
                     ng-class="{'fa-heart': service.is_favorite, 'fa-heart-o': !service.is_favorite}"
                     style="font-size:1.5rem;"
                     ng-click="service_enable_favorite &amp;&amp; add_to_my_favorite('accorderie.' + type_service + '.service', service)"
