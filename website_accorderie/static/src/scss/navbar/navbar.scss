@@ -70,6 +70,10 @@ header .nav-link {
   }
 }
 
+.second_navbar {
+  background-color: $second-navbar-color;
+}
+
 @media only screen and (max-width: 767px) {
   .collapse.navbar-collapse {
     height: auto;
