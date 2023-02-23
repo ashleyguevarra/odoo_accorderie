@@ -1,0 +1,159 @@
+.bilan_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0% 10%;
+}
+
+.bilan_left {
+  align-items: center;
+  border-radius: 7px;
+  border: none;
+  color: $text-alpha;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  margin-top: 5px;
+  padding: 1% 1% !important;
+  text-align: left !important;
+  white-space: normal;
+}
+
+.bilan-1 {
+  padding: 1% 1% !important;
+  width: 100%;
+}
+
+.bilan_main {
+  align-items: center;
+  border-radius: 7px;
+  border: none;
+  color: $text-alpha;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-around;
+  padding: 1% 1% !important;
+  text-align: left !important;
+  white-space: normal;
+}
+
+.bilan-2,
+.bilan-3 {
+  margin-top: 10px;
+  padding: 4% 4% !important;
+  width: 100%;
+}
+
+.bilan_right {
+  align-items: center;
+  border-radius: 7px;
+  border: none;
+  color: $text-alpha;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-around;
+  padding: 1% 1% !important;
+  text-align: left !important;
+  white-space: normal;
+}
+
+.bilan-4,
+.bilan-5 {
+  margin-top: 10px;
+  padding: 4% 4% !important;
+  width: 100%;
+}
+
+.nbr {
+  font-size: clamp(24px, 2.35vw, 2.35vw) !important;
+  font-weight: bold;
+}
+
+.txt {
+  font-size: clamp(18px, 1.5vw, 1.5vw) !important;
+  text-align: left !important;
+}
+
+.lg-btn.btn {
+  font-size: 1.2rem;
+  padding: 1.3rem;
+}
+
+.activite.btn.small {
+  max-height: 20%;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 990px) {
+  .bilan_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0% 10%;
+  }
+
+  .bilan_left {
+    align-items: center;
+    border-radius: 7px;
+    border: none;
+    color: $text-alpha;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 1% 1% !important;
+    text-align: left !important;
+    white-space: normal;
+  }
+
+  .bilan-1 {
+    padding: 1% 1% !important;
+    width: 100%;
+  }
+
+  .bilan_main {
+    align-items: center;
+    border-radius: 7px;
+    border: none;
+    color: $text-alpha;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+    padding: 1% 1% !important;
+    text-align: left !important;
+    white-space: normal;
+  }
+
+  .bilan-2,
+  .bilan-3 {
+    margin-top: 10px;
+    padding: 4% 4% !important;
+    width: 100%;
+  }
+
+  .bilan_right {
+    flex: 1;
+    align-items: center;
+    border-radius: 7px;
+    border: none;
+    color: $text-alpha;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left !important;
+    white-space: normal;
+    padding: 1% 1% !important;
+  }
+
+  .bilan-4,
+  .bilan-5 {
+    padding: 4% 4% !important;
+    width: 100%;
+    margin-top: 10px;
+  }
+}

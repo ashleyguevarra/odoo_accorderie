@@ -20,7 +20,7 @@
                 <div class="login_box shadow">
                     <h1>Bienvenue sur l'espace</h1>
                     <br />
-                    <h2>membre de l'Accorderie</h2>
+                    <h2 id="membre_accorderie">membre de l'Accorderie</h2>
                     <form
                         id="login_form"
                         class="oe_login_form"

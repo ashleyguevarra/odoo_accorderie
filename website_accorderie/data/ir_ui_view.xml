@@ -2029,7 +2029,7 @@
                                         <div class="information information-1">
                                             <div class="profile_pic" style="width: 200px; height: 150px; position: relative; top: -1px;">
                                                 <img class="img img-fluid rounded-circle" ng-src="{{ membre_info.ma_photo }}" alt="Ma photo" style="position:relative; left:5px;" />
-                                                <input id="file-input" style="opacity:0;" type="file" ng-model="myImage" accept="image/*" onchange="angular.element(this).scope().updateImage(this)" />
+                                                <input id="file-input" style="opacity:0;" ng-if="ask_modification_profile" type="file" ng-model="myImage" accept="image/*" onchange="angular.element(this).scope().updateImage(this)" />
                                                 <label for="file-input" class="file-label">
                                                     <i class="white_box" style="padding-bottom: 1px; padding-right: 1px; border-radius: 10px; left: 55px; top: 50px; width: 40px; height: 40px" ng-if="ask_modification_profile" />
                                                     <i class="fa fa-pencil-square text-primary" style="padding-bottom: 50px; padding-right: 100px; cursor: pointer;" ng-if="ask_modification_profile" />
@@ -3080,38 +3080,39 @@
                                         </li>
                                     </ul>
                                 </nav>
-                                <section class="s_activite_bilan">
-                                    <div class="bilan_container">
-                                        <a href="/monactivite/echanges" class="bilan bilan-1 btn" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;)">
+                                <div class="bilan_container">
+                                    <nav class="bilan_left">
+                                        <a href="/monactivite/echanges" class="bilan_left bilan-1 btn" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;)">
                                             <span class="txt">Soldes en heures:</span>
                                             <span class="nbr">{{personal.actual_bank_time_human | uppercase}}</span>
                                         </a>
-                                        <a href="/monactivite/echanges" class="bilan bilan-2 btn" style="background-image: url(&quot;https://i.pinimg.com/originals/60/43/bf/6043bf9787ade7d5b2e746ad0960cd5a.jpg&quot;)">
+                                    </nav>
+                                    <nav class="bilan_main">
+                                        <a href="/monactivite/echanges" class="bilan_main bilan-2 btn" style="background-image: url(&quot;https://i.pinimg.com/originals/60/43/bf/6043bf9787ade7d5b2e746ad0960cd5a.jpg&quot;)">
                                             <span class="nbr">{{personal.nb_echange_a_venir}}</span>
                                             <span class="txt">échange &#224; venir</span>
                                         </a>
-                                        <a href="/monactivite/echanges" class="bilan bilan-3 btn" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;)">
+                                        <a href="/monactivite/echanges" class="bilan_main bilan-3 btn" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;)">
                                             <span class="nbr">{{personal.actual_month_bank_time_human_short | uppercase}}</span>
                                             <span class="txt">ce mois-ci</span>
                                         </a>
-                                        <a href="/monactivite/echanges" class="bilan bilan-4 btn" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;)">
+                                        <a href="/monprofil/mapresentation" class="bilan_main bilan-3 btn debug_unimplemented" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;)">
+                                            <span class="nbr">1</span>
+                                            <span class="txt">nouveau contact</span>
+                                        </a>
+                                    </nav>
+                                    <nav class="bilan_right">
+                                        <a href="/monactivite/echanges" class="bilan_right bilan-4 btn" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;)">
                                             <span class="nbr">{{personal.nb_echange_en_cours}}</span>
                                             <span class="txt">échange en cours</span>
                                         </a>
-<!--                                        <span class="debug_unimplemented">-->
-<!--                                            <a href="/monprofil/mapresentation" class="bilan bilan-4 btn" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;)">-->
-<!--                                                <span class="nbr">1</span>-->
-<!--                                                <span class="txt">nouveau contact</span>-->
-<!--                                            </a>-->
-<!--                                        </span>-->
-                                        <span class="debug_unimplemented">
-                                            <a href="/evenement" class="bilan bilan-5 btn" style="background-image: url(&quot;https://i.pinimg.com/originals/60/43/bf/6043bf9787ade7d5b2e746ad0960cd5a.jpg&quot;)">
-                                                <span class="nbr">1</span>
-                                                <span class="txt">évènement</span>
-                                            </a>
-                                        </span>
-                                    </div>
-                                </section>
+                                        <a href="/evenement" class="bilan_right bilan-5 btn debug_unimplemented" style="background-image: url(&quot;https://i.pinimg.com/originals/60/43/bf/6043bf9787ade7d5b2e746ad0960cd5a.jpg&quot;)">
+                                            <span class="nbr">1</span>
+                                            <span class="txt">évènement</span>
+                                        </a>
+                                    </nav>
+                                </div>
+
                                 <section class="s_activites_recentes debug_unimplemented">
                                     <div class="container_lists">
                                         <div class="row activites_list">

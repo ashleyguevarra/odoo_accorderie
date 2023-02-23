@@ -7,5 +7,8 @@
             <script type="text/javascript" src="/website_chat_accorderie/static/src/js/messagerie_privee.js" />
             <script type="text/javascript" src="/website_chat_accorderie/static/src/js/accorderie_angularjs_chat.js" />
         </xpath>
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/website_chat_accorderie/static/src/scss/chat.scss" />
+        </xpath>
     </template>
 </odoo>

@@ -863,7 +863,7 @@
                                         <!-- Photo header -->
                                         <section
                                             ng-if="form_is_offre_demande_service(state)"
-                                            class="s_event_banner oe_img_bg oe_custom_bg"
+                                            class="s_event_banner oe_img_bg oe_custom_bg debug_unimplemented"
                                             style="background-image: url(&quot;/web/image/website_accorderie.ir_attachment_eric_prouzet_z62b9jiltgm_unsplash_jpg/eric-prouzet-Z62b9jIltGM-unsplash.jpg&quot;);"
                                         >
                                             <!-- TODO fill image with model -->
