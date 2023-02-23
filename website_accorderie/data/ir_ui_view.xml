@@ -2074,23 +2074,23 @@
                                             <span class="txt">R&#233;sum&#233;</span>
                                             <br />
                                             <br />
-                                            <span class="txt desc debug_unimplemented">
+                                            <span class="desc-3 debug_unimplemented">
                                                 <i class="fa fa-map-marker" />
                                                 Habite &#224; 1.2km de votre domicile
                                             </span>
                                             <br />
-                                            <span class="txt desc">
+                                            <span class="desc-3">
                                                 <i class="fa fa-home" />
                                                 {{membre_info.location}}
                                             </span>
                                             <br />
-                                            <span class="txt desc">
+                                            <span class="desc-3">
                                                 <i class="fa fa-shield" />
                                                 <span ng-if="membre_info.antecedent_judiciaire_verifier">Ant&#233;c&#233;dents judificaires v&#233;rifi&#233;s</span>
                                                 <span ng-if="!membre_info.antecedent_judiciaire_verifier">Ant&#233;c&#233;dents judificaires non v&#233;rifi&#233;s</span>
                                             </span>
                                             <br />
-                                            <span class="txt desc">
+                                            <span class="desc-3">
                                                 <i class="fa fa-calendar" />
                                                 Membre depuis {{membre_info.diff_humain_creation_membre}}
                                             </span>
