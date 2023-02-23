@@ -920,6 +920,8 @@
                                                     ng-init="model = 'accorderie.demande.service'; service_id = echange_service.demande_service; service_enable_href = false; service_enable_favorite = false; type_service = 'offre'; getDatabaseInfo(); "
                                                 />
                                             </span>
+                                            <br />
+                                            <br />
                                             <span
                                                 ng-if="form_is_exist_echange_to_validate(state) &amp;&amp; !_.isUndefined(echange_service.offre_service)"
                                             >

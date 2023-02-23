@@ -20,8 +20,8 @@
                                         </div>
                                     </div>
                                 </section>
-                                <nav class="sub-navbar navbar navbar-light bg-light">
-                                    <ul class="nav navbar-nav">
+                                <nav class="sub-navbar navbar-light bg-light second_navbar">
+                                    <ul class="nav navbar-nav second_navbar">
                                         <li class="nav-item">
                                             <a class="nav-link" role="menu_item" href="/monactivite" data-original-title="" title="">
                                                 <span>Bilan</span>
@@ -138,8 +138,8 @@
                                         </div>
                                     </div>
                                 </section>
-                                <nav class="sub-navbar navbar navbar-light bg-light">
-                                    <ul class="nav navbar-nav">
+                                <nav class="sub-navbar navbar-light bg-light second_navbar">
+                                    <ul class="nav navbar-nav second_navbar">
                                         <li class="nav-item debug_unimplemented">
                                             <a class="nav-link active" role="menu_item" href="/communaute/actualite">
                                                 <span>Actualit&#233;</span>
@@ -446,8 +446,8 @@
                                         </div>
                                     </div>
                                 </section>
-                                <nav class="sub-navbar navbar navbar-light bg-light">
-                                    <ul class="nav navbar-nav">
+                                <nav class="sub-navbar navbar-light bg-light second_navbar">
+                                    <ul class="nav navbar-nav second_navbar">
                                         <li class="nav-item debug_unimplemented">
                                             <a class="nav-link" role="menu_item" href="/communaute/actualite">
                                                 <span>Actualit&#233;</span>
@@ -716,8 +716,8 @@
                                         </div>
                                     </div>
                                 </section>
-                                <nav class="sub-navbar navbar navbar-light bg-light">
-                                    <ul class="nav navbar-nav">
+                                <nav class="sub-navbar navbar-light bg-light second_navbar">
+                                    <ul class="nav navbar-nav second_navbar">
                                         <li class="nav-item">
                                             <a class="nav-link" role="menu_item" href="/communaute/actualite">
                                                 <span>Actualit&#233;</span>
@@ -2258,8 +2258,8 @@
                                         </div>
                                     </div>
                                 </section>
-                                <nav class="sub-navbar navbar navbar-light bg-light">
-                                    <ul class="nav navbar-nav">
+                                <nav class="sub-navbar navbar-light bg-light second_navbar">
+                                    <ul class="nav navbar-nav second_navbar">
                                         <li class="nav-item debug_unimplemented">
                                             <a class="nav-link" role="menu_item" href="/communaute/actualite">
                                                 <span>Actualit&#233;</span>
@@ -2566,8 +2566,8 @@
                                         </div>
                                     </div>
                                 </section>
-                                <nav class="sub-navbar navbar navbar-light bg-light">
-                                    <ul class="nav navbar-nav">
+                                <nav class="sub-navbar navbar-light bg-light second_navbar">
+                                    <ul class="nav navbar-nav second_navbar">
                                         <li class="nav-item">
                                             <a class="nav-link" role="menu_item" href="/monactivite">
                                                 <span>Bilan</span>
@@ -2899,8 +2899,8 @@
                                             </div>
                                         </div>
                                     </section>
-                                    <nav class="sub-navbar navbar navbar-light bg-light">
-                                        <ul class="nav navbar-nav">
+                                    <nav class="sub-navbar navbar-light bg-light second_navbar">
+                                        <ul class="nav navbar-nav second_navbar">
                                             <li class="nav-item nav_notification">
                                                 <a class="nav-link" role="menu_item" href="/notification#!?section=notification" ng-class="{'active': section=='notification'}">
                                                     <span>Notifications</span>
@@ -3054,8 +3054,8 @@
                                         </div>
                                     </div>
                                 </section>
-                                <nav class="sub-navbar navbar navbar-light bg-light">
-                                    <ul class="nav navbar-nav">
+                                <nav class="sub-navbar navbar-light bg-light second_navbar">
+                                    <ul class="nav navbar-nav second_navbar">
                                         <li class="nav-item">
                                             <a class="nav-link active" role="menu_item" href="/monactivite">
                                                 <span>Bilan</span>
@@ -3227,8 +3227,8 @@
                                         </div>
                                     </div>
                                 </section>
-                                <nav class="sub-navbar navbar navbar-light bg-light">
-                                    <ul class="nav navbar-nav">
+                                <nav class="sub-navbar navbar-light bg-light second_navbar">
+                                    <ul class="nav navbar-nav second_navbar">
                                         <li class="nav-item">
                                             <a class="nav-link" role="menu_item" href="/monactivite">
                                                 <span>Bilan</span>
@@ -3390,6 +3390,12 @@
                                         </div>
                                     </div>
                                 </section>
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
                                 <section class="s_map_btn pt32 pb32">
                                     <div class="btn_map btn btn-primary rounded-circle text-gamma pt16 pb16">
                                         <icon class="fa fa-map" />
@@ -3665,8 +3671,8 @@
                                         </div>
                                     </div>
                                 </section>
-                                <nav class="sub-navbar navbar navbar-light bg-light mobile-display-none">
-                                    <ul class="nav navbar-nav">
+                                <nav class="sub-navbar navbar-light bg-light mobile-display-none second_navbar">
+                                    <ul class="nav navbar-nav second_navbar">
                                         <li class="nav-item">
                                             <a class="nav-link active" role="menu_item" href="#">
                                                 <span>Mer 1 oct</span>
@@ -4499,8 +4505,8 @@
                             <p class="alert alert-danger" ng-if="!_.isEmpty(error)" role="alert">
                                 {{error}}
                             </p>
-                            <nav class="sub-navbar navbar navbar-light bg-light">
-                                <ul class="nav navbar-nav">
+                            <nav class="sub-navbar navbar-light bg-light second_navbar">
+                                <ul class="nav navbar-nav second_navbar">
                                     <li class="nav-item">
                                         <a href="/aide#!?section=guide_utilisation" class="nav-link" role="menu_item" ng-class="{'active': section=='guide_utilisation'}">
                                             <span>Guides d'utilisation</span>
