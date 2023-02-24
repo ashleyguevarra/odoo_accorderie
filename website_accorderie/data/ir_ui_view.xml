@@ -2042,26 +2042,32 @@
                                                 <font style="font-weight:bold;">{{membre_info.full_name}}</font>
                                             </span>
                                             <div class="container_profil">
-                                                <div class="modif_btn btn btn-primary text-gamma" ng-if="membre_info.estPersonnel &amp;&amp; !ask_modification_profile" ng-click="change_ask_modification_profile(true)">
-                                                    <span class="img img-fluid mx-auto fa fa-pencil" />
-                                                    Modifier le profil
-                                                </div>
-                                                <div class="modif_btn btn btn-primary text-gamma" ng-if="membre_info.estPersonnel &amp;&amp; ask_modification_profile" ng-click="change_ask_modification_profile(false)">
-                                                    <span class="img img-fluid mx-auto fa fa-save" />
-                                                    Enregistrer le profil
-                                                </div>
-                                                <div class="modif_btn btn btn-primary text-gamma" ng-if="membre_info.estPersonnel &amp;&amp; ask_modification_profile" ng-click="annuler_ask_modification_profile()">
-                                                    <span class="img img-fluid mx-auto fa fa-close" />
-                                                    Annuler les modifications
-                                                </div>
-                                                <div class="modif_btn btn btn-primary btn_saccorder debug_unimplemented text-gamma" ng-if="!membre_info.estPersonnel">
-                                                    S'accorder avec {{membre_info.prenom}}
-                                                </div>
-                                                <div class="modif_btn btn btn-primary text-gamma" style="right: 50px;" ng-click="add_to_my_favorite('accorderie.membre', membre_info)">
-                                                    <span class="img img-fluid mx-auto fa coeur" ng-class="{'fa-heart': membre_info.is_favorite, 'fa-heart-o': !membre_info.is_favorite}" />
-                                                    <span class="text-gamma" ng-if="!membre_info.is_favorite">Ajouter à mes favoris</span>
-                                                    <span class="text-gamma" ng-if="membre_info.is_favorite">Retirer de mes favoris</span>
-                                                </div>
+                                                <nav class="profil_left">
+                                                    <div class="profil profil_left profil_box btn btn-primary text-gamma" ng-if="membre_info.estPersonnel &amp;&amp; !ask_modification_profile" ng-click="change_ask_modification_profile(true)">
+                                                        <span class="img img-fluid mx-auto fa fa-pencil" />
+                                                        Modifier le profil
+                                                    </div>
+                                                    <div class="profil profil_right profil_box btn btn-primary text-gamma" ng-if="membre_info.estPersonnel &amp;&amp; ask_modification_profile" ng-click="annuler_ask_modification_profile()">
+                                                        <span class="img img-fluid mx-auto fa fa-close" />
+                                                        Annuler les modifications
+                                                    </div>
+                                                </nav>
+                                                <nav class="profil_main">
+                                                    <div class="profil profil_main profil_box btn btn-primary text-gamma" style="right: 50px;" ng-click="add_to_my_favorite('accorderie.membre', membre_info)">
+                                                        <span class="img img-fluid mx-auto fa coeur" ng-class="{'fa-heart': membre_info.is_favorite, 'fa-heart-o': !membre_info.is_favorite}" />
+                                                        <span class="text-gamma" ng-if="!membre_info.is_favorite">Ajouter à mes favoris</span>
+                                                        <span class="text-gamma" ng-if="membre_info.is_favorite">Retirer de mes favoris</span>
+                                                    </div>
+                                                </nav>
+                                                <nav class="profil_right">
+                                                    <div class="profil profil_left profil_box btn btn-primary text-gamma" ng-if="membre_info.estPersonnel &amp;&amp; ask_modification_profile" ng-click="change_ask_modification_profile(false)">
+                                                        <span class="img img-fluid mx-auto fa fa-save" />
+                                                        Enregistrer le profil
+                                                    </div>
+                                                    <div class="profil profil_right profil_box btn btn-primary btn_saccorder debug_unimplemented text-gamma" ng-if="!membre_info.estPersonnel">
+                                                        S'accorder avec {{membre_info.prenom}}
+                                                    </div>
+                                                </nav>
                                             </div>
                                         </div>
                                         <div class="information information-2">
