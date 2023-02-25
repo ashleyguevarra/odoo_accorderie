@@ -90,13 +90,14 @@
   }
 
   .status.blue {
-    background-color: $alpha;
+    background-color: $bg-green-alert;
     border: none;
     color: $text-alpha;
   }
 
   .status.blue-o {
-    color: $alpha;
+    background-color: $bg-green-alert;
+    color: $text-alpha;
   }
 
   .event {
