@@ -17,15 +17,22 @@ $tertiary-color: theme-color("delta"); // cloud blue
 $second-navbar-color: #e8eef8;
 
 // Text Colors
-$text-alpha: white;
-$text-beta: black;
+$text-alpha: #ffffff;
+$text-beta: #000000;
 $text-gamma: #656565;
+$text-white: #ffffff;
+$text-black: #000000;
+$text-gray: #d6d0d5;
 
 // Background Colors
 $bg-alpha: white;
 $bg-red-2-alert: #9f0808;
 $bg-red-alert: #d8746f;
 $bg-green-alert: #70a6a8;
+
+.text-color-title {
+  color: white;
+}
 
 /*
   Global

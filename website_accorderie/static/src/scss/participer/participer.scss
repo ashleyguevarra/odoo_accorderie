@@ -42,7 +42,8 @@
 }
 
 .buttons_form_container .label.checked {
-  box-shadow: inset 0px 0px 0px 2px $alpha;
+  background-color: theme-color("epsilon");
+  color: $text-white;
 }
 
 .buttons_form_container .s_event_banner {
@@ -244,9 +245,9 @@
 
   .activite {
     align-items: center;
-    background-color: $tertiary-color;
+    background-color: white;
     border-radius: 5px;
-    border: 1px solid $alpha;
+    border: 2px solid $alpha;
     display: flex;
     padding: 5%;
 

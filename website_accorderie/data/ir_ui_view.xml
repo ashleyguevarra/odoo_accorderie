@@ -14,7 +14,7 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-color-title">
                                                 Mon activit&#233;
                                             </p>
                                         </div>
@@ -132,7 +132,7 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-color-title">
                                                 {{personal.mon_accorderie.name}}
                                             </p>
                                         </div>
@@ -440,7 +440,7 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-color-title">
                                                 {{personal.mon_accorderie.name}}
                                             </p>
                                         </div>
@@ -710,7 +710,7 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-color-title">
                                                 {{personal.mon_accorderie.name}}
                                             </p>
                                         </div>
@@ -2136,9 +2136,9 @@
                                                 <br />
                                                 <div class="d-flex" style="gap:1%">
 
-                                                    <div class="tag text-epsilon">Marche</div>
-                                                    <div class="tag text-epsilon">Jardinage</div>
-                                                    <div class="tag text-epsilon">Tricot</div>
+                                                    <div class="tag">Marche</div>
+                                                    <div class="tag">Jardinage</div>
+                                                    <div class="tag">Tricot</div>
                                                 </div>
 
                                             </div>
@@ -2260,7 +2260,7 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default">
+                                            <p class="s_title_default text-color-title">
                                                 {{personal.mon_accorderie.name}}
                                             </p>
                                         </div>
@@ -2572,7 +2572,7 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-color-title">
                                                 Mon activit&#233;
                                             </p>
                                         </div>
@@ -2963,22 +2963,22 @@
                                     <div class="banner_profile">
                                         <div class="profile_infos">
                                             <div class="profile_pic rounded-circle" ng-style="{'background-image': 'url(' + personal.ma_photo + ')'}">
-                                                <i class="fa fa-shield text-gamma" />
+                                                <i class="fa fa-shield text-color-title" />
                                             </div>
                                             <div class="profile_banner_info">
-                                                <p class="profile_name text-gamma">{{personal.full_name}}</p>
-                                                <p class="profile_hrs text-gamma">
+                                                <p class="profile_name text-color-title">{{personal.full_name}}</p>
+                                                <p class="profile_hrs text-color-title">
                                                     <i class="fa fa-clock-o" />&amp;nbsp;<span ng-class="{neg_time_2: !personal.actual_bank_sign}">{{personal.actual_bank_time_human_simplify}}</span>
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="profile_btn btn accorderie text-gamma debug_unimplemented">
+                                        <div class="profile_btn btn accorderie text-color-title debug_unimplemented">
                                             <i class="fa fa-smile-o" />
                                             Mon accorderie: {{personal.mon_accorderie.name}}
                                             <i class="fa fa-chevron-right" />
                                         </div>
                                         <a href="web/session/logout?redirect=/">
-                                            <div class="profile_btn btn disconnect text-gamma">
+                                            <div class="profile_btn btn disconnect text-color-title">
                                                 <i class="fa fa-power-off" />&amp;nbsp;Se déconnecter
                                             </div>
                                         </a>
@@ -3057,12 +3057,12 @@
                                 </div>
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="banner_profile s_title pt16 pb16">
-                                        <p class="s_title_default text-gamma">
+                                        <p class="s_title_default text-color-title">
                                             Mon activité
                                         </p>
-                                        <div class="solde_container text-gamma">
+                                        <div class="solde_container text-color-title">
                                             <div class="txt">Solde de mon compte <i class="fa fa-question-circle-o debug_unimplemented" /></div>
-                                            <div class="solde" ng-class="{neg_time: !personal.actual_bank_sign}">{{personal.actual_bank_time_human_short | uppercase}}</div>
+                                            <div class="solde text-color-title" ng-class="{neg_time: !personal.actual_bank_sign}">{{personal.actual_bank_time_human_short | uppercase}}</div>
                                         </div>
                                     </div>
                                 </section>
@@ -3108,7 +3108,7 @@
                                             <span class="nbr-activite">{{personal.actual_month_bank_time_human_short | uppercase}}</span>
                                             <span class="txt-activite">ce mois-ci</span>
                                         </a>
-                                        <a href="/monprofil/mapresentation" class="bilan_main bilan-3 btn debug_unimplemented" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;)">
+                                        <a href="/monprofil/mapresentation" class="bilan_main bilan-3 btn debug_unimplemented" style="background-image: url(&quot;https://i.pinimg.com/originals/60/43/bf/6043bf9787ade7d5b2e746ad0960cd5a.jpg&quot;)">
                                             <span class="nbr-activite">1</span>
                                             <span class="txt-activite">nouveau contact</span>
                                         </a>
@@ -3233,7 +3233,7 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-color-title">
                                                 Mon activit&#233;
                                             </p>
                                         </div>
@@ -4200,7 +4200,7 @@
                                                 <p>{{echange_service_info.show_duree_estime_pos}}</p>
                                                 <p class="condition_desc">Durée du trajet estimée à effectuer</p>
                                                 <p>{{echange_service_info.show_duree_trajet_estime_pos}}</p>
-                                                <div class="bar_time">
+                                                <div class="bar_time" style="color:white;">
                                                     <b>
                                                         Montant total de temps estimé :
                                                     </b>
@@ -4335,7 +4335,7 @@
                                                 </b>
                                                 <p class="condition_desc">{{echange_service_info.commentaire}}</p>
                                             </div>
-                                            <div class="bar_time">
+                                            <div class="bar_time" style="color:white;">
                                                 <b>
                                                     Montant total de temps transféré :
                                                 </b>

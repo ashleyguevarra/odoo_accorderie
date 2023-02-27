@@ -1462,7 +1462,7 @@
 
                                             <!-- Montant à transférer -->
                                             <div
-                                                class="bar_time"
+                                                class="bar_time bg-beta adapt-text-beta-color"
                                                 ng-if="form_is_service_and_service_prevu(state) &amp;&amp; !['init.saa.offrir.demande.existante.date.time.form'].includes(state.id)"
                                             >
                                                 <b>Montant total de temps à transférer</b>
