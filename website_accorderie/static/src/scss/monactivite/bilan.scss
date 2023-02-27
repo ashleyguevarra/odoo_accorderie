@@ -23,6 +23,7 @@
 .bilan-1 {
   padding: 1% 1% !important;
   width: 100%;
+  background-color: theme-color("primary");
 }
 
 .bilan_main {
@@ -39,11 +40,18 @@
   white-space: normal;
 }
 
-.bilan-2,
+.bilan-2 {
+  margin-top: 10px;
+  padding: 4% 4% !important;
+  width: 100%;
+  background-color: theme-color("epsilon");
+}
+
 .bilan-3 {
   margin-top: 10px;
   padding: 4% 4% !important;
   width: 100%;
+  background-color: theme-color("primary");
 }
 
 .bilan_right {
@@ -60,11 +68,18 @@
   white-space: normal;
 }
 
-.bilan-4,
+.bilan-4 {
+  margin-top: 10px;
+  padding: 4% 4% !important;
+  width: 100%;
+  background-color: theme-color("primary");
+}
+
 .bilan-5 {
   margin-top: 10px;
   padding: 4% 4% !important;
   width: 100%;
+  background-color: theme-color("epsilon");
 }
 
 .nbr {
@@ -141,11 +156,18 @@
     white-space: normal;
   }
 
-  .bilan-2,
+  .bilan-2 {
+    margin-top: 10px;
+    padding: 4% 4% !important;
+    width: 100%;
+    background-color: theme-color("epsilon");
+  }
+
   .bilan-3 {
     margin-top: 10px;
     padding: 4% 4% !important;
     width: 100%;
+    background-color: theme-color("primary");
   }
 
   .bilan_right {
@@ -162,10 +184,17 @@
     padding: 1% 1% !important;
   }
 
-  .bilan-4,
-  .bilan-5 {
+  .bilan-4 {
+    margin-top: 10px;
     padding: 4% 4% !important;
     width: 100%;
+    background-color: theme-color("primary");
+  }
+
+  .bilan-5 {
     margin-top: 10px;
+    padding: 4% 4% !important;
+    width: 100%;
+    background-color: theme-color("epsilon");
   }
 }

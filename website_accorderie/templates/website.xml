@@ -187,7 +187,7 @@
                                         />
                                         <div>
                                             <button
-                                                class="btn btn-primary text-gamma"
+                                                class="btn btn-primary adapt-text-primary-color"
                                                 ng-click="demander_un_service_sur_une_offre()"
                                             >Recevoir un service de {{offre_service_info.membre.full_name}}
                                             </button>
@@ -378,7 +378,7 @@
                                         />
                                         <div>
                                             <button
-                                                class="btn btn-primary text-gamma"
+                                                class="btn btn-primary adapt-text-primary-color"
                                                 ng-click="offrir_un_service_sur_une_demande()"
                                             >Offrir un service à {{demande_service_info.membre.full_name}}
                                             </button>
@@ -429,7 +429,7 @@
                                 />
                                 <span
                                     t-if="not lst_icon_offre_service[offre_service_index]"
-                                    class="activite_img fa fa-calendar-plus-o bg-epsilon text-center"
+                                    class="activite_img fa fa-calendar-plus-o bg-epsilon text-center adapt-text-epsilon-color"
                                 />
                                 <div class="infos">
                                     <div
@@ -492,7 +492,7 @@
                                 />
                                 <span
                                     t-if="not lst_icon_demande_service[demande_service_index]"
-                                    class="activite_img fa fa-calendar-plus-o bg-epsilon text-center"
+                                    class="activite_img fa fa-calendar-plus-o bg-epsilon text-center adapt-text-epsilon-color"
                                     style=""
                                 />
                                 <div class="infos">
@@ -868,7 +868,7 @@
                                         >
                                             <!-- TODO fill image with model -->
                                             <div style="text-align:center" class="debug_unimplemented">
-                                                <div class="btn btn-primary text-gamma">
+                                                <div class="btn btn-primary adapt-text-primary-color">
                                                     <i class="fa fa-edit icon_padding_right" />
                                                     Remplacer la photo
                                                 </div>
@@ -1163,7 +1163,7 @@
                                                 </div>
                                             </div>
                                             <div
-                                                class="btn btn-primary text-gamma px-4 py-2"
+                                                class="btn btn-primary adapt-text-primary-color px-4 py-2"
                                                 style="align-self:start;"
                                                 ng-if="form_is_modifying_date_service"
                                                 ng-click="toggleFormIsModifyingDateService()"
@@ -1211,7 +1211,7 @@
                                                 </div>
                                             </div>
                                             <div
-                                                class="btn btn-primary text-gamma px-4 py-2"
+                                                class="btn btn-primary adapt-text-primary-color px-4 py-2"
                                                 style="align-self:start;"
                                                 ng-if="form_is_modifying_time_service"
                                                 ng-click="toggleFormIsModifyingTimeService()"
@@ -1314,7 +1314,7 @@
                                                 <span>{{form.distance_trajet}} km</span>
                                             </div>
                                             <div
-                                                class="btn btn-primary text-gamma px-4 py-2"
+                                                class="btn btn-primary adapt-text-primary-color px-4 py-2"
                                                 style="align-self:start;"
                                                 ng-if="form_is_service_to_modify(state)"
                                             >Enregistrer</div>
@@ -1462,7 +1462,7 @@
 
                                             <!-- Montant à transférer -->
                                             <div
-                                                class="bar_time"
+                                                class="bar_time bg-beta adapt-text-beta-color"
                                                 ng-if="form_is_service_and_service_prevu(state) &amp;&amp; !['init.saa.offrir.demande.existante.date.time.form'].includes(state.id)"
                                             >
                                                 <b>Montant total de temps à transférer</b>
@@ -1608,51 +1608,55 @@
                                         <a ng-if="submitted_url" href="{{submitted_url}}">
                                             <button
                                                 ng-if="form_is_nouvelle_offre(state) || ['init.saa.offrir.existant.form', 'init.saa.offrir.demande.existante.date.time.form'].includes(state.id)"
-                                                class="btn btn-primary text-gamma"
+                                                class="btn btn-primary adapt-text-primary-color"
                                             >Voir mon offre</button>
                                             <button
                                                 ng-if="form_is_nouvelle_demande(state) || ['init.saa.demande.form'].includes(state.id)"
-                                                class="btn btn-primary text-gamma"
+                                                class="btn btn-primary adapt-text-primary-color"
                                             >Voir ma demande</button>
                                             <button
                                                 ng-if="form_is_recevoir_not_valider(state)"
-                                                class="btn btn-primary text-gamma"
+                                                class="btn btn-primary adapt-text-primary-color"
                                             >Visualiser ma demande</button>
                                             <button
                                                 ng-if="['init.saa.offrir.nouveau.cat.form'].includes(state.id)"
-                                                class="btn btn-primary text-gamma"
+                                                class="btn btn-primary adapt-text-primary-color"
                                             >Voir mon offre d'échange de service</button>
                                             <button
                                                 ng-if="form_is_valider_echange(state)"
-                                                class="btn btn-primary text-gamma"
+                                                class="btn btn-primary adapt-text-primary-color"
                                             >Voir les détails de la transaction</button>
                                         </a>
                                         <a
                                             ng-href="/accorderie/accorderie_offre_service/{{form.offre_service_id.id}}"
                                             ng-if="['init.saa.recevoir.choix.existant.time.form'].includes(state.id)"
                                         >
-                                            <button class="btn btn-primary text-gamma">Voir l'offre de service
+                                            <button
+                                                class="btn btn-primary adapt-text-primary-color"
+                                            >Voir l'offre de service
                                             </button>
                                         </a>
                                         <a
                                             ng-href="/monprofil/mapresentation#!?membre_id={{form.membre_id.id}}"
                                             ng-if="form_is_echange_pas_valider(state)"
                                         >
-                                            <button class="btn btn-primary text-gamma">Voir le profil de l'Accordeur.e
+                                            <button
+                                                class="btn btn-primary adapt-text-primary-color"
+                                            >Voir le profil de l'Accordeur.e
                                             </button>
                                         </a>
                                         <a href="monprofil/mesannonces" ng-if="form_is_offre_demande_service(state)">
-                                            <button class="btn btn-primary text-gamma">Voir toutes mes
+                                            <button class="btn btn-primary adapt-text-primary-color">Voir toutes mes
                                                 annonces
                                             </button>
                                         </a>
                                         <a href="monactivite/echanges" ng-if="form_is_valider_echange(state)">
-                                            <button class="btn btn-primary text-gamma">Voir tous mes
+                                            <button class="btn btn-primary adapt-text-primary-color">Voir tous mes
                                                 échanges
                                             </button>
                                         </a>
                                         <a href="explorer">
-                                            <button class="btn btn-primary text-gamma">Retourner à
+                                            <button class="btn btn-primary adapt-text-primary-color">Retourner à
                                                 l'accueil
                                             </button>
                                         </a>

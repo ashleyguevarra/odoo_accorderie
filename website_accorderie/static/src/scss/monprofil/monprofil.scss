@@ -4,12 +4,11 @@
 
 .banner_profile {
   align-items: center;
-  color: $text-gamma;
   display: flex;
   gap: 2rem;
 
   .solde_container {
-    border-left: 2px solid $text-gamma;
+    border-left: 2px solid;
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -50,11 +49,10 @@
   position: relative;
 
   i {
-    bottom: 0px;
-    color: $text-gamma;
+    bottom: 0;
     font-size: 2rem;
     position: absolute;
-    right: 0px;
+    right: 0;
   }
 }
 
@@ -64,19 +62,16 @@
   margin-left: 10%;
 
   .profile_name {
-    color: $text-gamma;
     font-size: 3rem;
   }
 
   .profile_hrs {
-    color: $text-gamma;
     font-size: 2rem;
   }
 }
 
 .profile_btn.btn {
   border: 1px solid $beta;
-  color: $text-gamma;
   font-size: 1.5rem;
   padding: 1rem;
   white-space: normal;
@@ -97,25 +92,28 @@
   .information {
     border-radius: 7px;
     border: 1px solid $beta;
-    max-height: 300px;
+    max-height: 400px; //or max-height: none;
     overflow: hidden;
     padding: 2.5rem;
     text-align: left;
     text-decoration: none;
     white-space: normal;
+    font-size: 1.1rem;
+    line-height: 1.4;
 
     img {
       height: 15%;
     }
 
     .nbr {
-      color: $text-gamma;
       font-size: 1.5rem;
     }
 
     .txt {
       color: gray;
       font-size: 1.2rem;
+      max-width: 100%;
+      word-wrap: break-word;
     }
   }
 
@@ -166,7 +164,6 @@
 
     .solde_container {
       display: none;
-      color: $text-gamma !important;
     }
   }
 

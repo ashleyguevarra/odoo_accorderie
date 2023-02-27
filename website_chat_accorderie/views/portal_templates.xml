@@ -60,7 +60,7 @@
             </div>
             <a role="menuitem" href="/notification#!?section=message" class="dropdown-item">
                 <div class="cat activite btn btn-primary">
-                    <font class="text-gamma" style="font-size: 1rem;">
+                    <font class="adapt-text-primary-color" style="font-size: 1rem;">
                         Voir tous les messages
                     </font>
                 </div>

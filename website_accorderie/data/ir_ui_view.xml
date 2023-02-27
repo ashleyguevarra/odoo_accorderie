@@ -14,7 +14,7 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-color-title">
                                                 Mon activit&#233;
                                             </p>
                                         </div>
@@ -132,7 +132,7 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-color-title">
                                                 {{personal.mon_accorderie.name}}
                                             </p>
                                         </div>
@@ -440,7 +440,7 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-color-title">
                                                 {{personal.mon_accorderie.name}}
                                             </p>
                                         </div>
@@ -526,11 +526,11 @@
                                                     </p>
                                                     <div class="btn_container">
                                                         <div class="item_btn btn btn-primary">
-                                                            <font class="text-gamma" style="">En savoir plus</font>
+                                                            <font class="adapt-text-primary-color" style="">En savoir plus</font>
                                                         </div>
                                                         <div class="item_btn btn btn-primary">
-                                                            <icon class="fa fa-star-o text-gamma" />&amp;nbsp;
-                                                            <font class="text-gamma" style="">Je participe</font>
+                                                            <icon class="fa fa-star-o adapt-text-primary-color" />&amp;nbsp;
+                                                            <font class="adapt-text-primary-color" style="">Je participe</font>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -559,11 +559,11 @@
                                                     </p>
                                                     <div class="btn_container">
                                                         <div class="item_btn btn btn-primary">
-                                                            <font class="text-gamma" style="">En savoir plus</font>
+                                                            <font class="adapt-text-primary-color" style="">En savoir plus</font>
                                                         </div>
                                                         <div class="item_btn btn btn-primary">
-                                                            <icon class="fa fa-star-o text-gamma" />&amp;nbsp;
-                                                            <font class="text-gamma" style="">Je participe</font>
+                                                            <icon class="fa fa-star-o adapt-text-primary-color" />&amp;nbsp;
+                                                            <font class="adapt-text-primary-color" style="">Je participe</font>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -598,11 +598,11 @@
                                                     </p>
                                                     <div class="btn_container">
                                                         <div class="item_btn btn btn-primary">
-                                                            <font class="text-gamma" style="">En savoir plus</font>
+                                                            <font class="adapt-text-primary-color" style="">En savoir plus</font>
                                                         </div>
                                                         <div class="item_btn btn btn-primary">
-                                                            <icon class="fa fa-star-o text-gamma" />&amp;nbsp;
-                                                            <font class="text-gamma" style="">Je participe</font>
+                                                            <icon class="fa fa-star-o adapt-text-primary-color" />&amp;nbsp;
+                                                            <font class="adapt-text-primary-color" style="">Je participe</font>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -637,11 +637,11 @@
                                                     </p>
                                                     <div class="btn_container">
                                                         <div class="item_btn btn btn-primary">
-                                                            <font class="text-gamma" style="">En savoir plus</font>
+                                                            <font class="adapt-text-primary-color" style="">En savoir plus</font>
                                                         </div>
                                                         <div class="item_btn btn btn-primary">
-                                                            <icon class="fa fa-star-o text-gamma" />&amp;nbsp;
-                                                            <font class="text-gamma" style="">Je participe</font>
+                                                            <icon class="fa fa-star-o adapt-text-primary-color" />&amp;nbsp;
+                                                            <font class="adapt-text-primary-color" style="">Je participe</font>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -676,11 +676,11 @@
                                                     </p>
                                                     <div class="btn_container">
                                                         <div class="item_btn btn btn-primary">
-                                                            <font class="text-gamma" style="">En savoir plus</font>
+                                                            <font class="adapt-text-primary-color" style="">En savoir plus</font>
                                                         </div>
                                                         <div class="item_btn btn btn-primary">
-                                                            <icon class="fa fa-star-o text-gamma" />&amp;nbsp;
-                                                            <font class="text-gamma" style="">Je participe</font>
+                                                            <icon class="fa fa-star-o adapt-text-primary-color" />&amp;nbsp;
+                                                            <font class="adapt-text-primary-color" style="">Je participe</font>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -710,7 +710,7 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-color-title">
                                                 {{personal.mon_accorderie.name}}
                                             </p>
                                         </div>
@@ -800,7 +800,7 @@
                                                     </p>
                                                     <div class="btn_container">
                                                         <div class="item_btn btn btn-primary lg">
-                                                            <font class="text-gamma" style="">Rejoindre le groupe</font>
+                                                            <font class="adapt-text-primary-color" style="">Rejoindre le groupe</font>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -822,7 +822,7 @@
                                                     </p>
                                                     <div class="btn_container">
                                                         <div class="item_btn btn btn-primary lg">
-                                                            <font class="text-gamma" style="">Rejoindre le groupe</font>
+                                                            <font class="adapt-text-primary-color" style="">Rejoindre le groupe</font>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -844,7 +844,7 @@
                                                     </p>
                                                     <div class="btn_container">
                                                         <div class="item_btn btn btn-primary lg">
-                                                            <font class="text-gamma" style="">Rejoindre le groupe</font>
+                                                            <font class="adapt-text-primary-color" style="">Rejoindre le groupe</font>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1060,7 +1060,7 @@
                                                 <div class="row">
                                                     <div class="col-lg-12 s_title s_col_no_bgcolor" data-name="Title">
                                                         <h1 class="s_title_thin">
-                                                            <font style="font-size: 62px;" class="text-beta">
+                                                            <font style="font-size: 62px;" class="adapt-text-alpha-color">
                                                                 <b>Les principes de l'échange de service</b>
                                                             </font>
                                                         </h1>
@@ -1486,9 +1486,9 @@
                                                 <div class="search_bar">
                                                     <p class="search_txt text-epsilon">Que cherchez-vous?</p>
                                                     <div class="search_category">
-                                                        <p class="search_txt  text-epsilon">Type de recherche</p>
+                                                        <p class="search_txt text-epsilon">Type de recherche</p>
                                                         <div class="search_send btn btn-primary rounded-circle">
-                                                            <font style="font-size: 18px;" class="text-gamma">
+                                                            <font style="font-size: 18px;" class="adapt-text-primary-color">
                                                                 <i class="img img-fluid mx-auto fa fa-search" />
                                                                 Rechercher
                                                             </font>
@@ -1550,16 +1550,16 @@
                                                             </font>
                                                         </p>
                                                     </div>
-                                                    <div class="banner_btn s_btn col-lg-5 text-center" data-name="Button" style="">
-                                                        <a href="/participer#!?state=init.pos" class="btn btn-gamma rounded-circle" data-original-title="" title="" aria-describedby="tooltip742376" style="">
-                                                            <font class="text-primary" style="" data-original-title="" title="" aria-describedby="tooltip195285">
+                                                    <div class="banner_btn s_btn col-lg-5 text-center" data-name="Button">
+                                                        <a href="/participer#!?state=init.pos" class="btn btn-gamma rounded-circle">
+                                                            <font class="adapt-text-gamma-color">
                                                                 Publier une offre
                                                             </font>
                                                         </a>
                                                     </div>
                                                     <div class="banner_btn s_btn text-center col-lg-5 debug_unimplemented" data-name="Button">
-                                                        <a href="#" class="btn btn-gamma rounded-circle" data-original-title="" title="" aria-describedby="tooltip742376">
-                                                            <font class="text-primary" style="">En savoir plus</font>
+                                                        <a href="#" class="btn btn-gamma rounded-circle">
+                                                            <font class="adapt-text-gamma-color">En savoir plus</font>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -1704,7 +1704,7 @@
                                         </h5>
                                         <a href="/participer#!?state=init.va">
                                             <div class="btn btn-gamma rounded-circle">
-                                                <font class="text-primary">Valider mon échange</font>
+                                                <font class="adapt-text-gamma-color">Valider mon échange</font>
                                             </div>
                                         </a>
                                     </div>
@@ -1747,13 +1747,13 @@
                                                 </div>
                                                 <div class="s_btn pt16 pb0 text-center col-lg-6" data-name="Button" style="">
                                                     <a href="#" class="btn btn-gamma rounded-circle" data-original-title="" title="" aria-describedby="tooltip742376" style="">
-                                                        <font class="text-primary" style="">D&#233;couvrir les membres
+                                                        <font class="adapt-text-gamma-color" style="">D&#233;couvrir les membres
                                                         </font>
                                                     </a>
                                                 </div>
                                                 <div class="s_btn pt16 pb16 text-center col-lg-4" data-name="Button">
                                                     <a href="#" class="btn btn-gamma rounded-circle" data-original-title="" title="" aria-describedby="tooltip742376">
-                                                        <font class="text-primary" style="">D&#233;couvrir les groupes&amp;nbsp;</font>
+                                                        <font class="adapt-text-gamma-color" style="">D&#233;couvrir les groupes&amp;nbsp;</font>
                                                     </a>
                                                 </div>
                                             </div>
@@ -1810,8 +1810,8 @@
                                                 </p>
                                                 <div class="btn_container">
                                                     <div class="item_btn btn btn-primary">
-                                                        <icon class="fa fa-star-o text-gamma" />&amp;nbsp;
-                                                        <font class="text-gamma" style="">Je participe</font>
+                                                        <icon class="fa fa-star-o adapt-text-primary-color" />&amp;nbsp;
+                                                        <font class="adapt-text-primary-color" style="">Je participe</font>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1842,8 +1842,8 @@
                                                 </p>
                                                 <div class="btn_container">
                                                     <div class="item_btn btn btn-primary">
-                                                        <icon class="fa fa-star-o text-gamma" />&amp;nbsp;
-                                                        <font class="text-gamma" style="">Je participe</font>
+                                                        <icon class="fa fa-star-o adapt-text-primary-color" />&amp;nbsp;
+                                                        <font class="adapt-text-primary-color" style="">Je participe</font>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1882,8 +1882,8 @@
                                                 </p>
                                                 <div class="btn_container">
                                                     <div class="item_btn btn btn-primary">
-                                                        <icon class="fa fa-star-o text-gamma" />&amp;nbsp;
-                                                        <font class="text-gamma" style="">Je participe</font>
+                                                        <icon class="fa fa-star-o adapt-text-primary-color" />&amp;nbsp;
+                                                        <font class="adapt-text-primary-color" style="">Je participe</font>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1914,8 +1914,8 @@
                                                 </p>
                                                 <div class="btn_container">
                                                     <div class="item_btn btn btn-primary">
-                                                        <icon class="fa fa-star-o text-gamma" />&amp;nbsp;
-                                                        <font class="text-gamma" style="">Je participe</font>
+                                                        <icon class="fa fa-star-o adapt-text-primary-color" />&amp;nbsp;
+                                                        <font class="adapt-text-primary-color" style="">Je participe</font>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1954,8 +1954,8 @@
                                                 </p>
                                                 <div class="btn_container">
                                                     <div class="item_btn btn btn-primary">
-                                                        <icon class="fa fa-star-o text-gamma" />&amp;nbsp;
-                                                        <font class="text-gamma" style="">Je participe</font>
+                                                        <icon class="fa fa-star-o adapt-text-primary-color" />&amp;nbsp;
+                                                        <font class="adapt-text-primary-color" style="">Je participe</font>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1976,7 +1976,7 @@
                                         </div>
                                         <div class="s_text pt16 col-lg-5 pb0" data-name="Text">
                                             <p class="lead">
-                                                <font class="text-gamma" style="">Vous ne savez pas comment fonctionne
+                                                <font class="text-gamma">Vous ne savez pas comment fonctionne
                                                     l'Accorderie ou vous avez des difficult&#233;s &#224; utiliser votre
                                                     espace membre? Ne vous inqui&#233;tez pas, nous sommes tous d&#233;j&#224;
                                                     pass&#233; par l&#224;. Nous sommes l&#224; pour vous aider.
@@ -1985,10 +1985,10 @@
                                         </div>
                                         <div class="col-lg-12 pb16 pt16 s_btn" data-name="Buttons">
                                             <a href="/aboutus" class="aide_btn btn btn-primary rounded-circle" data-original-title="" title="" aria-describedby="tooltip233358">
-                                                <font id="aide_btn_txt" class="text-gamma" data-original-title="" title="" aria-describedby="tooltip200172">Consulter l'aide</font>
+                                                <font id="aide_btn_txt" class="adapt-text-primary-color" data-original-title="" title="" aria-describedby="tooltip200172">Consulter l'aide</font>
                                             </a>
                                             <a href="/contactus" class="aide_btn btn btn-primary rounded-circle" data-original-title="" title="" aria-describedby="tooltip608562">
-                                                <font id="aide_btn_txt" class="text-gamma">
+                                                <font id="aide_btn_txt" class="adapt-text-primary-color">
                                                     Contacter un
                                                     mentor
                                                 </font>
@@ -2036,30 +2036,38 @@
                                                 </label>
                                                 <i class="fa fa-shield text-epsilon" ng-if="membre_info.antecedent_judiciaire_verifier" />
                                             </div>
-                                            <span class="nbr">
+                                            <span class="text desc" style="font-size: 1.4rem;">
                                                 Bonjour, je m'appelle
                                                 <br />
                                                 <font style="font-weight:bold;">{{membre_info.full_name}}</font>
                                             </span>
-                                            <div class="modif_btn btn btn-primary" ng-if="membre_info.estPersonnel &amp;&amp; !ask_modification_profile" ng-click="change_ask_modification_profile(true)">
-                                                <span class="img img-fluid mx-auto fa fa-pencil" />
-                                                Modifier le profil
-                                            </div>
-                                            <div class="modif_btn btn btn-primary" ng-if="membre_info.estPersonnel &amp;&amp; ask_modification_profile" ng-click="change_ask_modification_profile(false)">
-                                                <span class="img img-fluid mx-auto fa fa-save" />
-                                                Enregistrer le profil
-                                            </div>
-                                            <div class="modif_btn btn btn-primary" ng-if="membre_info.estPersonnel &amp;&amp; ask_modification_profile" ng-click="annuler_ask_modification_profile()">
-                                                <span class="img img-fluid mx-auto fa fa-close" />
-                                                Annuler les modifications
-                                            </div>
-                                            <div class="modif_btn btn btn-primary btn_saccorder debug_unimplemented" ng-if="!membre_info.estPersonnel">
-                                                S'accorder avec {{membre_info.prenom}}
-                                            </div>
-                                            <div class="modif_btn btn btn-primary" ng-click="add_to_my_favorite('accorderie.membre', membre_info)">
-                                                <span class="img img-fluid mx-auto fa" ng-class="{'fa-heart': membre_info.is_favorite, 'fa-heart-o': !membre_info.is_favorite}" />
-                                                <span ng-if="!membre_info.is_favorite">Ajouter à mes favoris</span>
-                                                <span ng-if="membre_info.is_favorite">Retirer de mes favoris</span>
+                                            <div class="container_profil">
+                                                <nav class="profil_left">
+                                                    <div class="profil profil_left profil_box btn btn-primary adapt-text-primary-color" ng-if="membre_info.estPersonnel &amp;&amp; !ask_modification_profile" ng-click="change_ask_modification_profile(true)">
+                                                        <span class="img img-fluid mx-auto fa fa-pencil" />
+                                                        Modifier le profil
+                                                    </div>
+                                                    <div class="profil profil_right profil_box btn btn-primary adapt-text-primary-color" ng-if="membre_info.estPersonnel &amp;&amp; ask_modification_profile" ng-click="annuler_ask_modification_profile()">
+                                                        <span class="img img-fluid mx-auto fa fa-close" />
+                                                        Annuler les modifications
+                                                    </div>
+                                                </nav>
+                                                <nav class="profil_main">
+                                                    <div class="profil profil_main profil_box btn btn-primary adapt-text-primary-color" style="right: 50px;" ng-click="add_to_my_favorite('accorderie.membre', membre_info)">
+                                                        <span class="img img-fluid mx-auto fa coeur" ng-class="{'fa-heart': membre_info.is_favorite, 'fa-heart-o': !membre_info.is_favorite}" />
+                                                        <span class="adapt-text-primary-color" ng-if="!membre_info.is_favorite">Ajouter à mes favoris</span>
+                                                        <span class="adapt-text-primary-color" ng-if="membre_info.is_favorite">Retirer de mes favoris</span>
+                                                    </div>
+                                                </nav>
+                                                <nav class="profil_right">
+                                                    <div class="profil profil_left profil_box btn btn-primary adapt-text-primary-color" ng-if="membre_info.estPersonnel &amp;&amp; ask_modification_profile" ng-click="change_ask_modification_profile(false)">
+                                                        <span class="img img-fluid mx-auto fa fa-save" />
+                                                        Enregistrer le profil
+                                                    </div>
+                                                    <div class="profil profil_right profil_box btn btn-primary btn_saccorder debug_unimplemented adapt-text-primary-color" ng-if="!membre_info.estPersonnel">
+                                                        S'accorder avec {{membre_info.prenom}}
+                                                    </div>
+                                                </nav>
                                             </div>
                                         </div>
                                         <div class="information information-2">
@@ -2128,9 +2136,9 @@
                                                 <br />
                                                 <div class="d-flex" style="gap:1%">
 
-                                                    <div class="tag text-epsilon">Marche</div>
-                                                    <div class="tag text-epsilon">Jardinage</div>
-                                                    <div class="tag text-epsilon">Tricot</div>
+                                                    <div class="tag">Marche</div>
+                                                    <div class="tag">Jardinage</div>
+                                                    <div class="tag">Tricot</div>
                                                 </div>
 
                                             </div>
@@ -2252,7 +2260,7 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-color-title">
                                                 {{personal.mon_accorderie.name}}
                                             </p>
                                         </div>
@@ -2336,7 +2344,7 @@
                                     </div>
                                 </section>
                                 <section class="s_map_btn pt32 pb32">
-                                    <div class="btn_map btn btn-primary rounded-circle text-gamma pt16 pb16" ng-click="show_map_member=!show_map_member">
+                                    <div class="btn_map btn btn-primary rounded-circle adapt-text-primary-color pt16 pb16" ng-click="show_map_member=!show_map_member">
                                         <icon class="fa fa-map" />
                                         &amp;nbsp; Voir la carte
                                     </div>
@@ -2399,7 +2407,7 @@
                                                     <i class="fa text-epsilon coeur" ng-class="{'fa-heart': offre_service.is_favorite, 'fa-heart-o': !offre_service.is_favorite}" style="font-size:1.5rem;" ng-click="add_to_my_favorite('accorderie.offre.service', offre_service)" />
                                                 </div>
                                             </div>
-                                            <a href="/participer#!?state=init.pos" class="btn btn-primary rounded-circle text-gamma add_service"><i class="fa fa-plus-circle icon_padding_right" /> Ajouter une offre de service</a>
+                                            <a href="/participer#!?state=init.pos" class="btn btn-primary rounded-circle adapt-text-primary-color add_service"><i class="fa fa-plus-circle icon_padding_right" /> Ajouter une offre de service</a>
                                             <div class="list_title s_title pb40">
                                                 <h5>
                                                     <font style="font-size: 1.5rem;" ng-if="membre_info.estPersonnel">
@@ -2428,7 +2436,7 @@
                                                     <i class="fa text-epsilon coeur" ng-class="{'fa-heart': demande_service.is_favorite, 'fa-heart-o': !demande_service.is_favorite}" style="font-size:1.5rem;" ng-click="add_to_my_favorite('accorderie.demande.service', demande_service)" />
                                                 </div>
                                             </div>
-                                            <a href="/participer#!?state=init.pds" class="btn btn-primary rounded-circle text-gamma add_service"><i class="fa fa-plus-circle icon_padding_right" /> Ajouter une demande de service</a>
+                                            <a href="/participer#!?state=init.pds" class="btn btn-primary rounded-circle adapt-text-primary-color add_service"><i class="fa fa-plus-circle icon_padding_right" /> Ajouter une demande de service</a>
                                         </div>
                                     </div>
                                 </section>
@@ -2564,7 +2572,7 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-color-title">
                                                 Mon activit&#233;
                                             </p>
                                         </div>
@@ -2622,7 +2630,7 @@
                                                     </h6>
                                                     <div class="btn_container">
                                                         <div class="item_btn btn btn-primary lg">
-                                                            <font class="text-gamma" style="">Entrer</font>
+                                                            <font class="adapt-text-primary-color" style="">Entrer</font>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2647,7 +2655,7 @@
                                                     </h6>
                                                     <div class="btn_container">
                                                         <div class="item_btn btn btn-primary lg">
-                                                            <font class="text-gamma" style="">Entrer</font>
+                                                            <font class="adapt-text-primary-color" style="">Entrer</font>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2672,7 +2680,7 @@
                                                     </h6>
                                                     <div class="btn_container">
                                                         <div class="item_btn btn btn-primary lg">
-                                                            <font class="text-gamma" style="">Entrer</font>
+                                                            <font class="adapt-text-primary-color" style="">Entrer</font>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2697,7 +2705,7 @@
                                                     </h6>
                                                     <div class="btn_container">
                                                         <div class="item_btn btn btn-primary lg">
-                                                            <font class="text-gamma" style="">Entrer</font>
+                                                            <font class="adapt-text-primary-color" style="">Entrer</font>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2722,7 +2730,7 @@
                                                     </h6>
                                                     <div class="btn_container">
                                                         <div class="item_btn btn btn-primary lg">
-                                                            <font class="text-gamma" style="">Entrer</font>
+                                                            <font class="adapt-text-primary-color" style="">Entrer</font>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2955,22 +2963,22 @@
                                     <div class="banner_profile">
                                         <div class="profile_infos">
                                             <div class="profile_pic rounded-circle" ng-style="{'background-image': 'url(' + personal.ma_photo + ')'}">
-                                                <i class="fa fa-shield text-gamma" />
+                                                <i class="fa fa-shield text-color-title" />
                                             </div>
                                             <div class="profile_banner_info">
-                                                <p class="profile_name text-gamma">{{personal.full_name}}</p>
-                                                <p class="profile_hrs text-gamma">
+                                                <p class="profile_name text-color-title">{{personal.full_name}}</p>
+                                                <p class="profile_hrs text-color-title">
                                                     <i class="fa fa-clock-o" />&amp;nbsp;<span ng-class="{neg_time_2: !personal.actual_bank_sign}">{{personal.actual_bank_time_human_simplify}}</span>
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="profile_btn btn accorderie text-gamma debug_unimplemented">
+                                        <div class="profile_btn btn accorderie text-color-title debug_unimplemented">
                                             <i class="fa fa-smile-o" />
                                             Mon accorderie: {{personal.mon_accorderie.name}}
                                             <i class="fa fa-chevron-right" />
                                         </div>
                                         <a href="web/session/logout?redirect=/">
-                                            <div class="profile_btn btn disconnect text-gamma">
+                                            <div class="profile_btn btn disconnect text-color-title">
                                                 <i class="fa fa-power-off" />&amp;nbsp;Se déconnecter
                                             </div>
                                         </a>
@@ -3049,12 +3057,12 @@
                                 </div>
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="banner_profile s_title pt16 pb16">
-                                        <p class="s_title_default text-gamma">
+                                        <p class="s_title_default text-color-title">
                                             Mon activité
                                         </p>
-                                        <div class="solde_container text-gamma">
+                                        <div class="solde_container text-color-title">
                                             <div class="txt">Solde de mon compte <i class="fa fa-question-circle-o debug_unimplemented" /></div>
-                                            <div class="solde" ng-class="{neg_time: !personal.actual_bank_sign}">{{personal.actual_bank_time_human_short | uppercase}}</div>
+                                            <div class="solde text-color-title" ng-class="{neg_time: !personal.actual_bank_sign}">{{personal.actual_bank_time_human_short | uppercase}}</div>
                                         </div>
                                     </div>
                                 </section>
@@ -3100,7 +3108,7 @@
                                             <span class="nbr-activite">{{personal.actual_month_bank_time_human_short | uppercase}}</span>
                                             <span class="txt-activite">ce mois-ci</span>
                                         </a>
-                                        <a href="/monprofil/mapresentation" class="bilan_main bilan-3 btn debug_unimplemented" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;)">
+                                        <a href="/monprofil/mapresentation" class="bilan_main bilan-3 btn debug_unimplemented" style="background-image: url(&quot;https://i.pinimg.com/originals/60/43/bf/6043bf9787ade7d5b2e746ad0960cd5a.jpg&quot;)">
                                             <span class="nbr-activite">1</span>
                                             <span class="txt-activite">nouveau contact</span>
                                         </a>
@@ -3156,7 +3164,7 @@
                                                 </div>
                                                 <div class="event">ÉVÈNEMENT</div>
                                             </div>
-                                            <div class="lg-btn btn btn-primary text-gamma">
+                                            <div class="lg-btn btn btn-primary adapt-text-primary-color">
                                                 <i class="fa fa-calendar" /> &amp;nbsp
                                                 Voir mon agenda</div>
                                         </div>
@@ -3225,7 +3233,7 @@
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
                                         <div class="col-lg-12 s_title pt16 pb16">
-                                            <p class="s_title_default text-gamma">
+                                            <p class="s_title_default text-color-title">
                                                 Mon activit&#233;
                                             </p>
                                         </div>
@@ -3401,7 +3409,7 @@
                                 <br />
                                 <br />
                                 <section class="s_map_btn pt32 pb32">
-                                    <div class="btn_map btn btn-primary rounded-circle text-gamma pt16 pb16">
+                                    <div class="btn_map btn btn-primary rounded-circle adapt-text-primary-color pt16 pb16">
                                         <icon class="fa fa-map" />
                                         &amp;nbsp; Voir la carte
                                     </div>
@@ -3618,11 +3626,11 @@
                                         </div>
                                         <!-- modal-body -->
                                         <a href="/">
-                                            <button id="voir_offre" data-dismiss="modal" class="btn btn-primary text-gamma">Voir mon offre</button>
+                                            <button id="voir_offre" data-dismiss="modal" class="btn btn-primary adapt-text-primary-color">Voir mon offre</button>
                                         </a>
                                         <font style="font-size:1rem">OU</font>
                                         <a href="/">
-                                            <button id="retour_accueil" data-dismiss="modal" class="btn btn-primary text-gamma">Retourner sur l'accueil</button>
+                                            <button id="retour_accueil" data-dismiss="modal" class="btn btn-primary adapt-text-primary-color">Retourner sur l'accueil</button>
                                         </a>
                                     </div>
                                 </div>
@@ -3892,7 +3900,7 @@
                                                         <div class="search_category">
                                                             <p class="search_txt text-epsilon">Type de recherche</p>
                                                             <div class="search_send btn btn-primary rounded-circle">
-                                                                <font style="font-size: 18px;" class="text-gamma">
+                                                                <font style="font-size: 18px;" class="adapt-text-primary-color">
                                                                     <i class="img img-fluid mx-auto fa fa-search" />
                                                                     Rechercher
                                                                 </font>
@@ -3981,7 +3989,7 @@
                                                         <div class="search_category">
                                                             <p class="search_txt text-epsilon">Type de recherche</p>
                                                             <div class="search_send btn btn-primary rounded-circle">
-                                                                <font style="font-size: 18px;" class="text-gamma">
+                                                                <font style="font-size: 18px;" class="adapt-text-primary-color">
                                                                     <i class="img img-fluid mx-auto fa fa-search" />
                                                                     Rechercher
                                                                 </font>
@@ -4080,7 +4088,7 @@
                                                 <br />
                                                 {{contact_info.full_name}}
                                             </span>
-                                            <div class="btn btn-primary text-gamma debug_unimplemented">
+                                            <div class="btn btn-primary adapt-text-primary-color debug_unimplemented">
 <!--                                                <a ng-href="{{get_href_participer_service_effectue(echange_service_info)}}">-->
                                                     <i class="fa fa-thumbs-up" />
                                                     <!-- TODO faire apparaitre un formulaire pour demander des commentaires et informer l'autre utilisateur d'avoir accepter. Quel est la prochaine étape? -->
@@ -4088,18 +4096,18 @@
                                                     <span>Accepter</span>
 <!--                                                </a>-->
                                             </div>
-                                            <div class="btn btn-primary text-gamma">
+                                            <div class="btn btn-primary adapt-text-primary-color">
                                                 <a ng-href="{{get_href_participer_service_effectue(echange_service_info)}}">
                                                     <i class="fa fa-check" />
                                                     <span>Service effectué</span>
                                                 </a>
                                             </div>
-                                            <div class="btn btn-epsilon text-gamma debug_unimplemented">
+                                            <div class="btn btn-epsilon adapt-text-epsilon-color debug_unimplemented">
                                                 <i class="fa fa-pencil" />
                                                 <!-- TODO faire apparaitre un formulaire pour que l'autre utilisateur change une information DEMANDE DE RÉVISION ou modifier soi même une information -->
                                                 <span>Modifier l'entente</span>
                                             </div>
-                                            <div class="btn btn-epsilon text-gamma debug_unimplemented">
+                                            <div class="btn btn-epsilon adapt-text-epsilon-color debug_unimplemented">
                                                 <i class="fa fa-times-circle" />
                                                 <!-- TODO faire apparaitre un formulaire pour demander des commentaires et informer l'autre utilisateur du refus -->
                                                 <span>Annuler l'entente</span>
@@ -4192,7 +4200,7 @@
                                                 <p>{{echange_service_info.show_duree_estime_pos}}</p>
                                                 <p class="condition_desc">Durée du trajet estimée à effectuer</p>
                                                 <p>{{echange_service_info.show_duree_trajet_estime_pos}}</p>
-                                                <div class="bar_time">
+                                                <div class="bar_time" style="color:white;">
                                                     <b>
                                                         Montant total de temps estimé :
                                                     </b>
@@ -4327,7 +4335,7 @@
                                                 </b>
                                                 <p class="condition_desc">{{echange_service_info.commentaire}}</p>
                                             </div>
-                                            <div class="bar_time">
+                                            <div class="bar_time" style="color:white;">
                                                 <b>
                                                     Montant total de temps transféré :
                                                 </b>
@@ -4397,11 +4405,11 @@
                                                 <div class="title">
                                                     <h1>Décembre 2021</h1>
                                                     <span class="agenda_btns">
-                                                        <span class="btn btn-gamma">
+                                                        <span class="btn btn-gamma adapt-text-gamma-color">
                                                             <i class="fa fa-calendar" />
                                                         </span>
                                                         <divider />
-                                                        <span class="btn btn-gamma text-epsilon">
+                                                        <span class="btn btn-gamma adapt-text-gamma-color">
                                                             <i class="fa fa-list" />
                                                         </span>
                                                     </span>
@@ -4555,7 +4563,7 @@
                                             </div>
                                             <div class="col-lg-2 col-md-12 offset-lg-1 mt16 mb32">
                                                 <div class="s_big_icons_box">
-                                                    <div class="s_big_icons_icon bg-epsilon">
+                                                    <div class="s_big_icons_icon bg-epsilon adapt-text-epsilon-color">
                                                         <span class="fa fa-desktop" />
                                                     </div>
                                                     <h5 class="o_default_snippet_text">{{data.state.length}} guides utilisateurs</h5>
@@ -4564,7 +4572,7 @@
 
                                             <div class="col-lg-2 col-md-12 mt16 mb32">
                                                 <div class="s_big_icons_box">
-                                                    <div class="s_big_icons_icon bg-epsilon">
+                                                    <div class="s_big_icons_icon bg-epsilon adapt-text-epsilon-color">
                                                         <span class="fa fa-users" />
                                                     </div>
                                                     <h5 class="o_default_snippet_text">{{sizeStateValidated(data.state)}} validés</h5>
@@ -4572,7 +4580,7 @@
                                             </div>
                                             <div class="col-lg-2 col-md-12 mt16 mb32">
                                                 <div class="s_big_icons_box">
-                                                    <div class="s_big_icons_icon bg-epsilon">
+                                                    <div class="s_big_icons_icon bg-epsilon adapt-text-epsilon-color">
                                                         <span class="fa fa-user" />
                                                     </div>
                                                     <h5 class="o_default_snippet_text">{{sizeGuideEchangeService(data, data.state)}} guides échange de service</h5>
@@ -4580,7 +4588,7 @@
                                             </div>
                                             <div class="col-lg-2 col-md-12 mt16 mb32">
                                                 <div class="s_big_icons_box">
-                                                    <div class="s_big_icons_icon bg-epsilon">
+                                                    <div class="s_big_icons_icon bg-epsilon adapt-text-epsilon-color">
                                                         <span class="fa fa-globe" />
                                                     </div>
                                                     <h5 class="o_default_snippet_text">{{sizeGuideImplemented(data.state)}} guides implémentés</h5>

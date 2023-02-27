@@ -398,7 +398,7 @@
                                             </div>
                                             <a role="menuitem" href="/monprofil/mesfavoris" class="dropdown-item">
                                                 <div class="cat activite btn btn-primary">
-                                                    <font class="text-gamma" style="font-size: 1rem;">
+                                                    <font class="adapt-text-primary-color" style="font-size: 1rem;">
                                                         Voir toutes mes offres favorites
                                                     </font>
                                                 </div>
@@ -436,14 +436,14 @@
                                             <a role="menuitem" href="/monprofil/mesfavoris" class="dropdown-item">
                                                 <div class="cat activite btn btn-primary">
                                                     <font
-                                                        class="text-gamma"
+                                                        class="adapt-text-primary-color"
                                                         style="font-size: 1rem;"
                                                         ng-if="membre_info.estPersonnel"
                                                     >
                                                         Voir toutes mes demandes favorites
                                                     </font>
                                                     <font
-                                                        class="text-gamma"
+                                                        class="adapt-text-primary-color"
                                                         style="font-size: 1rem;"
                                                         ng-if="!membre_info.estPersonnel"
                                                     >
@@ -485,7 +485,7 @@
                                             </div>
                                             <a role="menuitem" href="/monprofil/mesfavoris" class="dropdown-item">
                                                 <div class="cat activite btn btn-primary">
-                                                    <font class="text-gamma" style="font-size: 1rem;">
+                                                    <font class="adapt-text-primary-color" style="font-size: 1rem;">
                                                         Voir tous mes membres favoris
                                                     </font>
                                                 </div>
@@ -543,7 +543,7 @@
                                                 class="dropdown-item"
                                             >
                                                 <div class="cat activite btn btn-primary">
-                                                    <font class="text-gamma" style="font-size: 1rem;">
+                                                    <font class="adapt-text-primary-color" style="font-size: 1rem;">
                                                         Voir toutes les notifications
                                                     </font>
                                                 </div>
@@ -612,7 +612,7 @@
                             </li>
                             <li class="nav-item dropdown bg-primary" t-ignore="true" t-if="not user_id._is_public()">
                                 <a
-                                    class="nav-link text-gamma"
+                                    class="nav-link adapt-text-primary-color"
                                     data-toggle="dropdown"
                                     role="menu_item"
                                     style="cursor:pointer"
@@ -656,7 +656,7 @@
                             >
                                 <img class="nav_pic rounded-circle" ng-src="{{ membre_info.ma_photo }}" />
                                 <a
-                                    class="nav-link dropdown-toggle text-gamma"
+                                    class="nav-link dropdown-toggle adapt-text-secondary-color"
                                     data-toggle="dropdown"
                                     style="cursor:pointer"
                                 >

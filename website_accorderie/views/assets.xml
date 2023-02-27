@@ -178,6 +178,7 @@
                 type="text/javascript"
                 src="/website_accorderie/static/src/js/snippet_accorderie_liste_type_service_categorie.js"
             />
+            <script type="text/javascript" src="/website_accorderie/static/src/js/adapt_font_color.js" />
         </xpath>
     </template>
 </odoo>
