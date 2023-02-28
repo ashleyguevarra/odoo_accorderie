@@ -1642,7 +1642,7 @@
                                         >
                                             <button
                                                 class="btn btn-primary adapt-text-primary-color"
-                                            >Voir le profil de l'Accordeur.e
+                                            >Voir le profil du membre
                                             </button>
                                         </a>
                                         <a href="monprofil/mesannonces" ng-if="form_is_offre_demande_service(state)">
