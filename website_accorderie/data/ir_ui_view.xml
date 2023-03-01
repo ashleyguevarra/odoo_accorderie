@@ -2974,9 +2974,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                        <div class="profile_btn btn accorderie text-color-title debug_unimplemented"
-                                            style="background-color: white; border-radius: 15px;">
-                                            <i class="fa fa-smile-o"/>
+                                        <div class="profile_btn btn accorderie text-color-title debug_unimplemented" style="background-color: white; border-radius: 15px;">
+                                            <i class="fa fa-smile-o" />
                                             <span id="mon_accorderie"> Mon accorderie: {{personal.mon_accorderie.name}}</span>
                                             <i class="fa fa-chevron-right" />
                                         </div>
