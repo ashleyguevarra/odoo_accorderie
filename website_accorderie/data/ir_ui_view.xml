@@ -8,8 +8,10 @@
                         <div id="wrap">
                             <div class="oe_structure">
                                 <div class="debug_debug">
-                                    Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371564">https://marvelapp.com/prototype/1773h559/screen/86371564</a><br />
-                                    Lien mobile : <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805031">https://marvelapp.com/prototype/6dbaaf8/screen/84805031</a>
+                                    <a href="https://marvelapp.com/prototype/1773h559/screen/86371564">
+                                    Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86371564</a>
+                                    <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805031" class="white-space-line">
+                                    Lien mobile : https://marvelapp.com/prototype/6dbaaf8/screen/84805031</a>
                                 </div>
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
@@ -126,8 +128,10 @@
                         <div id="wrap">
                             <div class="oe_structure">
                                 <div class="debug_debug">
-                                    Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371538">https://marvelapp.com/prototype/1773h559/screen/86371538</a><br />
-                                    Lien mobile : <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805020">https://marvelapp.com/prototype/6dbaaf8/screen/84805020</a>
+                                    <a href="https://marvelapp.com/prototype/1773h559/screen/86371538">
+                                    Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86371538</a>
+                                    <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805020">
+                                    Lien mobile : https://marvelapp.com/prototype/6dbaaf8/screen/84805020</a>
                                 </div>
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
@@ -434,8 +438,10 @@
                         <div id="wrap">
                             <div class="oe_structure">
                                 <div class="debug_debug">
-                                    Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371531">https://marvelapp.com/prototype/1773h559/screen/86371531</a><br />
-                                    Lien mobile : <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805023">https://marvelapp.com/prototype/6dbaaf8/screen/84805023</a>
+                                    <a href="https://marvelapp.com/prototype/1773h559/screen/86371531">
+                                    Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86371531</a>
+                                    <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805023" class="white-space-line">
+                                    Lien mobile : https://marvelapp.com/prototype/6dbaaf8/screen/84805023</a>
                                 </div>
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
@@ -704,8 +710,10 @@
                         <div id="wrap">
                             <div class="oe_structure">
                                 <div class="debug_debug">
-                                    Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371516">https://marvelapp.com/prototype/1773h559/screen/86371516</a><br />
-                                    Lien mobile : <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805026">https://marvelapp.com/prototype/6dbaaf8/screen/84805026</a>
+                                    <a href="https://marvelapp.com/prototype/1773h559/screen/86371531">
+                                    Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86371531</a>
+                                    <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805023" class="white-space-line">
+                                    Lien mobile : https://marvelapp.com/prototype/6dbaaf8/screen/84805023</a>
                                 </div>
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
@@ -1473,10 +1481,10 @@
                         <t t-set="pageName" t-value="'explorer'" />
                         <div id="wrap" class="oe_structure oe_empty">
                             <div class="debug_debug">
-                                Lien maquette :
-                                <a href="https://marvelapp.com/prototype/1773h559/screen/86371509">https://marvelapp.com/prototype/1773h559/screen/86371509</a>
-                                <br />
-                                Mobile : <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84804840">https://marvelapp.com/prototype/6dbaaf8/screen/84804840</a>
+                                <a href="https://marvelapp.com/prototype/1773h559/screen/86371509">
+                                Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86371509</a>
+                                <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84804840" class="white-space-line">
+                                Lien mobile : https://marvelapp.com/prototype/6dbaaf8/screen/84804840</a>
                             </div>
                             <section class="s_search oe_img_bg oe_custom_bg pt16 debug_unimplemented" style="background-image: url(&quot;/web/image/website_accorderie.ir_attachment_accueil_illustration_05@2x_png/Accueil-Illustration-05@2x.png&quot;);">
                                 <div class="container">
@@ -2012,10 +2020,14 @@
                         <div id="wrap" class="ng-cloak">
                             <div class="oe_structure">
                                 <div class="debug_debug">
-                                    Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371556">https://marvelapp.com/prototype/1773h559/screen/86371556</a><br />
-                                    Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371573">https://marvelapp.com/prototype/1773h559/screen/86371573</a><br />
-                                    Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86589551">https://marvelapp.com/prototype/1773h559/screen/86589551</a><br />
-                                    Lien mobile : <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84804863">https://marvelapp.com/prototype/6dbaaf8/screen/84804863</a>
+                                    <a href="https://marvelapp.com/prototype/1773h559/screen/86371556">
+                                    Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86371556</a>
+                                    <a href="https://marvelapp.com/prototype/1773h559/screen/86371573" class="white-space-line">
+                                    Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86371573</a>
+                                    <a href="https://marvelapp.com/prototype/1773h559/screen/86589551" class="white-space-line">
+                                    Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86589551</a>
+                                    <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84804863" class="white-space-line">
+                                    Lien mobile : https://marvelapp.com/prototype/6dbaaf8/screen/84804863</a>
                                 </div>
                                 <section class="oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
@@ -2255,8 +2267,10 @@
                         <div id="wrap">
                             <div class="oe_structure">
                                 <div class="debug_debug">
-                                    Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371562">https://marvelapp.com/prototype/1773h559/screen/86371562</a><br />
-                                    Lien mobile : <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805022">https://marvelapp.com/prototype/6dbaaf8/screen/84805022</a>
+                                    <a href="https://marvelapp.com/prototype/1773h559/screen/86371562">
+                                    Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86371562</a>
+                                    <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805022" class="white-space-line">
+                                    Lien mobile : https://marvelapp.com/prototype/6dbaaf8/screen/84805022</a>
                                 </div>
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
@@ -2369,8 +2383,10 @@
                         <div id="wrap">
                             <div class="oe_structure">
                                 <div class="debug_debug">
-                                    Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371565">https://marvelapp.com/prototype/1773h559/screen/86371565</a><br />
-                                    Lien mobile : <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84804996">https://marvelapp.com/prototype/6dbaaf8/screen/84804996</a>
+                                    <a href="https://marvelapp.com/prototype/1773h559/screen/86371565">
+                                    Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86371565</a>
+                                    <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84804996" class="white-space-line">
+                                    Lien mobile : https://marvelapp.com/prototype/6dbaaf8/screen/84804996</a>
                                 </div>
                                 <section class="s_page_title pb24 pt88 s" style="margin-left:14%;">
                                     <p><a href="/monprofil">Mon profil <i class="fa fa-chevron-right" /> Mes annonces publiées</a></p>
@@ -2455,10 +2471,12 @@
                 <t name="About us" t-name="website.aboutus" groups="base.group_user,base.group_portal">
                     <t t-call="website.layout">
                         <div id="wrap">
-                            <div class="oe_structure">
+                            <div class="oe_structure">s
                                 <div class="debug_debug">
-                                    Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371530">https://marvelapp.com/prototype/1773h559/screen/86371530</a><br />
-                                    Lien mobile : <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805005">https://marvelapp.com/prototype/6dbaaf8/screen/84805005</a>
+                                    <a href="https://marvelapp.com/prototype/1773h559/screen/86371530">
+                                    Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86371530</a>
+                                    <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805005" class="white-space-line">
+                                    Lien mobile : https://marvelapp.com/prototype/6dbaaf8/screen/84805005</a>
                                 </div>
                                 <section class="s_page_title pb24 pt88 s" style="margin-left:14%;">
                                     <p><a href="/monprofil">Mon profil <i class="fa fa-chevron-right" /> Mes favoris</a></p>
@@ -2567,8 +2585,10 @@
                         <div id="wrap">
                             <div class="oe_structure">
                                 <div class="debug_debug">
-                                    Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371519">https://marvelapp.com/prototype/1773h559/screen/86371519</a><br />
-                                    Lien mobile : <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805033">https://marvelapp.com/prototype/6dbaaf8/screen/84805033</a>
+                                    <a href="https://marvelapp.com/prototype/1773h559/screen/86371519">
+                                    Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86371519</a>
+                                    <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805033" class="white-space-line">
+                                    Lien mobile : https://marvelapp.com/prototype/6dbaaf8/screen/84805033</a>
                                 </div>
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
@@ -2755,8 +2775,10 @@
                         <div id="wrap">
                             <div class="oe_structure">
                                 <div class="debug_debug">
-                                    Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371551">https://marvelapp.com/prototype/1773h559/screen/86371551</a><br />
-                                    Lien mobile : <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84804998">https://marvelapp.com/prototype/6dbaaf8/screen/84804998</a>
+                                    <a href="https://marvelapp.com/prototype/1773h559/screen/86371551">
+                                    Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86371551</a>
+                                    <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84804998" class="white-space-line">
+                                    Lien mobile : https://marvelapp.com/prototype/6dbaaf8/screen/84804998</a>
                                 </div>
                                 <section class="s_page_title pb24 pt88 s" style="margin-left:14%;">
                                     <p>Mon profil > Mes informations personnelles</p>
@@ -2844,8 +2866,10 @@
                         <div id="wrap">
                             <div class="oe_structure">
                                 <div class="debug_debug">
-                                    Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371527">https://marvelapp.com/prototype/1773h559/screen/86371527</a><br />
-                                    Lien mobile : <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805003">https://marvelapp.com/prototype/6dbaaf8/screen/84805003</a>
+                                    <a href="https://marvelapp.com/prototype/1773h559/screen/86371527">
+                                    Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86371527</a>
+                                    <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805003" class="white-space-line">
+                                    Lien mobile : https://marvelapp.com/prototype/6dbaaf8/screen/84805003</a>
                                 </div>
                                 <section class="s_page_title pb24 pt88 s" style="margin-left:14%;">
                                     <p>Mon profil > Mes préférences générales</p>
@@ -2896,7 +2920,8 @@
                                 </p>
                                 <div class="debug_debug">
                                     <div ng-if="section==='notification'">
-                                        Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371534">https://marvelapp.com/prototype/1773h559/screen/86371534</a>
+                                        <a href="https://marvelapp.com/prototype/1773h559/screen/86371534">
+                                        Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86371534</a>
                                     </div>
                                 </div>
 <!--                                <span ng-if="$parent.section_membre===''">-->
@@ -2957,8 +2982,10 @@
                         <div id="wrap" class="ng-cloak">
                             <div class="oe_structure">
                                 <div class="debug_debug">
-                                    Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371536">https://marvelapp.com/prototype/1773h559/screen/86371536</a><br />
-                                    Lien mobile : <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84804881">https://marvelapp.com/prototype/6dbaaf8/screen/84804881</a>
+                                    <a href="https://marvelapp.com/prototype/1773h559/screen/86371536">
+                                    Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86371536</a>
+                                    <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84804881" class="white-space-line">
+                                    Lien mobile : https://marvelapp.com/prototype/6dbaaf8/screen/84804881</a>
                                 </div>
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pb64 pt56" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="banner_profile">
@@ -3055,8 +3082,10 @@
                         <div id="wrap">
                             <div class="oe_structure">
                                 <div class="debug_debug">
-                                    Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371557">https://marvelapp.com/prototype/1773h559/screen/86371557</a><br />
-                                    Lien mobile : <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84804872">https://marvelapp.com/prototype/6dbaaf8/screen/84804872</a>
+                                    <a href="https://marvelapp.com/prototype/1773h559/screen/86371557">
+                                    Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86371557</a>
+                                    <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84804872" class="white-space-line">
+                                    Lien mobile : https://marvelapp.com/prototype/6dbaaf8/screen/84804872</a>
                                 </div>
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="banner_profile s_title pt16 pb16">
@@ -3230,8 +3259,10 @@
                         <div id="wrap">
                             <div class="oe_structure">
                                 <div class="debug_debug">
-                                    Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371583">https://marvelapp.com/prototype/1773h559/screen/86371583</a><br />
-                                    Lien mobile : <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805034">https://marvelapp.com/prototype/6dbaaf8/screen/84805034</a>
+                                    <a href="https://marvelapp.com/prototype/1773h559/screen/86371583">
+                                    Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86371583</a>
+                                    <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805034" class="white-space-line">
+                                    Lien mobile : https://marvelapp.com/prototype/6dbaaf8/screen/84805034</a>
                                 </div>
                                 <section class="s_title_banner oe_img_bg oe_custom_bg pt56 pb64" style="background-image: url(&quot;/website_accorderie/static/src/img/abstract-blue-and-green-fluid-shape-modern-background-vector.jpg&quot;);">
                                     <div class="row s_nb_column_fixed">
@@ -3653,8 +3684,10 @@
                         <div id="wrap">
                             <div class="oe_structure">
                                 <div class="debug_debug">
-                                    Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371547">https://marvelapp.com/prototype/1773h559/screen/86371547</a><br />
-                                    Lien mobile : <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805037">https://marvelapp.com/prototype/6dbaaf8/screen/84805037</a>
+                                    <a href="https://marvelapp.com/prototype/1773h559/screen/86371547">
+                                    Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86371547</a>
+                                    <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805037" class="white-space-line">
+                                    Lien mobile : https://marvelapp.com/prototype/6dbaaf8/screen/84805037</a>
                                 </div>
                                 <section class="s_event_banner oe_img_bg oe_custom_bg" style="background-image: url(&quot;/web/image/website_accorderie.ir_attachment_patrick_tomasso_ajgebwgnru4_unsplash_jpg/patrick-tomasso-AjgebwgNrU4-unsplash.jpg&quot;);">
                                     <div class="event_date_container lg">
@@ -3890,8 +3923,10 @@
                         <div id="wrap">
                             <div class="oe_structure">
                                 <div class="debug_debug">
-                                    Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86417205">https://marvelapp.com/prototype/1773h559/screen/86417205</a><br />
-                                    Lien mobile : <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84804842">https://marvelapp.com/prototype/6dbaaf8/screen/84804842</a>
+                                    <a href="https://marvelapp.com/prototype/1773h559/screen/86417205">
+                                    Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86417205</a>
+                                    <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84804842" class="white-space-line">
+                                    Lien mobile : https://marvelapp.com/prototype/6dbaaf8/screen/84804842</a>
                                 </div>
                                 <section class="s_search_short debug_unimplemented">
                                     <div class="container">
@@ -4053,12 +4088,10 @@
                         <div id="wrap">
                             <div class="oe_structure">
                                 <div class="debug_debug">
-                                    <div ng-if="!echange_service_info.transaction_valide">
-                                        Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86594051">https://marvelapp.com/prototype/1773h559/screen/86594051</a><br />
-                                    </div>
-                                    <div ng-if="echange_service_info.transaction_valide">
-                                        Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86694421">https://marvelapp.com/prototype/1773h559/screen/86694421</a><br />
-                                    </div>
+                                    <a href="https://marvelapp.com/prototype/1773h559/screen/86594051">
+                                    Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86594051</a>
+                                    <a href="https://marvelapp.com/prototype/6dbaaf8/screen/86694421" class="white-space-line">
+                                    Lien mobile : https://marvelapp.com/prototype/6dbaaf8/screen/86694421</a>
                                 </div>
                                 <section class="s_back">
                                     <a href="/monactivite/echanges">
@@ -4365,8 +4398,10 @@
                         <div id="wrap">
                             <div class="oe_structure">
                                 <div class="debug_debug">
-                                    Lien maquette : <a href="https://marvelapp.com/prototype/1773h559/screen/86371574">https://marvelapp.com/prototype/1773h559/screen/86371574</a><br />
-                                    Lien mobile : <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805048">https://marvelapp.com/prototype/6dbaaf8/screen/84805048</a>
+                                    <a href="https://marvelapp.com/prototype/1773h559/screen/86371574">
+                                    Lien maquette : https://marvelapp.com/prototype/1773h559/screen/86371574</a>
+                                    <a href="https://marvelapp.com/prototype/6dbaaf8/screen/84805048" class="white-space-line">
+                                    Lien mobile : https://marvelapp.com/prototype/6dbaaf8/screen/84805048</a>
                                 </div>
                                 <section class="s_back">
                                     <a href="">
