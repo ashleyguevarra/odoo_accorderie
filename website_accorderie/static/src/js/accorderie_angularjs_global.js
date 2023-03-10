@@ -1018,11 +1018,6 @@ odoo.define('website.accorderie_angularjs_global', function (require) {
             }
             console.debug($scope.personal.dct_echange_mensuel);
         }
-
-        $scope.echange_click_redirect = function (echange) {
-            // TODO no need this, use instead <a href and not ng-click
-            window.location.href = '/monactivite/echange#!?echange=' + echange.id;
-        }
     }])
 
     let AccorderieAngularJSGlobal = Widget.extend({
