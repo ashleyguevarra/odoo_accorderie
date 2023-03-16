@@ -2,12 +2,12 @@
     Page mon profil
 */
 
-.banner_profile {
+.banner-profile {
   align-items: center;
   display: flex;
   gap: 2rem;
 
-  .solde_container {
+  .solde-container {
     border-left: 2px solid;
     display: flex;
     flex-direction: column;
@@ -26,23 +26,23 @@
     }
   }
 
-  .profile_infos {
+  .profile-infos {
     align-items: center;
     display: flex;
     width: 50%;
   }
 }
 
-.white_box {
+.white-box {
   background-color: white;
 }
 
-.s_informations {
+.s-informations {
   margin-bottom: 100px;
   margin-top: 100px;
 }
 
-.profile_pic {
+.profile-pic {
   aspect-ratio: 1/1;
   background-size: cover;
   height: 150px;
@@ -56,31 +56,31 @@
   }
 }
 
-.profile_banner_info {
+.profile-banner-info {
   display: flex;
   flex-direction: column;
 
-  .profile_name {
+  .profile-name {
     font-size: 3rem;
   }
 
-  .profile_hrs {
+  .profile-hrs {
     font-size: 2rem;
   }
 }
 
-.profile_btn.btn {
+.profile-btn.btn {
   border: 1px solid $beta;
   font-size: 1.5rem;
   padding: 1rem;
   white-space: normal;
 }
 
-.profile_btn.accorderie {
+.profile-btn.accorderie {
   margin-left: auto;
 }
 
-.informations_container {
+.informations-container {
   display: grid;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
@@ -174,24 +174,24 @@
 }
 
 @media only screen and (max-width: 990px) {
-  .banner_profile {
+  .banner-profile {
     align-items: unset;
     flex-direction: column;
 
-    .profile_infos {
+    .profile-infos {
       width: 100%;
     }
 
-    .solde_container {
+    .solde-container {
       display: none;
     }
   }
 
-  .profile_pic {
+  .profile-pic {
     height: 12vh;
   }
 
-  .informations_container {
+  .informations-container {
     display: flex;
     flex-direction: column;
 
@@ -216,22 +216,22 @@
     }
   }
 
-  .profile_banner_info {
-    .profile_name {
+  .profile-banner-info {
+    .profile-name {
       font-size: 4vh;
     }
 
-    .profile_hrs {
+    .profile-hrs {
       font-size: 3.5vh;
     }
   }
 
-  .profile_btn.disconnect {
+  .profile-btn.disconnect {
     display: none;
     padding: 0;
   }
 
-  .profile_btn.accorderie {
+  .profile-btn.accorderie {
     font-size: 5vw;
     width: 100%;
 

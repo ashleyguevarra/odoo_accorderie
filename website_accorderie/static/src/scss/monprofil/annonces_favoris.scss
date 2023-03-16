@@ -3,13 +3,13 @@
     Page monprofil/mesfavoris
 */
 
-.s_vertical_list_lg {
+.s-vertical-list-lg {
   height: auto;
   padding-top: 0;
   padding: 0 10%;
 }
 
-.vertical_list {
+.vertical-list {
   display: flex;
   flex-direction: column;
   float: left;
@@ -19,7 +19,7 @@
   padding: 0 5%;
   width: 100%;
 
-  .list_title {
+  .list-title {
     border-bottom: 1px solid $beta;
     margin-top: 6vh;
   }
@@ -34,7 +34,7 @@
       flex: 1;
     }
 
-    .activite_img {
+    .activite-img {
       float: left;
       max-height: 150px;
     }
@@ -49,11 +49,11 @@
       line-height: 1;
       margin-right: 5%;
 
-      .activite_title {
+      .activite-title {
         width: 100%;
       }
 
-      .activite_desc {
+      .activite-desc {
         color: gray;
         margin-bottom: 0;
       }
@@ -71,38 +71,38 @@
     }
   }
 
-  .add_service {
+  .add-service {
     margin-top: 1.5%;
     width: fit-content;
   }
 }
 
 @media only screen and (max-width: 990px) {
-  .s_page_title {
+  .s-page-title {
     margin-left: 5% !important;
   }
 
-  .s_vertical_list_lg {
+  .s-vertical-list-lg {
     padding: 0;
   }
 
   .activite.btn {
     padding: 2% 0 2%;
 
-    .activite_img {
+    .activite-img {
       height: 8vh;
     }
 
-    .activite_title {
+    .activite-title {
       font-size: 1.8vh;
       max-height: 3rem;
       overflow: hidden;
     }
 
-    .activite_auteur,
-    .activite_distance,
-    .activite_age,
-    .activite_desc,
+    .activite-auteur,
+    .activite-distance,
+    .activite-age,
+    .activite-desc,
     q {
       font-size: 1.5vh;
     }

@@ -2,7 +2,7 @@
     Section return bar
 */
 
-.s_back {
+.s-back {
   display: flex;
   padding: 28px 32px;
 
@@ -30,7 +30,7 @@
   }
 }
 @media only screen and (max-width: 710px) {
-  .s_back {
+  .s-back {
     flex-direction: column;
     gap: 1.5rem;
 

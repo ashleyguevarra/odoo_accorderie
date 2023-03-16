@@ -2,22 +2,22 @@
     Page Mon activité/Échanges, Mon activité/Mon agenda
 */
 
-.s_activites_recentes.lg {
+.s-activites-recentes.lg {
   height: auto;
   max-height: 2000px;
   padding-top: 0;
 }
 
-.activites_list.lg {
+.activites-list.lg {
   flex-wrap: nowrap;
   width: 100%;
 
-  .list_title {
+  .list-title {
     border-bottom: 1px solid $beta;
     margin-top: 6vh;
   }
 
-  .agenda_btns {
+  .agenda-btns {
     align-items: center;
     border-radius: 7px;
     border: 1px solid #d6d6d6;
@@ -47,14 +47,14 @@
       max-height: 150px;
     }
 
-    .activite_infos {
+    .activite-infos {
       align-items: center;
       display: flex;
       height: 100%;
       width: 60%;
     }
 
-    .activite_title {
+    .activite-title {
       width: 30%;
     }
 
@@ -91,13 +91,13 @@
 }
 
 @media only screen and (max-width: 990px) {
-  .activites_list.lg .activite.btn {
-    .activite_infos {
+  .activites-list.lg .activite.btn {
+    .activite-infos {
       align-items: unset;
       flex-direction: column;
       justify-content: center;
 
-      .activite_title {
+      .activite-title {
         width: auto;
       }
 
@@ -112,7 +112,7 @@
       }
     }
 
-    .details_link {
+    .details-link {
       display: none;
     }
   }

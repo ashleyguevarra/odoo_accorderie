@@ -2,10 +2,10 @@
     Page ma présentation
 */
 
-.s_mes_informations {
+.s-mes-informations {
   background-color: $gamma;
 
-  .informations_container {
+  .informations-container {
     display: grid;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
@@ -50,7 +50,7 @@
       grid-area: 1 / 1 / 2 / 3;
       padding: 1% 4%;
 
-      .profile_pic {
+      .profile-pic {
         aspect-ratio: 1/1;
         height: 170px;
 
@@ -119,7 +119,7 @@
       }
     }
 
-    .information-4 .vertical_list {
+    .information-4 .vertical-list {
       padding: 0;
       * {
         font-size: unset;
@@ -131,7 +131,7 @@
     }
   }
 
-  .container_profil {
+  .container-profil {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -140,9 +140,9 @@
     width: 100%;
   }
 
-  .profil_left,
-  .profil_main,
-  .profil_right {
+  .profil-left,
+  .profil-main,
+  .profil-right {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -163,7 +163,7 @@
     font-size: 20px;
   }
 
-  .profil_box {
+  .profil-box {
     padding: 1% 1% !important;
     width: 100%;
   }
@@ -174,10 +174,10 @@
 }
 
 @media only screen and (max-width: 990px) {
-  .s_mes_informations {
+  .s-mes-informations {
     background-color: unset;
 
-    .informations_container {
+    .informations-container {
       display: flex;
       flex-direction: column;
 
@@ -201,7 +201,7 @@
     }
   }
 
-  .container_profil {
+  .container-profil {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -210,9 +210,9 @@
     width: 100%;
   }
 
-  .profil_left,
-  .profil_main,
-  .profil_right {
+  .profil-left,
+  .profil-main,
+  .profil-right {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -234,7 +234,7 @@
     font-size: 10px;
   }
 
-  .profil_box {
+  .profil-box {
     padding: 1% 1% !important;
     width: 100%;
   }

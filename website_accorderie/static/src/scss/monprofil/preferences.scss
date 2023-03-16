@@ -2,7 +2,7 @@
     Page mon profil/mes préférences
 */
 
-.vertical_list.settings {
+.vertical-list.settings {
   width: 60%;
 }
 
@@ -10,7 +10,7 @@
   border-bottom: 1px solid $beta;
   padding: 20px 0 20px;
 
-  .item_desc {
+  .item-desc {
     font-size: 1rem;
     font-weight: 350;
   }
@@ -22,7 +22,7 @@
 }
 
 @media only screen and (max-width: 990px) {
-  .vertical_list.settings {
+  .vertical-list.settings {
     width: 100%;
   }
 }

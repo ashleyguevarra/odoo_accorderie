@@ -31,7 +31,7 @@ header .nav-link {
 .collapse.navbar-collapse {
   height: var(--nav-height);
 
-  #top_menu {
+  #top-menu {
     height: 100%;
 
     .nav-item {
@@ -48,7 +48,7 @@ header .nav-link {
   width: auto;
   color: $text-gamma !important;
 
-  .nav_pic {
+  .nav-pic {
     height: 45px;
     aspect-ratio: 1;
   }
@@ -70,7 +70,7 @@ header .nav-link {
   }
 }
 
-.second_navbar {
+.second-navbar {
   background-color: $second-navbar-color;
 }
 

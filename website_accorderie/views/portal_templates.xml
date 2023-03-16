@@ -9,7 +9,7 @@
 
         <xpath expr="//div[@id='wrapwrap']" position="inside">
             <div
-                class="modal fade modal_pub_offre modal_shown show ng-cloak"
+                class="modal fade modal-pub-offre modal_shown show ng-cloak"
                 style="display:block"
                 ng-show="show_qrcode_modal"
             >
@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div
-                class="modal fade modal_pub_offre modal_shown show ng-cloak"
+                class="modal fade modal-pub-offre modal_shown show ng-cloak"
                 style="display:block"
                 ng-show="show_camera_qrcode_modal"
             >
@@ -120,7 +120,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="top_menu_collapse">
                         <!-- FIXME We want menu to open to the right by default (except cases handled in JS) -->
-                        <ul class="nav navbar-nav text-right" id="top_menu">
+                        <ul class="nav navbar-nav text-right" id="top-menu">
                             <li class="nav-item" t-ignore="true" t-if="not user_id._is_public()">
                                 <a class="nav-link" role="menu_item" href="/explorer">
                                     <span
@@ -380,13 +380,13 @@
                                                 >
                                                     <div class="cat activite btn">
                                                         <img
-                                                            class="activite_img img-fluid"
+                                                            class="activite-img img-fluid"
                                                             src="/web/image/website_accorderie.ir_attachment_meritt_thomas_u_hb93v6iwi_unsplash_jpg/meritt-thomas-u-Hb93V6IWI-unsplash.jpg"
                                                         />
                                                         <div class="infos">
-                                                            <span class="activite_title">{{offre_service.titre}}</span>
+                                                            <span class="activite-title">{{offre_service.titre}}</span>
                                                             <span
-                                                                class="activite_auteur"
+                                                                class="activite-auteur"
                                                             >{{offre_service.membre.full_name}}</span>
                                                         </div>
                                                         <div class="infos right">
@@ -415,15 +415,15 @@
                                                 >
                                                     <div class="cat activite btn">
                                                         <img
-                                                            class="activite_img img-fluid"
+                                                            class="activite-img img-fluid"
                                                             src="/web/image/website_accorderie.ir_attachment_meritt_thomas_u_hb93v6iwi_unsplash_jpg/meritt-thomas-u-Hb93V6IWI-unsplash.jpg"
                                                         />
                                                         <div class="infos">
                                                             <span
-                                                                class="activite_title"
+                                                                class="activite-title"
                                                             >{{demande_service.titre}}</span>
                                                             <span
-                                                                class="activite_auteur"
+                                                                class="activite-auteur"
                                                             >{{demande_service.membre.full_name}}</span>
                                                         </div>
                                                         <div class="infos right">
@@ -463,15 +463,15 @@
                                                 >
                                                     <div class="cat activite btn">
                                                         <img
-                                                            class="activite_img img-fluid rounded-circle"
+                                                            class="activite-img img-fluid rounded-circle"
                                                             ng-src="{{ membre_favoris.ma_photo }}"
                                                         />
                                                         <div class="infos">
                                                             <span
-                                                                class="activite_title"
+                                                                class="activite-title"
                                                             >{{membre_favoris.full_name}}</span>
                                                             <span
-                                                                class="activite_auteur"
+                                                                class="activite-auteur"
                                                                 ng-if="membre_favoris.description"
                                                             ><q>{{membre_favoris.description}}</q></span>
                                                         </div>
@@ -523,14 +523,14 @@
                                                 >
                                                     <div class="cat activite btn">
                                                         <img
-                                                            class="activite_img img-fluid rounded-circle"
+                                                            class="activite-img img-fluid rounded-circle"
                                                             ng-src="{{ notif.membre_photo }}"
                                                         />
                                                         <div class="infos">
                                                             <span
-                                                                class="activite_title"
+                                                                class="activite-title"
                                                             >{{notif.type_notification}}</span>
-                                                            <span class="activite_auteur">{{notif.name}}</span>
+                                                            <span class="activite-auteur">{{notif.name}}</span>
                                                         </div>
                                                         <div class="infos right">
                                                             <span>5m</span>
@@ -655,7 +655,7 @@
                                 t-ignore="true"
                                 t-if="not user_id._is_public()"
                             >
-                                <img class="nav_pic rounded-circle" ng-src="{{ membre_info.ma_photo }}" />
+                                <img class="nav-pic rounded-circle" ng-src="{{ membre_info.ma_photo }}" />
                                 <a
                                     class="nav-link dropdown-toggle adapt-text-secondary-color"
                                     data-toggle="dropdown"
@@ -670,26 +670,26 @@
                                     <b class="ng-cloak">
                                         <p
                                             class="hours"
-                                            ng-class="{neg_time: !personal.actual_bank_sign}"
+                                            ng-class="{neg-time: !personal.actual_bank_sign}"
                                         >{{personal.actual_bank_time_diff}}</p>
                                     </b>
 
                                 </a>
                                 <div class="dropdown-menu js_usermenu" role="menu">
                                     <a class="dropdown-item" t-attf-href="/monactivite" role="menuitem">
-                                        <i class="fa fa-signal icon_padding_right" />Mon activité
+                                        <i class="fa fa-signal icon-padding-right" />Mon activité
                                     </a>
                                     <a class="dropdown-item" t-attf-href="/monprofil/mapresentation" role="menuitem">
-                                        <i class="fa fa-user-circle icon_padding_right" />Ma présentation
+                                        <i class="fa fa-user-circle icon-padding-right" />Ma présentation
                                     </a>
                                     <a class="dropdown-item" t-attf-href="/monprofil/mesannonces" role="menuitem">
-                                        <i class="fa fa-newspaper-o icon_padding_right" />Mes annonces publiées
+                                        <i class="fa fa-newspaper-o icon-padding-right" />Mes annonces publiées
                                     </a>
                                     <a class="dropdown-item" t-attf-href="/communaute/actualite" role="menuitem">
-                                        <i class="fa fa-eye icon_padding_right" />Mon accorderie
+                                        <i class="fa fa-eye icon-padding-right" />Mon accorderie
                                     </a>
                                     <a class="dropdown-item" t-attf-href="/monprofil/mespreferences" role="menuitem">
-                                        <i class="fa fa-gear icon_padding_right" />Mes préférences générales
+                                        <i class="fa fa-gear icon-padding-right" />Mes préférences générales
                                     </a>
                                     <hr />
                                     <a
@@ -698,7 +698,7 @@
                                         t-attf-href="/web/session/logout?redirect=/"
                                         role="menuitem"
                                     >
-                                        <i class="fa fa-power-off icon_padding_right" />
+                                        <i class="fa fa-power-off icon-padding-right" />
                                         Déconnexion
                                     </a>
                                 </div>

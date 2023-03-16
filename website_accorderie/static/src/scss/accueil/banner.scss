@@ -9,26 +9,26 @@
   width: 70%;
 }
 
-.banner_btn {
+.banner-btn {
   margin: auto;
   max-width: none !important;
   padding-top: 16px;
 }
 
-.container_communaute {
+.container-communaute {
   .row {
     width: 100%;
   }
 }
 
-.s_title_banner {
+.s-title-banner {
   padding: 10vw;
   p {
     font-size: 3rem;
   }
 }
 
-.aide_title {
+.aide-title {
   font-size: 4rem;
 }
 
@@ -44,7 +44,7 @@
       .row > .jumbotron {
         border-radius: 0px;
 
-        .row > .s_title * {
+        .row > .s-title * {
           font-size: 6vw;
           padding-bottom: 0;
           padding-top: 0;
@@ -53,15 +53,15 @@
     }
   }
 
-  #banner_communaute {
+  #banner-communaute {
     padding: 50% 0 0 0;
 
-    .s_parallax_bg {
+    .s-parallax-bg {
       background-position: 90%;
     }
   }
 
-  .container_communaute {
+  .container-communaute {
     max-width: 100%;
     padding: 0;
 
@@ -71,7 +71,7 @@
     }
   }
 
-  #banner_aide {
+  #banner-aide {
     padding: 50% 0 0 0 !important;
 
     .container {
@@ -81,7 +81,7 @@
         background-color: $primary-color;
         padding: 30px 15px;
 
-        .s_btn {
+        .s-btn {
           display: flex;
           flex-wrap: wrap;
           gap: 20px;
@@ -90,20 +90,20 @@
     }
   }
 
-  .aide_title {
+  .aide-title {
     font-size: 6vh;
   }
 
-  .aide_btn {
+  .aide-btn {
     background-color: $bg-alpha !important;
     border-color: $bg-alpha !important;
   }
 
-  #aide_btn_txt {
+  #aide-btn-txt {
     color: $primary-color !important;
   }
 
-  .s_title_banner p {
+  .s-title-banner p {
     font-size: 4vh;
   }
 }
