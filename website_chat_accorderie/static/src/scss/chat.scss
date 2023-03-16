@@ -1,14 +1,14 @@
 /*
     Chat
 */
-.chat_container {
+.chat-container {
   display: flex;
   flex-direction: row;
   gap: 8%;
   max-height: 800px;
 }
 
-.chat_box {
+.chat-box {
   background-color: $delta;
   border-radius: 7px;
   border: 1px solid $beta;
@@ -18,7 +18,7 @@
   margin-left: 10%;
   width: 50%;
 
-  .chat_header {
+  .chat-header {
     display: flex;
     max-height: 18%;
     padding: 2rem;
@@ -29,7 +29,7 @@
       height: 100%;
     }
 
-    .header_info {
+    .header-info {
       display: flex;
       flex-direction: column;
       line-height: 0.75rem;
@@ -40,7 +40,7 @@
         margin-bottom: 0.75rem;
       }
 
-      .chat_contact {
+      .chat-contact {
         font-size: 1.25rem;
         font-weight: bold;
         line-height: 1.5rem;
@@ -49,7 +49,7 @@
         white-space: nowrap;
       }
 
-      .chat_title {
+      .chat-title {
         display: block;
         font-size: 1.1rem;
         height: 1.1rem;
@@ -58,7 +58,7 @@
         white-space: nowrap;
       }
 
-      .chat_desc {
+      .chat-desc {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -66,7 +66,7 @@
     }
   }
 
-  .chat_header::after {
+  .chat-header::after {
     content: "";
     border-top: 1px solid $beta;
     bottom: 0px;
@@ -75,12 +75,12 @@
     right: 2rem;
   }
 
-  .chat_body {
+  .chat-body {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
 
-    .chat_msg {
+    .chat-msg {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
@@ -97,22 +97,22 @@
         width: fit-content;
       }
 
-      .my_msg {
+      .my-msg {
         border-radius: 25px 25px 3px;
         margin-left: auto;
       }
 
-      .their_msg {
+      .their-msg {
         border-radius: 25px 25px 25px 3px;
       }
 
-      .contact_pic {
+      .contact-pic {
         aspect-ratio: 1/1;
         height: 2.5rem;
         margin-top: auto;
       }
 
-      .msg_time {
+      .msg-time {
         color: $text-beta;
         flex-basis: 100%;
         margin-left: 3.5rem;
@@ -121,11 +121,11 @@
     }
   }
 
-  .chat_footer {
+  .chat-footer {
     margin-top: auto;
     padding: 2rem;
 
-    .input_container {
+    .input-container {
       background-color: $bg-alpha;
       border-radius: 7px;
       border: 1px solid $beta;
@@ -156,29 +156,29 @@
 }
 
 @media only screen and (max-width: 990px) {
-  .s_chat {
+  .s-chat {
     padding: 0 !important;
   }
 
-  //.right_cards_container {
+  //.right-cards-container {
   //  display: none;
   //}
 
-  .chat_container {
+  .chat-container {
     max-height: calc(94vh - 154px);
 
-    .right_cards_container {
+    .right-cards-container {
       display: none;
     }
   }
 
-  .chat_box {
+  .chat-box {
     background-color: $bg-alpha;
     border: none;
     margin: 0;
     width: 100%;
 
-    .chat_header {
+    .chat-header {
       background-color: $bg-alpha;
       max-height: 80px;
       padding: 1rem;
@@ -187,30 +187,30 @@
         border-radius: 50%;
       }
 
-      .header_info {
-        .chat_desc {
+      .header-info {
+        .chat-desc {
           display: none;
         }
       }
     }
 
-    .chat_header::after {
+    .chat-header::after {
       left: 1rem;
       right: 1rem;
     }
 
-    .chat_body {
+    .chat-body {
       margin-bottom: 139px;
     }
 
-    .chat_footer {
+    .chat-footer {
       background-color: $bg-alpha;
       bottom: 65px;
       padding: 1rem;
       position: fixed;
       width: 100%;
 
-      .input_container {
+      .input-container {
         input {
           height: 2.5rem;
         }
@@ -220,7 +220,7 @@
 }
 
 @media only screen and (max-width: 366px) {
-  .chat_container {
+  .chat-container {
     max-height: calc(94vh - 188.25px);
   }
 }

@@ -82,7 +82,7 @@ $bg-green-alert: #70a6a8;
   Copy from odoo/addons/web_editor/static/src/scss/web_editor.ui.scss
   INPUTS
 */
-.o_switch {
+.o-switch {
   align-items: center;
   display: flex;
   font-weight: normal;
@@ -127,7 +127,7 @@ $bg-green-alert: #70a6a8;
     }
   }
 
-  &.o_switch_danger {
+  &.o-switch-danger {
     > input {
       &:not(:checked) + span {
         background: $o-we-color-danger;

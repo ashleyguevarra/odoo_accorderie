@@ -2,20 +2,20 @@
     Time
 */
 
-.neg_time {
+.neg-time {
   color: $bg-red-alert !important;
 }
 
-.neg_time_b {
+.neg-time-b {
   background-color: $bg-red-alert !important;
   color: $text-alpha !important;
 }
 
-.neg_time_2 {
+.neg-time-2 {
   color: $bg-red-2-alert !important;
 }
 
-.list_title {
+.list-title {
   padding-bottom: 50px;
 
   .title {
@@ -30,7 +30,7 @@
     white-space: nowrap;
   }
 
-  .nav_btn {
+  .nav-btn {
     aspect-ratio: 1;
     border-radius: 50%;
     border: 1px solid $beta;

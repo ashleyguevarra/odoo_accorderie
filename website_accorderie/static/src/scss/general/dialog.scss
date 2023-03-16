@@ -2,21 +2,21 @@
     Dialog mon accorderie
 */
 
-.accorderie_form {
+.accorderie-form {
   padding: 5% 10%;
 
-  .form_title {
+  .form-title {
     font-size: 2rem;
     font-weight: bold;
   }
 
-  .radio_container {
+  .radio-container {
     border-bottom: 1px solid $beta;
     display: flex;
     font-weight: normal;
     padding: 1rem 0;
 
-    .form_title {
+    .form-title {
       font-size: 2rem;
     }
 
@@ -33,7 +33,7 @@
 .modal-footer {
   padding: 1rem 10%;
 
-  .btn_accorderie {
+  .btn-accorderie {
     background-color: $primary-color !important;
     border-radius: 5px !important;
     border: none;

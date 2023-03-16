@@ -19,24 +19,24 @@
                             href="https://marvelapp.com/prototype/6dbaaf8/screen/84804853"
                         >https://marvelapp.com/prototype/6dbaaf8/screen/84804853</a>
                     </div>
-                    <section class="s_back ng-cloak" ng-if="offre_service_info.membre_id === personal.id">
+                    <section class="s-back ng-cloak" ng-if="offre_service_info.membre_id === personal.id">
                         <a href="/monprofil/mesannonces">
                             <i class="fa fa-arrow-left text-primary" />
                             Voir toutes mes annonces publiées
                         </a>
                         <div class="actions">
                             <div class="debug_unimplemented" style="cursor:pointer">
-                                <i class="fa fa-pencil text-primary icon_padding_right" />
+                                <i class="fa fa-pencil text-primary icon-padding-right" />
                             Modifier mon offre de service
                             </div>
                             <divider class="debug_unimplemented" />
                             <div ng-click="supprimer_offre_service(offre_service_info.id)" style="cursor:pointer">
-                                <i class="fa fa-trash text-primary icon_padding_right" />
+                                <i class="fa fa-trash text-primary icon-padding-right" />
                             Supprimer
                             </div>
                             <divider />
                             <div>
-                                <label class="o_switch o_switch_danger" style="display:inline" for="publier_offre_id">
+                                <label class="o-switch o-switch-danger" style="display:inline" for="publier_offre_id">
                                     <input
                                         type="checkbox"
                                         id="publier_offre_id"
@@ -60,7 +60,7 @@
                         <section class="pt32 pb32" t-if="not accorderie_offre_service_id">
                             <div class="container">
                                 <div class="row s_nb_column_fixed">
-                                    <div class="col-lg-12 s_title pt16 pb16" style="text-align: center;">
+                                    <div class="col-lg-12 s-title pt16 pb16" style="text-align: center;">
                                         <h1 class="s_title_default text-bold">
                                             <font style="font-size: 62px;">Offre de service non existante</font>
                                         </h1>
@@ -69,18 +69,18 @@
                             </div>
                         </section>
                         <section
-                            class="s_event_banner oe_img_bg oe_custom_bg"
+                            class="s-event-banner oe_img_bg oe_custom_bg"
                             style="background-image: url(&quot;/web/image/website_accorderie.ir_attachment_eric_prouzet_z62b9jiltgm_unsplash_jpg/eric-prouzet-Z62b9jIltGM-unsplash.jpg&quot;);"
                         >
 
-                            <div class="event_banner_action bg-primary">
+                            <div class="event-banner-action bg-primary">
                                 <div class="btn btn-primary" ng-if="is_share_enable()" ng-click="share_link()">
-                                    <i class="fa fa-share-alt icon_padding_right" />
+                                    <i class="fa fa-share-alt icon-padding-right" />
                                     Partager
                                 </div>
                                 <div class="divider" ng-if="is_share_enable()" />
                                 <div class="btn btn-primary" ng-click="show_and_generate_qrcode()">
-                                    <i class="fa fa-qrcode icon_padding_right" />
+                                    <i class="fa fa-qrcode icon-padding-right" />
                                     Code QR
                                 </div>
                                 <div class="divider" />
@@ -89,7 +89,7 @@
                                     t-attf-ng-click="add_to_my_favorite_field_id('accorderie.offre.service', {{accorderie_offre_service_id.id}})"
                                 >
                                     <i
-                                        class="fa icon_padding_right"
+                                        class="fa icon-padding-right"
                                         ng-class="{'fa-heart': offre_service_info.is_favorite, 'fa-heart-o': !offre_service_info.is_favorite}"
                                     />
                                     <span ng-show="!offre_service_info.is_favorite">Ajouter à mes favoris</span>
@@ -98,20 +98,20 @@
                             </div>
                         </section>
 
-                        <section class="event_head">
-                            <div class="event_info info-1">
+                        <section class="event-head">
+                            <div class="event-info info-1">
                                 <h1 t-field="accorderie_offre_service_id.titre" />
                                 <div class="infos">
                                     <div class="distance">
-                                        <i class="fa fa-map-marker text-primary icon_padding_right" />
+                                        <i class="fa fa-map-marker text-primary icon-padding-right" />
                                         <t t-if="str_distance">&#192; <t t-raw="str_distance" /> de votre domicile</t>
                                     </div>
                                     <div class="adresse">
-                                        <i class="fa fa-home text-primary icon_padding_right" />
+                                        <i class="fa fa-home text-primary icon-padding-right" />
                                         <t t-esc="accorderie_offre_service_id.membre.adresse" />
                                     </div>
                                     <div class="pubdate">
-                                        <i class="fa fa-clock-o text-primary icon_padding_right" />
+                                        <i class="fa fa-clock-o text-primary icon-padding-right" />
                                         <t t-esc="str_diff_time" />
                                     </div>
                                 </div>
@@ -119,9 +119,9 @@
                         </section>
 
                         <section class="s_evenement pt80 pb160" t-if="accorderie_offre_service_id">
-                            <div class="event_container">
-                                <div class="informations_container">
-                                    <div class="event_info info-2">
+                            <div class="event-container">
+                                <div class="informations-container">
+                                    <div class="event-info info-2">
                                         <div class="description" t-if="accorderie_offre_service_id.description">
                                             <h2>Description</h2>
                                             <t t-raw="accorderie_offre_service_id.description" />
@@ -153,7 +153,7 @@
                                         </div>
                                         <div class="dispo debug_unimplemented">
                                             <h2>Disponilibités</h2>
-                                            <div class="dates_container">
+                                            <div class="dates-container">
                                                 <p>LUNDI</p><p>08H00 - 19H00</p>
                                                 <p>MARDI</p><p>08H00 - 19H00</p>
                                                 <p>MERCREDI</p><p>08H00 - 19H00</p>
@@ -171,7 +171,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="right_cards_container">
+                                <div class="right-cards-container">
                                     <div class="card info-3" ng-if="offre_service_info.membre_id !== personal.id">
                                         <h2>Choisir une date</h2>
                                         {{ load_date() }}
@@ -210,24 +210,24 @@
         <t name="About us" t-name="website.aboutus">
             <t t-call="website.layout">
                 <div id="wrap">
-                    <section class="s_back ng-cloak" ng-if="demande_service_info.membre_id === personal.id">
+                    <section class="s-back ng-cloak" ng-if="demande_service_info.membre_id === personal.id">
                         <a href="/monprofil/mesannonces">
                             <i class="fa fa-arrow-left text-primary" />
                             Voir toutes mes annonces publiées
                         </a>
                         <div class="actions">
                             <div class="debug_unimplemented" style="cursor:pointer">
-                                <i class="fa fa-pencil text-primary icon_padding_right" />
+                                <i class="fa fa-pencil text-primary icon-padding-right" />
                             Modifier ma demande de service
                             </div>
                             <divider class="debug_unimplemented" />
                             <div ng-click="supprimer_demande_service(demande_service_info.id)" style="cursor:pointer">
-                                <i class="fa fa-trash text-primary icon_padding_right" />
+                                <i class="fa fa-trash text-primary icon-padding-right" />
                             Supprimer
                             </div>
                             <divider />
                             <div>
-                                <label class="o_switch o_switch_danger" style="display:inline" for="publier_demande_id">
+                                <label class="o-switch o-switch-danger" style="display:inline" for="publier_demande_id">
                                     <input
                                         type="checkbox"
                                         id="publier_demande_id"
@@ -251,8 +251,8 @@
                         <section class="pt32 pb32" t-if="not accorderie_demande_service_id">
                             <div class="container">
                                 <div class="row s_nb_column_fixed">
-                                    <div class="col-lg-12 s_title pt16 pb16" style="text-align: center;">
-                                        <h1 class="s_title_default text-bold">
+                                    <div class="col-lg-12 s-title pt16 pb16" style="text-align: center;">
+                                        <h1 class="s_title_default">
                                             <font style="font-size: 62px;">Demande de service non existante</font>
                                         </h1>
                                     </div>
@@ -260,18 +260,18 @@
                             </div>
                         </section>
                         <section
-                            class="s_event_banner oe_img_bg oe_custom_bg"
+                            class="s-event-banner oe_img_bg oe_custom_bg"
                             style="background-image: url(&quot;/web/image/website_accorderie.ir_attachment_eric_prouzet_z62b9jiltgm_unsplash_jpg/eric-prouzet-Z62b9jIltGM-unsplash.jpg&quot;);"
                         >
 
-                            <div class="event_banner_action bg-primary">
+                            <div class="event-banner-action bg-primary">
                                 <div class="btn btn-primary" ng-if="is_share_enable()" ng-click="share_link()">
-                                    <i class="fa fa-share-alt icon_padding_right" />
+                                    <i class="fa fa-share-alt icon-padding-right" />
                                     Partager
                                 </div>
                                 <div class="divider" ng-if="is_share_enable()" />
                                 <div class="btn btn-primary" ng-click="show_and_generate_qrcode()">
-                                    <i class="fa fa-qrcode icon_padding_right" />
+                                    <i class="fa fa-qrcode icon-padding-right" />
                                     Code QR
                                 </div>
                                 <div class="divider" />
@@ -280,7 +280,7 @@
                                     t-attf-ng-click="add_to_my_favorite_field_id('accorderie.demande.service', {{accorderie_demande_service_id.id}})"
                                 >
                                     <i
-                                        class="fa icon_padding_right"
+                                        class="fa icon-padding-right"
                                         ng-class="{'fa-heart': demande_service_info.is_favorite, 'fa-heart-o': !demande_service_info.is_favorite}"
                                     />
                                     <span ng-show="!demande_service_info.is_favorite">Ajouter à mes favoris</span>
@@ -289,20 +289,20 @@
                             </div>
                         </section>
 
-                        <section class="event_head">
-                            <div class="event_info info-1">
+                        <section class="event-head">
+                            <div class="event-info info-1">
                                 <h1 t-field="accorderie_demande_service_id.titre" />
                                 <div class="infos">
                                     <div class="distance">
-                                        <i class="fa fa-map-marker text-primary icon_padding_right" />
+                                        <i class="fa fa-map-marker text-primary icon-padding-right" />
                                         <t t-if="str_distance">&#192; <t t-raw="str_distance" /> de votre domicile</t>
                                     </div>
                                     <div class="adresse">
-                                        <i class="fa fa-home text-primary icon_padding_right" />
+                                        <i class="fa fa-home text-primary icon-padding-right" />
                                         <t t-esc="accorderie_demande_service_id.membre.adresse" />
                                     </div>
                                     <div class="pubdate">
-                                        <i class="fa fa-clock-o text-primary icon_padding_right" />
+                                        <i class="fa fa-clock-o text-primary icon-padding-right" />
                                         <t t-esc="str_diff_time" />
                                     </div>
                                 </div>
@@ -310,9 +310,9 @@
                         </section>
 
                         <section class="s_evenement pt80 pb160" t-if="accorderie_demande_service_id">
-                            <div class="event_container">
-                                <div class="informations_container">
-                                    <div class="event_info info-2">
+                            <div class="event-container">
+                                <div class="informations-container">
+                                    <div class="event-info info-2">
                                         <div class="description" t-if="accorderie_demande_service_id.description">
                                             <h2>Description</h2>
                                             <t t-raw="accorderie_demande_service_id.description" />
@@ -344,7 +344,7 @@
 <!--                                        </div>-->
                                         <div class="dispo debug_unimplemented">
                                             <h2>Disponilibités</h2>
-                                            <div class="dates_container">
+                                            <div class="dates-container">
                                                 <p>LUNDI</p><p>08H00 - 19H00</p>
                                                 <p>MARDI</p><p>08H00 - 19H00</p>
                                                 <p>MERCREDI</p><p>08H00 - 19H00</p>
@@ -362,7 +362,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="right_cards_container" t-if="accorderie_demande_service_id">
+                                <div class="right-cards-container" t-if="accorderie_demande_service_id">
                                     <div class="card info-3" ng-if="demande_service_info.membre_id !== personal.id">
                                         <h2>Choisir une date</h2>
                                         {{ load_date() }}
@@ -402,9 +402,9 @@
         name="Offre Service Accorderie Offre Service And Demande Service Accorderie Demande Service List"
     >
         <t t-ignore="true">
-            <div class="container_lists">
-                <div class="row activites_list col-lg-6">
-                    <div class="list_title s_title">
+            <div class="container-lists">
+                <div class="row activites-list col-lg-6">
+                    <div class="list-title s-title">
                         <div class="title">
                             <img id="offres_recentes_accorderie" />
                             <h1>Offres r&#233;centes</h1>
@@ -426,30 +426,30 @@
                                     t-if="lst_icon_offre_service[offre_service_index]"
                                     t-att-src="image_data_uri(lst_icon_offre_service[offre_service_index])"
                                     alt="icon"
-                                    class="activite_img img-fluid"
+                                    class="activite-img img-fluid"
                                 />
                                 <span
                                     t-if="not lst_icon_offre_service[offre_service_index]"
-                                    class="activite_img fa fa-calendar-plus-o bg-epsilon text-center adapt-text-epsilon-color"
+                                    class="activite-img fa fa-calendar-plus-o bg-epsilon text-center adapt-text-epsilon-color"
                                 />
                                 <div class="infos">
                                     <div
-                                        class="activite_title"
+                                        class="activite-title"
                                         t-if="offre_service.titre"
                                         t-field="offre_service.titre"
                                     />
-                                    <div class="activite_title" t-if="not offre_service.titre">
+                                    <div class="activite-title" t-if="not offre_service.titre">
                                         Titre vide...
                                         <!-- TODO mettre un titre par défaut en lien avec la catégorie -->
                                     </div>
                                     <div
-                                        class="activite_auteur"
+                                        class="activite-auteur"
                                         t-if="offre_service.membre"
                                         t-field="offre_service.membre"
                                     />
                                     <span
                                         t-if="len(lst_distance_offre_service) >= offre_service_index"
-                                        class="activite_distance"
+                                        class="activite-distance"
                                         t-raw="lst_distance_offre_service[offre_service_index]"
                                     />
                                 </div>
@@ -467,8 +467,8 @@
                         Aucune offre de services sont disponible pour cette accorderie.
                     </div>
                 </div>
-                <div class="row activites_list col-lg-6">
-                    <div class="list_title s_title">
+                <div class="row activites-list col-lg-6">
+                    <div class="list-title s-title">
                         <div class="title">
                             <img id="demandes_recentes_accorderie" />
                             <h1>Demandes r&#233;centes</h1>
@@ -490,30 +490,30 @@
                                     t-if="lst_icon_demande_service[demande_service_index]"
                                     t-att-src="image_data_uri(lst_icon_demande_service[demande_service_index])"
                                     alt="icon"
-                                    class="activite_img img-fluid"
+                                    class="activite-img img-fluid"
                                 />
                                 <span
                                     t-if="not lst_icon_demande_service[demande_service_index]"
-                                    class="activite_img fa fa-calendar-plus-o bg-epsilon text-center adapt-text-epsilon-color"
+                                    class="activite-img fa fa-calendar-plus-o bg-epsilon text-center adapt-text-epsilon-color"
                                     style=""
                                 />
                                 <div class="infos">
                                     <h4
-                                        class="activite_title"
+                                        class="activite-title"
                                         t-if="demande_service.titre"
                                         t-field="demande_service.titre"
                                     />
-                                    <h4 class="activite_title" t-if="not demande_service.titre">
+                                    <h4 class="activite-title" t-if="not demande_service.titre">
                                         Titre vide...
                                     </h4>
                                     <h5
-                                        class="activite_auteur"
+                                        class="activite-auteur"
                                         t-if="demande_service.membre"
                                         t-field="demande_service.membre"
                                     />
                                     <span
                                         t-if="len(lst_distance_demande_service) >= demande_service_index"
-                                        class="activite_distance"
+                                        class="activite-distance"
                                         t-raw="lst_distance_demande_service[demande_service_index]"
                                     />
                                 </div>
@@ -541,8 +541,8 @@
                     <section class="pt32 pb32" t-if="not accorderie_type_service_categorie_id">
                         <div class="container">
                             <div class="row s_nb_column_fixed">
-                                <div class="col-lg-12 s_title pt16 pb16" style="text-align: center;">
-                                    <h1 class="s_title_default text-bold">
+                                <div class="col-lg-12 s-title pt16 pb16" style="text-align: center;">
+                                    <h1 class="s_title_default">
                                         <font style="font-size: 62px;">
                                             accorderie_type_service_categorie_id non existante
                                         </font>
@@ -558,12 +558,12 @@
                         style="background-image: none;"
                     >
                         <span
-                            class="s_parallax_bg oe_img_bg oe_custom_bg"
+                            class="s-parallax-bg oe_img_bg oe_custom_bg"
                             style="background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 0;"
                         />
                         <div class="container">
                             <div class="row s_nb_column_fixed">
-                                <div class="col-lg-12 s_title" data-name="Title">
+                                <div class="col-lg-12 s-title" data-name="Title">
                                     <h1
                                         class="s_title_thin"
                                         style="font-size: 62px; text-align: center;"
@@ -650,7 +650,7 @@
                 <div class="row">Aucune catégorie de service est disponible.</div>
             </div>
             <div t-if="type_service_categories" class="debug_unimplemented">
-                <div class="list_title s_title">
+                <div class="list-title s-title">
                     <div class="title">
                         <h1>Explorer les offres</h1>
                         <a href="/offresservice" style="font-size:1.25rem;">
@@ -658,8 +658,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="offres_list">
-                    <div class="offre_box btn" t-foreach="type_service_categories" t-as="type_service_categorie">
+                <div class="offres-list">
+                    <div class="offre-box btn" t-foreach="type_service_categories" t-as="type_service_categorie">
                         <a
                             t-if="type_service_categorie"
                             t-att-href="'/accorderie/type_service_categorie/%d' % type_service_categorie.id"
@@ -668,10 +668,10 @@
                                 t-if="type_service_categorie.icon"
                                 t-att-src="image_data_uri(type_service_categorie.icon)"
                                 alt="icon"
-                                class="offre_img"
+                                class="offre-img"
                             />
                             <div
-                                class="offre_desc"
+                                class="offre-desc"
                                 t-if="type_service_categorie.nom"
                                 t-raw="type_service_categorie._get_html_nom()"
                             />
@@ -704,8 +704,8 @@
                                 Debug state: <span>{{state || json}}</span>
                                 <br />
                             </div>
-                            <section class="s_buttons_form">
-                                <div class="txt_question" ng-if="!state.disable_question">
+                            <section class="s-buttons-form">
+                                <div class="txt-question" ng-if="!state.disable_question">
                                     <div><span
                                             ng-show="state.show_breadcrumb"
                                             ng-repeat="link in lst_label_breadcrumb"
@@ -722,16 +722,16 @@
                                         <span style="color:red;">Erreur : {{error}}</span>
                                     </div>
                                 </div>
-                                <div id="participer_form">
+                                <div id="participer-form">
                                     <div
-                                        class="buttons_form_container tab"
+                                        class="buttons-form-container tab"
                                         ng-if="state.type == 'selection_static' || state.type == 'selection_dynamique'"
                                     >
                                         <!-- !list_is_first_position -->
                                         <!-- Update the duplicate, check ng-if="state.list_is_first_position" -->
                                         <div
                                             ng-repeat="option in state.data"
-                                            class="button_form"
+                                            class="button-form"
                                             ng-if="!state.list_is_first_position &amp;&amp; _.isObject(state.data)"
                                         >
                                             <div
@@ -743,7 +743,7 @@
                                             >
     <!--                                            <i class="fa {{option.icon}}" ng-if="option.icon"/>-->
     <!--                                            <img-->
-    <!--                                                class="activite_img img-fluid"-->
+    <!--                                                class="activite-img img-fluid"-->
     <!--                                                src="/web/image/website_accorderie.ir_attachment_meritt_thomas_u_hb93v6iwi_unsplash_jpg/meritt-thomas-u-Hb93V6IWI-unsplash.jpg"-->
     <!--                                            />-->
                                                 <h5 ng-if="option.title">{{option.title}}</h5>
@@ -760,7 +760,7 @@
                                         <div
                                             ng-repeat="option in state.list"
                                             ng-class="{'debug_unimplemented': is_not_implemented(option)}"
-                                            class="button_form"
+                                            class="button-form"
                                         >
                                             <label
                                                 for="{{option.id}}"
@@ -781,7 +781,7 @@
                                         <!-- list_is_first_position -->
                                         <div
                                             ng-repeat="option in state.data"
-                                            class="button_form"
+                                            class="button-form"
                                             ng-if="state.list_is_first_position &amp;&amp; _.isObject(state.data)"
                                         >
                                             <div
@@ -793,7 +793,7 @@
                                             >
     <!--                                            <i class="fa {{option.icon}}" ng-if="option.icon"/>-->
     <!--                                            <img-->
-    <!--                                                class="activite_img img-fluid"-->
+    <!--                                                class="activite-img img-fluid"-->
     <!--                                                src="/web/image/website_accorderie.ir_attachment_meritt_thomas_u_hb93v6iwi_unsplash_jpg/meritt-thomas-u-Hb93V6IWI-unsplash.jpg"-->
     <!--                                            />-->
                                                 <h5 ng-if="option.title">{{option.title}}</h5>
@@ -809,7 +809,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="buttons_form_container tab"
+                                        class="buttons-form-container tab"
                                         style="justify-content:space-between;"
                                         ng-if="state.type == 'choix_categorie_de_service'"
                                     >
@@ -832,10 +832,10 @@
                                                     ng-if="!_.isEmpty(option.icon)"
                                                     ng-src="{{option.icon}}"
                                                     alt="icon"
-                                                    class="offre_img"
+                                                    class="offre-img"
                                                 />
                                                 <span
-                                                    class="cat_desc"
+                                                    class="cat-desc"
                                                     ng-if="!_.isEmpty(option.html)"
                                                     ng-bind-html="option.html | unsafe"
                                                 />
@@ -843,7 +843,7 @@
                                         </span>
                                     </div>
                                     <div
-                                        class="buttons_form_container tab"
+                                        class="buttons-form-container tab"
                                         ng-if="state.type == 'form'"
                                         style="flex-direction:column; flex-wrap:nowrap;"
                                         ng-class="{form: form_is_offre_demande_service(state)}"
@@ -853,7 +853,7 @@
                                         <!-- Catégorie -->
                                         <div
                                             ng-if="form_is_offre_demande_service(state) &amp;&amp; state.show_breadcrumb"
-                                            class="nav_back"
+                                            class="nav-back"
                                         ><b>Catégorie:</b><span
                                                 ng-repeat="link in lst_label_breadcrumb"
                                                 ng-click="change_breadcrumb_index(link.index)"
@@ -865,13 +865,13 @@
                                         <!-- Photo header -->
                                         <section
                                             ng-if="form_is_offre_demande_service(state)"
-                                            class="s_event_banner oe_img_bg oe_custom_bg debug_unimplemented"
+                                            class="s-event-banner oe_img_bg oe_custom_bg debug_unimplemented"
                                             style="background-image: url(&quot;/web/image/website_accorderie.ir_attachment_eric_prouzet_z62b9jiltgm_unsplash_jpg/eric-prouzet-Z62b9jIltGM-unsplash.jpg&quot;);"
                                         >
                                             <!-- TODO fill image with model -->
                                             <div style="text-align:center" class="debug_unimplemented">
                                                 <div class="btn btn-primary adapt-text-primary-color">
-                                                    <i class="fa fa-edit icon_padding_right" />
+                                                    <i class="fa fa-edit icon-padding-right" />
                                                     Remplacer la photo
                                                 </div>
                                             </div>
@@ -950,7 +950,7 @@
                                             De qui avez-vous reçu le service?
                                         </h2>
                                         <div
-                                            class="form_box cursor-pointer"
+                                            class="form-box cursor-pointer"
                                             ng-if="form_is_destinataire_du_service_de_qui(state) || form_is_destinataire_du_service(state)"
                                             ng-click="change_state_to_field_id('membre_id')"
                                         >
@@ -971,7 +971,7 @@
                                                 <h4>Catégorie du service</h4>
                                             </div>
                                             <div
-                                                class="form_box cursor-pointer"
+                                                class="form-box cursor-pointer"
                                                 ng-click="change_state_to_field_id('type_service_id')"
                                             >
                                                 <span>{{form.type_service_id.value}}</span>
@@ -990,7 +990,7 @@
                                         <input
                                             ng-if="form_is_nouveau(state)"
                                             type="text"
-                                            class="form_titre"
+                                            class="form-titre"
                                             ng-model="form.titre"
                                         />
 
@@ -1003,7 +1003,7 @@
                                         </div>
 
                                         <textarea
-                                            class="form_desc"
+                                            class="form-desc"
                                             ng-model="form.description"
                                             ng-if="form_is_nouveau(state)"
                                         />
@@ -1020,17 +1020,17 @@
                                                     />
                                                 </h4>
                                             </div>
-                                            <div class="form_box">
+                                            <div class="form-box">
                                                 <span>Je me déplace:</span>
                                                 <span>En voiture</span>
                                                 <i class="fa fa-chevron-right" />
                                             </div>
-                                            <div class="form_box">
+                                            <div class="form-box">
                                                 <span>J'accepte de me déplacer:</span>
                                                 <span>Dans la région</span>
                                                 <i class="fa fa-chevron-right" />
                                             </div>
-                                            <div class="form_box">
+                                            <div class="form-box">
                                                 <span>Destination spécifique: </span>
                                                 <span>Aucune</span>
                                                 <i class="fa fa-chevron-right" />
@@ -1043,7 +1043,7 @@
                                                     />
                                                 </h4>
                                             </div>
-                                            <div class="form_box flex-column" style="gap:1rem;">
+                                            <div class="form-box flex-column" style="gap:1rem;">
                                                 <div class="d-flex align-items-center w-100">
                                                     <i class="fa fa-check text-epsilon checker mt-0" />
                                                     <span
@@ -1062,9 +1062,9 @@
                                                         style="margin-left:auto;font-size:1.5rem"
                                                     />
                                                 </h4>
-                                                <div class="form_box">
+                                                <div class="form-box">
                                                     <div class="dispo">
-                                                        <div class="dates_container">
+                                                        <div class="dates-container">
                                                             <p>LUNDI</p>
                                                             <p>-</p>
                                                             <p>MARDI</p>
@@ -1084,11 +1084,11 @@
                                                     <i class="fa fa-chevron-right" />
                                                 </div>
                                             </div>
-                                            <div class="form_box dashed">
+                                            <div class="form-box dashed">
                                                 <i class="fa fa-plus" />
                                                 <span class="mr-auto ml-3">Matériel nécessaire</span>
                                             </div>
-                                            <div class="form_box dashed">
+                                            <div class="form-box dashed">
                                                 <i class="fa fa-plus" />
                                                 <span
                                                     class="mr-auto ml-3"
@@ -1100,7 +1100,7 @@
                                                 >Conditions</span>
                                             </div>
                                             <div
-                                                class="form_box dashed"
+                                                class="form-box dashed"
                                                 ng-if="'init.saa.offrir.nouveau.cat.form' === state.id"
                                             >
                                                 <i class="fa fa-plus" />
@@ -1298,7 +1298,7 @@
                                             <div
                                                 ng-if="form_is_frais_trajet_distance(state) &amp;&amp; !form_is_service_to_modify(state)"
                                             >
-                                                <div class="form_box float-left w-75 d-inline-block">
+                                                <div class="form-box float-left w-75 d-inline-block">
     <!--                                                    <span>2.3</span>-->
                                                     <input
                                                         class="form-control"
@@ -1307,7 +1307,7 @@
                                                         ng-model="form.distance_trajet"
                                                     />
                                                 </div>
-                                                <div class="form_box ml-auto" style="width:20%;">
+                                                <div class="form-box ml-auto" style="width:20%;">
                                                     <span>Km</span>
     <!--                                                    <i class="fa fa-chevron-down" />-->
                                                 </div>
@@ -1324,7 +1324,7 @@
                                             <div ng-if="form_is_frais_trajet_prix(state)">
                                                 <h4>Frais pour trajet :</h4>
                                             </div>
-                                            <div class="form_box" ng-if="form_is_frais_trajet_prix(state)">
+                                            <div class="form-box" ng-if="form_is_frais_trajet_prix(state)">
                                                 <input
                                                     class="form-control border-0"
                                                     name="date"
@@ -1336,7 +1336,7 @@
                                             <div ng-if="form_is_frais_trajet_prix(state)">
                                                 <h4>Frais pour le matériel nécessaire à l'échange de service</h4>
                                             </div>
-                                            <div class="form_box" ng-if="form_is_frais_trajet_prix(state)">
+                                            <div class="form-box" ng-if="form_is_frais_trajet_prix(state)">
                                                 <input
                                                     class="form-control border-0"
                                                     name="date"
@@ -1353,7 +1353,7 @@
                                                 <h4>Frais pour le matériel nécessaire à l'échange de service</h4>
                                             </div>
                                             <div
-                                                class="form_box debug_unimplemented"
+                                                class="form-box debug_unimplemented"
                                                 style="width:fit-content;"
                                                 ng-if="form_is_frais_import_list_without_modify(state)"
                                             >
@@ -1435,7 +1435,7 @@
                                         <h2 ng-if="form_is_commentaire(state)">Commentaires
                                         </h2>
                                         <textarea
-                                            class="form_desc"
+                                            class="form-desc"
                                             ng-model="form.commentaires"
                                             ng-if="form_is_commentaire(state)"
                                         />
@@ -1464,7 +1464,7 @@
 
                                             <!-- Montant à transférer -->
                                             <div
-                                                class="bar_time bg-beta adapt-text-beta-color"
+                                                class="bar-time bg-beta adapt-text-beta-color"
                                                 ng-if="form_is_service_and_service_prevu(state) &amp;&amp; !['init.saa.offrir.demande.existante.date.time.form'].includes(state.id)"
                                             >
                                                 <b>Montant total de temps à transférer</b>
@@ -1479,7 +1479,7 @@
                                             <h3><b>Respectez-vous les conditions suivantes :</b>
                                             </h3>
                                             <span>
-                                                <i class="fa fa-check checker text-epsilon icon_padding_right" />
+                                                <i class="fa fa-check checker text-epsilon icon-padding-right" />
                                                 Il doit y avoir au moins 4 personnes pour le déménagement.
                                             </span>
                                             <div class="divider" />
@@ -1492,11 +1492,11 @@
                                             </p>
                                         </span>
                                     </div>
-                                    <div class="buttons_form_container tab" ng-if="state.type == 'choix_membre'">
-                                        <div class="search_member_container mx-auto">
+                                    <div class="buttons-form-container tab" ng-if="state.type == 'choix_membre'">
+                                        <div class="search-member-container mx-auto">
                                             <img
                                                 style="width:50px; aspect-ratio:1;"
-                                                class="nav_pic rounded-circle"
+                                                class="nav-pic rounded-circle"
                                                 ng-src="{{state.selected_obj_value.img}}"
                                                 ng-if="!_.isUndefined(state.selected_obj_value)"
                                             />
@@ -1516,8 +1516,8 @@
                                                 ng-model="tmpForm.modelChooseMember"
                                             />
                                             <button
-                                                class="fa fa-times-circle remove_member text-epsilon"
-                                                ng-click="remove_member()"
+                                                class="fa fa-times-circle remove-member text-epsilon"
+                                                ng-click="remove-member()"
                                                 ng-if="!_.isUndefined($parent.state.selected_id)"
                                             />
                                         </div>
@@ -1527,7 +1527,7 @@
                                         {{ load_member() }}
 
                                     </div>
-                                    <div class="buttons_form_container tab" ng-if="state.type == 'calendrier'">
+                                    <div class="buttons-form-container tab" ng-if="state.type == 'calendrier'">
                                         {{ load_date() }}
                                         <div
                                             class="input-group date"
@@ -1540,7 +1540,7 @@
                                             date-max-year="true"
                                         />
                                     </div>
-                                    <div class="buttons_form_container tab" ng-if="state.type == 'temps_duree'">
+                                    <div class="buttons-form-container tab" ng-if="state.type == 'temps_duree'">
                                         {{ load_date() }}
                                         <div
                                             class="input-group date"
@@ -1551,12 +1551,12 @@
                                             date-format-tool="clock"
                                         />
                                     </div>
-                                    <div class="submit_container">
+                                    <div class="submit-container">
                                         <input
                                             id="reloadBtn"
                                             type="button"
                                             value="Recharger"
-                                            class="submit_btn btn"
+                                            class="submit-btn btn"
                                             ng-show="error"
                                             ng-click="init_controller()"
                                         />
@@ -1565,32 +1565,32 @@
                                             value="Retour"
                                             class="prev"
                                             ng-show="is_show_previous()"
-                                            ng-click="previous_btn()"
+                                            ng-click="previous-btn()"
                                             href=""
                                         >Retour</a>
                                         <input
                                             id="nextBtn"
                                             type="button"
                                             value="Suivant"
-                                            class="submit_btn btn"
+                                            class="submit-btn btn"
                                             ng-show="is_show_next()"
                                             ng-click="next_btn()"
-                                            ng-class="{'submit_btn_disable': is_disable_next()}"
+                                            ng-class="{'submit-btn-disable': is_disable_next()}"
                                         />
                                         <input
                                             id="submitBtn"
                                             type="button"
                                             ng-value="state.submit_button_text"
-                                            class="submit_btn btn"
+                                            class="submit-btn btn"
                                             ng-show="is_show_submit()"
-                                            ng-class="{'submit_btn_disable': !formCanSend()}"
+                                            ng-class="{'submit-btn-disable': !formCanSend()}"
                                             ng-click="formCanSend() &amp;&amp; submit_form()"
                                         />
                                     </div>
                                 </div>
                             </section>
                             <div
-                                class="modal fade modal_pub_offre modal_shown show"
+                                class="modal fade modal-pub-offre modal_shown show"
                                 style="display:block"
                                 ng-show="show_submit_modal"
                             >
@@ -1688,10 +1688,10 @@
                 />
                 <label
                     t-att-for="'sous_cat_%s' % str(type_service_sous_categorie.id)"
-                    class="button_form btn small label"
+                    class="button-form btn small label"
                 >
                     <p
-                        class="offre_desc"
+                        class="offre-desc"
                         t-if="type_service_sous_categorie.nom"
                         t-raw="type_service_sous_categorie.nom"
                     />
@@ -1713,7 +1713,7 @@
                     Membre depuis {{contact_info.show_date_creation}}
                 </p>
                 <p>
-                    <i class="fa fa-shield" ng-class="{'neg_time': !contact_info.antecedent_judiciaire_verifier}" />
+                    <i class="fa fa-shield" ng-class="{'neg-time': !contact_info.antecedent_judiciaire_verifier}" />
                     Antécédents judiciaires <span
                         ng-if="!contact_info.antecedent_judiciaire_verifier"
                     >non </span>vérifiés
@@ -1760,23 +1760,23 @@
                 ng-href="{{service_enable_href ? ('/accorderie/accorderie_' + type_service + '_service/' + service_id) : ''}}"
             >
                 <img
-                    class="activite_img img-fluid"
+                    class="activite-img img-fluid"
                     src="/web/image/website_accorderie.ir_attachment_meritt_thomas_u_hb93v6iwi_unsplash_jpg/meritt-thomas-u-Hb93V6IWI-unsplash.jpg"
                 />
                 <div class="infos">
-                    <h4 class="activite_title" ng-if="!_.isEmpty(service.titre)">{{service.titre}}</h4>
-                    <h4 class="activite_title" ng-if="_.isEmpty(service.titre)">Aucune titre</h4>
+                    <h4 class="activite-title" ng-if="!_.isEmpty(service.titre)">{{service.titre}}</h4>
+                    <h4 class="activite-title" ng-if="_.isEmpty(service.titre)">Aucune titre</h4>
                     <h5
-                        class="activite_desc"
+                        class="activite-desc"
                         ng-if="!_.isEmpty(service.description)"
                         ng-bind-html="service.description | unsafe"
                     />
-                    <h5 class="activite_auteur" ng-if="!_.isEmpty(service.membre)">{{service.membre.full_name}}</h5>
-                    <h5 class="activite_distance" ng-if="!_.isEmpty(service.distance)">{{service.distance}}</h5>
+                    <h5 class="activite-auteur" ng-if="!_.isEmpty(service.membre)">{{service.membre.full_name}}</h5>
+                    <h5 class="activite-distance" ng-if="!_.isEmpty(service.distance)">{{service.distance}}</h5>
                 </div>
             </a>
 <!--            <div class="infos right">-->
-            <div class="infos_right">
+            <div class="infos-right">
                 <h5>{{service.diff_create_date}}</h5>
                 <i
                     class="fa text-epsilon coeur"

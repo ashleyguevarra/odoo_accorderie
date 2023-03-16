@@ -2,13 +2,13 @@
     Page Login
 */
 
-.s_login {
+.s-login {
   background-position-x: center;
   height: 1000px;
   min-height: 500px;
 }
 
-.login_box {
+.login-box {
   background-color: $bg-alpha;
   border-radius: 20px;
   float: right;
@@ -26,7 +26,7 @@
   }
 }
 
-#login_form {
+#login-form {
   margin: 20px auto;
   max-width: none;
 }
@@ -37,18 +37,18 @@
 }
 
 @media only screen and (max-width: 990px) {
-  .s_login {
+  .s-login {
     background-size: contain !important;
   }
 
-  .login_box {
+  .login-box {
     border-radius: 0;
     margin: 40% 0 0 0;
     padding: 5% 7%;
     width: 100%;
   }
 
-  .login_box.shadow {
+  .login-box.shadow {
     box-shadow: none !important;
   }
 }
