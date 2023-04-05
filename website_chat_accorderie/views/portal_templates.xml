@@ -47,10 +47,10 @@
                     ng-repeat="msg in lst_membre_message"
                 >
                     <div class="cat activite btn">
-                        <img class="activite-img img-fluid rounded-circle" ng-src="{{ msg.ma_photo }}" />
+                        <img class="activite_img img-fluid rounded-circle" ng-src="{{ msg.ma_photo }}" />
                         <div class="infos">
-                            <span class="activite-title">{{msg.resume_msg}}</span>
-                            <span class="activite-auteur">{{msg.name}}</span>
+                            <span class="activite_title">{{msg.resume_msg}}</span>
+                            <span class="activite_auteur">{{msg.name}}</span>
                         </div>
                         <div class="infos right">
                             <span>{{msg.last_date}}</span>

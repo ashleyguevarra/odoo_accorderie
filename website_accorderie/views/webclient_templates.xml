@@ -4,7 +4,7 @@
         <!-- Add section/div + h1-br-h2 -->
         <xpath expr="//form" position="replace">
             <section
-                class="s-login oe_img_bg oe_custom_bg pt16"
+                class="s_login oe_img_bg oe_custom_bg pt16"
                 style="background-image: url(&quot;/web/image/website_accorderie.ir_attachment_accueil_illustration_05@2x_png/Accueil-Illustration-05@2x.png&quot;);"
             >
                 <div class="debug_debug">
@@ -17,12 +17,12 @@
                         href="https://marvelapp.com/prototype/6dbaaf8/screen/85564739"
                     >https://marvelapp.com/prototype/6dbaaf8/screen/85564739</a>
                     </div>
-                <div class="login-box shadow">
+                <div class="login_box shadow">
                     <h1>Bienvenue sur l'espace</h1>
                     <br />
                     <h2 id="membre_accorderie">membre de l'Accorderie</h2>
                     <form
-                        id="login-form"
+                        id="login_form"
                         class="oe_login_form"
                         role="form"
                         t-attf-action="/web/login{{ '?debug' if debug else '' }}"

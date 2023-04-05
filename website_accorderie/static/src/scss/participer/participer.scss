@@ -2,12 +2,12 @@
     Page Participer
 */
 
-.s-buttons-form {
+.s_buttons_form {
   display: flex;
   max-height: calc(100vh - 126px);
 }
 
-.txt-question {
+.txt_question {
   background-color: $alpha;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@
   }
 }
 
-#participer-form {
+#participer_form {
   flex: 1;
 
   h2 {
@@ -31,33 +31,33 @@
   }
 }
 
-.buttons-form-container .label:hover {
+.buttons_form_container .label:hover {
   background-color: $delta;
 }
 
-.buttons-form-container input[type="radio"] {
+.buttons_form_container input[type="radio"] {
   opacity: 0;
   position: fixed;
   width: 0;
 }
 
-.buttons-form-container .label.checked {
+.buttons_form_container .label.checked {
   background-color: theme-color("epsilon");
   color: $text-alpha;
 }
 
-.buttons-form-container .s-event-banner {
+.buttons_form_container .s_event_banner {
   left: -12.5%;
   padding: 10%;
   width: 100vw;
 }
 
-.buttons-form-container .input-group .datetimepicker-input {
+.buttons_form_container .input-group .datetimepicker-input {
   height: 3.5rem;
   padding: 1rem;
 }
 
-.buttons-form-container {
+.buttons_form_container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -83,7 +83,7 @@
     }
   }
 
-  .nav-back {
+  .nav_back {
     align-items: center;
     display: flex;
     gap: 1rem;
@@ -104,7 +104,7 @@
     }
   }
 
-  .button-form {
+  .button_form {
     margin: auto;
     width: 80%;
   }
@@ -152,15 +152,15 @@
     resize: none;
   }
 
-  .form-titre {
+  .form_titre {
     min-height: 5rem;
   }
 
-  .form-desc {
+  .form_desc {
     min-height: 10rem;
   }
 
-  .form-box {
+  .form_box {
     align-items: center;
     border-radius: 5px;
     border: 1px solid $beta;
@@ -178,7 +178,7 @@
     }
   }
 
-  .search-member-container {
+  .search_member_container {
     align-items: center;
     border-radius: 5px;
     border: 1px solid $beta !important;
@@ -209,14 +209,14 @@
     width: 100%;
   }
 
-  button.remove-member {
+  button.remove_member {
     background: none;
     border: none;
     font-size: 1.5rem;
     margin-left: auto;
   }
 
-  button.remove-member:hover {
+  button.remove_member:hover {
     cursor: pointer;
   }
 
@@ -251,7 +251,7 @@
     display: flex;
     padding: 5%;
 
-    .activite-img {
+    .activite_img {
       aspect-ratio: 1;
       border-radius: 5px;
       height: 100px;
@@ -268,7 +268,7 @@
       }
     }
 
-    .infos-right {
+    .infos_right {
       display: flex;
       flex-direction: column;
       height: 100%;
@@ -289,11 +289,11 @@
   padding: 25% 15% 5% 15%;
 }
 
-.submit-container {
+.submit_container {
   border-top: 2px solid $alpha;
   height: 5rem;
 
-  .submit-btn {
+  .submit_btn {
     // TODO use adapt-text-primary-color
     background-color: $primary-color;
     border-radius: 5px;
@@ -304,7 +304,7 @@
     min-width: 120px;
   }
 
-  .submit-btn-disable {
+  .submit_btn_disable {
     background-color: #d3d3d3;
   }
 
@@ -316,18 +316,18 @@
 }
 
 @media only screen and (max-width: 990px) {
-  .s-buttons-form {
+  .s_buttons_form {
     flex-direction: column;
 
     > * {
       width: 100% !important;
 
-      .button-form {
+      .button_form {
         width: 80% !important;
       }
     }
 
-    .txt-question {
+    .txt_question {
       background-color: $bg-alpha;
       max-height: 100px;
       padding: 5%;
@@ -346,8 +346,8 @@
       }
     }
 
-    #participer-form {
-      .buttons-form-container {
+    #participer_form {
+      .buttons_form_container {
         gap: 0.5rem;
         height: calc(100vh - 366px);
         padding: 5%;
@@ -356,27 +356,27 @@
           height: 100%;
           padding: 0.5rem;
         }
-        .nav-back {
+        .nav_back {
           margin: -1% 0 3%;
         }
       }
 
-      .buttons-form-container .btn.small {
+      .buttons_form_container .btn.small {
         min-height: 10vh;
       }
 
-      .submit-container .submit-btn {
+      .submit_container .submit_btn {
         margin-right: 5%;
         width: fit-content;
       }
     }
   }
 
-  .buttons-form-container .s-event-banner {
+  .buttons_form_container .s_event_banner {
     left: -5.5%;
   }
 
-  .buttons-form-container.form {
+  .buttons_form_container.form {
     flex-direction: column;
     flex-wrap: nowrap;
     height: calc(100vh - 272px) !important;
@@ -384,16 +384,16 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .buttons-form-container .categorie {
+  .buttons_form_container .categorie {
     width: 100%;
   }
 
   .cat {
-    .cat-desc {
+    .cat_desc {
       font-size: 3vw;
     }
 
-    .offre-img {
+    .offre_img {
       width: 10vw;
     }
   }

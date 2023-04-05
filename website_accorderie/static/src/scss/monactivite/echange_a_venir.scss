@@ -2,11 +2,11 @@
     Page Mon échange à venir
 */
 
-.s-echange-informations {
+.s_echange_informations {
   background-color: $gamma;
 }
 
-.s-echange-informations .informations-container {
+.s_echange_informations .informations_container {
   display: grid;
   grid-column-gap: 5%;
   grid-template-columns: 0.5fr 1fr;
@@ -19,7 +19,7 @@
     flex-direction: column;
     max-height: unset;
 
-    .info-title {
+    .info_title {
       font-size: 2rem;
     }
   }
@@ -46,7 +46,7 @@
       }
     }
 
-    .info-depot {
+    .info_depot {
       border-left: 1px solid $beta;
       color: $alpha;
       font-size: 1rem;
@@ -104,7 +104,7 @@
     grid-area: 3 / 2 / 4 / 3;
     height: fit-content;
 
-    .vertical-list {
+    .vertical_list {
       padding: 1rem 0 0;
 
       .activite.btn {
@@ -118,14 +118,14 @@
     gap: 3rem;
     grid-area: 4 / 2 / 6 / 3;
 
-    .condition-desc {
+    .condition_desc {
       display: flex;
       font-size: 1.2rem;
       margin-bottom: 0;
       margin-top: 1rem;
     }
 
-    .condition-txt {
+    .condition_txt {
       margin: 1rem 0 0;
     }
 
@@ -135,7 +135,7 @@
   }
 }
 
-.bar-time {
+.bar_time {
   align-items: center;
   background-color: $gamma;
   border-radius: 5px;
@@ -152,14 +152,14 @@
 }
 
 @media only screen and (max-width: 990px) {
-  .s-echange-informations .informations-container {
+  .s_echange_informations .informations_container {
     display: flex;
   }
 
-  .informations-container .information-1 {
+  .informations_container .information-1 {
     flex-direction: column !important;
 
-    .info-depot {
+    .info_depot {
       border: unset !important;
       margin: unset !important;
     }

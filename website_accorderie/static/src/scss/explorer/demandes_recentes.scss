@@ -2,18 +2,18 @@
     Offres et demandes récentes
 */
 
-.s-activites-recentes {
+.s_activites_recentes {
   height: auto;
   padding: 5% 10%;
 }
 
-.container-lists {
+.container_lists {
   display: flex;
   flex-direction: row;
   height: 100%;
 }
 
-.activites-list {
+.activites_list {
   display: flex;
   flex-direction: column;
   float: left;
@@ -23,7 +23,7 @@
   width: 50%;
   //overflow: hidden;
 
-  .list-title {
+  .list_title {
     padding-bottom: 3rem;
   }
 }
@@ -37,7 +37,7 @@
   white-space: normal;
   //max-height: 160px;
 
-  .activite-img {
+  .activite_img {
     aspect-ratio: 1/1;
     border-radius: 5px;
     font-size: clamp(12px, 3rem, 3rem);
@@ -51,19 +51,19 @@
     flex-direction: column;
   }
 
-  .activite-title {
+  .activite_title {
     color: $text-beta;
     font-size: 1.2rem;
     font-weight: bold;
   }
 
-  .activite-auteur {
+  .activite_auteur {
     color: $text-beta;
     font-size: 1.1rem;
     margin-top: auto;
   }
 
-  .activite-distance {
+  .activite_distance {
     color: $text-beta;
     font-size: 1.1rem;
     margin-bottom: 0;
@@ -118,16 +118,16 @@
 }
 
 @media only screen and (max-width: 990px) {
-  .s-activites-recentes {
+  .s_activites_recentes {
     padding: 5% 0;
   }
 
-  .container-lists {
+  .container_lists {
     flex-direction: column;
     gap: 5rem;
   }
 
-  .row.activites-list {
+  .row.activites_list {
     height: inherit !important;
     width: 100%;
 
@@ -135,20 +135,20 @@
       height: unset !important;
       padding: 2% 0 2%;
 
-      .activite-img {
+      .activite_img {
         height: 8vh;
         line-height: 8vh;
       }
 
-      .activite-title {
+      .activite_title {
         font-size: 1.8vh;
         max-height: unset;
         overflow: hidden;
         //line-height: 1rem;
       }
 
-      .activite-auteur,
-      .activite-distance {
+      .activite_auteur,
+      .activite_distance {
         font-size: 1.5vh;
       }
     }

@@ -1,15 +1,11 @@
-/*
-    Bilan container
-*/
-
-.bilan-container {
+.bilan_container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0% 10%;
 }
 
-.bilan-left {
+.bilan_left {
   align-items: center;
   border-radius: 7px;
   border: none;
@@ -30,7 +26,7 @@
   background-color: theme-color("primary");
 }
 
-.bilan-main {
+.bilan_main {
   align-items: center;
   border-radius: 7px;
   border: none;
@@ -58,7 +54,7 @@
   background-color: theme-color("primary");
 }
 
-.bilan-right {
+.bilan_right {
   align-items: center;
   border-radius: 7px;
   border: none;
@@ -119,14 +115,14 @@
 }
 
 @media only screen and (max-width: 990px) {
-  .bilan-container {
+  .bilan_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0% 10%;
   }
 
-  .bilan-left {
+  .bilan_left {
     align-items: center;
     border-radius: 7px;
     border: none;
@@ -146,7 +142,7 @@
     width: 100%;
   }
 
-  .bilan-main {
+  .bilan_main {
     align-items: center;
     border-radius: 7px;
     border: none;
@@ -174,7 +170,7 @@
     background-color: theme-color("primary");
   }
 
-  .bilan-right {
+  .bilan_right {
     flex: 1;
     align-items: center;
     border-radius: 7px;

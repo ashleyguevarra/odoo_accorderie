@@ -2,13 +2,13 @@
     Page Évènement/Offre
 */
 
-.s-event-banner {
+.s_event_banner {
   height: 35vh;
   padding: 5% 10% 0;
   position: relative;
 }
 
-.event-banner-action {
+.event_banner_action {
   border-radius: 5px 5px 0 0;
   bottom: 0;
   display: flex;
@@ -28,16 +28,16 @@
   }
 }
 
-.event-container {
+.event_container {
   display: flex;
   flex-direction: row;
 }
 
-.icon-padding-right {
+.icon_padding_right {
   padding-right: 10px;
 }
 
-.event-head {
+.event_head {
   padding: 5% 10% 0 10%;
   width: 100%;
 
@@ -60,12 +60,12 @@
         padding: 0.5% 2% 0 0;
       }
 
-      .event-date h3 {
+      .event_date h3 {
         font-weight: normal;
       }
     }
 
-    .btn-container {
+    .btn_container {
       float: right;
       margin-top: -3rem;
       width: 50%;
@@ -98,7 +98,7 @@
   border: 1px dashed gray !important;
 }
 
-.event-container .informations-container {
+.event_container .informations_container {
   display: flex;
   flex-direction: column;
   float: left;
@@ -137,7 +137,7 @@
       flex-direction: column;
       padding-right: 0;
 
-      .search-box {
+      .search_box {
         align-items: center;
         border-radius: 7px;
         border: 1px solid lightgray;
@@ -167,7 +167,7 @@
         gap: 40px;
         height: 100px;
 
-        .user-pic {
+        .user_pic {
           aspect-ratio: 1/1;
           background-size: cover;
           height: 70%;
@@ -188,7 +188,7 @@
   }
 }
 
-.dispo .dates-container {
+.dispo .dates_container {
   display: flex;
   flex-wrap: wrap;
   font-size: 1rem;
@@ -203,7 +203,7 @@
   }
 }
 
-.right-cards-container {
+.right_cards_container {
   display: flex;
   flex-direction: column;
   float: right;
@@ -281,15 +281,15 @@
 }
 
 @media only screen and (max-width: 990px) {
-  .s-event-banner {
+  .s_event_banner {
     height: 25vh !important;
   }
 
-  //.event-banner-action {
+  //.event_banner_action {
   //  display: none;
   //}
 
-  .event-info .btn-container {
+  .event_info .btn_container {
     float: none !important;
     margin-top: auto !important;
     width: auto !important;
@@ -302,7 +302,7 @@
     }
   }
 
-  .event-info .infos {
+  .event_info .infos {
     flex-direction: column !important;
 
     > * {
@@ -312,18 +312,18 @@
     }
   }
 
-  .event-container {
+  .event_container {
     flex-direction: column;
 
-    .informations-container {
+    .informations_container {
       width: 100%;
 
-      .info-2 .contact-list .search-box {
+      .info-2 .contact-list .search_box {
         width: 100%;
       }
     }
 
-    .right-cards-container {
+    .right_cards_container {
       width: 100%;
 
       //.info-3 {
@@ -337,7 +337,7 @@
     }
   }
 
-  .dispo .dates-container {
+  .dispo .dates_container {
     :nth-child(odd) {
       width: 50%;
     }
@@ -350,7 +350,7 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .s-event-banner {
+  .s_event_banner {
     height: 20vh !important;
   }
 }

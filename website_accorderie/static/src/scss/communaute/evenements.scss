@@ -2,23 +2,23 @@
     Page Communauté/Évènements
 */
 
-.s-event-list.lg {
+.s_event_list.lg {
   height: auto;
   padding: 0 10%;
 
-  .horizontal-list {
+  .horizontal_list {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
-    .list-item {
+    .list_item {
       height: 500px;
       width: auto;
     }
   }
 }
 
-.filter-btn.btn {
+.filter_btn.btn {
   border-radius: 50px;
   border: 1px solid $alpha;
   float: right;
@@ -26,7 +26,7 @@
 }
 
 @media only screen and (max-width: 1050px) {
-  .filter-btn.btn {
+  .filter_btn.btn {
     display: none;
   }
 }

@@ -2,7 +2,7 @@
     Section mobile filter
 */
 
-.s-mobile-filter {
+.s_mobile_filter {
   display: none;
   font-size: 2vh;
   justify-content: space-between;
@@ -17,7 +17,7 @@
 }
 
 @media only screen and (max-width: 990px) {
-  .s-mobile-filter {
+  .s_mobile_filter {
     display: flex;
   }
 }

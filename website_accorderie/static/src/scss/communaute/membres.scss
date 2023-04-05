@@ -2,45 +2,45 @@
     Page Communauté/Membres
 */
 
-.s-event-list.small-cards {
+.s_event_list.small-cards {
   height: auto;
   padding: 0 10%;
 
-  .horizontal-list {
+  .horizontal_list {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
-    .list-item {
+    .list_item {
       height: 350px;
       width: auto;
     }
   }
 }
 
-.item-img > icon {
+.item_img > icon {
   float: right;
   font-size: 20px;
 }
 
-.item-img .name {
+.item_img .name {
   bottom: 30px;
   font-size: 20px;
   position: absolute;
 }
 
-.item-img .infos {
+.item_img .infos {
   bottom: 10px;
   position: absolute;
 }
 
-.item-desc.centered {
+.item_desc.centered {
   height: 40% !important;
   padding: 10% !important;
   text-align: center;
 }
 
-.item-foot {
+.item_foot {
   height: 20%;
   padding: 8%;
   position: relative;
@@ -55,7 +55,7 @@
   width: fit-content;
 }
 
-.item-foot:after {
+.item_foot:after {
   content: "";
   border-top: 1px solid $beta;
   left: 5%;
@@ -64,21 +64,21 @@
   width: 90%;
 }
 
-.s-map-btn .btn-map {
+.s_map_btn .btn_map {
   float: right;
   font-size: 1.2rem;
   margin-right: 10%;
 }
 
 //clearfix
-.s-map-btn::after {
+.s_map_btn::after {
   content: "";
   clear: both;
   display: table;
 }
 
 @media only screen and (max-width: 990px) {
-  .s-event-list.small-cards {
+  .s_event_list.small-cards {
     padding: 0 5%;
   }
 }

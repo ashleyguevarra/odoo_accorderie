@@ -2,23 +2,23 @@
     Horizontal list
 */
 
-.s-event-list {
+.s_event_list {
   height: 675px;
   padding: 100px 10%;
 }
 
-.list-head {
+.list_head {
   height: 10%;
   padding: 0 1%;
 }
 
-.horizontal-list {
+.horizontal_list {
   display: flex;
   flex-direction: row;
   height: 90%;
 }
 
-.event-date-container {
+.event_date_container {
   align-items: center;
   aspect-ratio: 1/1;
   background-color: $bg-alpha;
@@ -29,27 +29,27 @@
   overflow: hidden;
   text-align: center;
 
-  .event-date {
+  .event_date {
     flex: 1;
   }
 
-  .event-date-separator {
+  .event_date_separator {
     background-color: $primary-color;
     flex: 0.1;
     height: 3px;
   }
 }
 
-.event-date-container.lg {
+.event_date_container.lg {
   aspect-ratio: 2/1;
 }
 
-.list-item {
+.list_item {
   flex: 1;
   height: 100%;
   padding: 2% 1%;
 
-  .item-card {
+  .item_card {
     height: 100%;
     padding: 0;
     position: relative;
@@ -57,28 +57,28 @@
     white-space: initial;
     width: 100%;
 
-    .item-img {
+    .item_img {
       height: 40%;
       padding: 5%;
       position: relative;
       width: 100%;
     }
 
-    .item-desc {
+    .item_desc {
       height: 60%;
       padding: 5%;
       width: 100%;
 
-      .item-title {
+      .item_title {
         font-size: 1.2rem;
         line-height: 1;
       }
 
-      .event-time {
+      .event_time {
         color: $text-gamma;
       }
 
-      .event-loc {
+      .event_loc {
         color: $text-gamma;
         font-size: 0.8rem;
       }
@@ -88,7 +88,7 @@
       }
     }
 
-    .btn-container {
+    .btn_container {
       bottom: 4%;
       display: flex;
       gap: 5%;
@@ -96,14 +96,14 @@
       position: absolute;
       width: 90%;
 
-      .item-btn {
+      .item_btn {
         align-items: center;
         display: flex;
         flex: 1;
         justify-content: center;
       }
 
-      .item-btn.lg {
+      .item_btn.lg {
         font-size: 1.2rem;
       }
 
@@ -115,13 +115,13 @@
 }
 
 @media only screen and (max-width: 1510px) {
-  .horizontal-list {
+  .horizontal_list {
     overflow-x: auto;
     white-space: normal;
     width: 100%;
   }
 
-  .list-item {
+  .list_item {
     height: auto;
     min-width: 280px;
   }

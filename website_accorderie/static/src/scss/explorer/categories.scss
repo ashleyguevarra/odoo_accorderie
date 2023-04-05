@@ -2,16 +2,16 @@
     Offres catégories
 */
 
-.s-offres {
+.s_offres {
   padding: 0 14%;
 }
 
-.offres-ist {
+.offres_list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
-.offre-box.btn {
+.offre_box.btn {
   max-height: 140px;
   padding: 0;
   text-align: left;
@@ -20,7 +20,7 @@
     color: $text-beta;
   }
 
-  .offre-img {
+  .offre_img {
     aspect-ratio: 1/1;
     background-size: cover;
     border-radius: 5px;
@@ -28,19 +28,19 @@
     height: 88%;
   }
 
-  .offre-desc {
+  .offre_desc {
     float: left;
     padding: 1rem 5%;
   }
 }
 
 @media only screen and (max-width: 1090px) {
-  .s-offres {
+  .s_offres {
     height: auto;
     padding: 0 5%;
   }
 
-  .offres-ist {
+  .offres_list {
     grid-template-columns: repeat(5, 270px);
     grid-template-rows: repeat(3, 100px);
     overflow-x: scroll;
